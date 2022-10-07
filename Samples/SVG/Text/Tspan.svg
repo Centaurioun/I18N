@@ -1,6 +1,1 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg">
-  <text x="10" y="20" style="fill:red;">Normal part
-    <tspan fill="green" font-weight="bold">bold part</tspan>
-    <tspan fill="blue" font-style="italic">italic part</tspan>
-  </text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg"><text x="10" y="20" style="fill:red">Normal part <tspan fill="green" font-weight="bold">bold part</tspan> <tspan fill="#00f" font-style="italic">italic part</tspan></text></svg>
