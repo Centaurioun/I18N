@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Resources;
 using System.Threading;
 using System.Windows;
 using System.Windows.Baml2006;
+using System.Windows.Documents;
 using System.Xaml;
 
 namespace Soluling.WPF
@@ -100,13 +102,25 @@ namespace Soluling.WPF
       TranslateElement(window, baml);
     }
 
+    private void TranslateRun(Run run, BamlControl baml)
+    {
+      if (baml == null)
+        return;
+
+      object value = baml.FindProperty("Text");
+
+      if ((value != null) && (value is string))
+        run.Text = (string)value;
+    }
+
     private void TranslateElement(FrameworkElement element, BamlControl baml)
     {
       if ((element == null) || (baml == null))
         return;
 
       // Translate child controls
-      IEnumerable children = LogicalTreeHelper.GetChildren(element);
+      IEnumerable childrenEnum = LogicalTreeHelper.GetChildren(element);
+      object[] children = childrenEnum.Cast<object>().ToArray();
 
       foreach (object child in children)
       {
@@ -114,6 +128,11 @@ namespace Soluling.WPF
         {
           FrameworkElement childElement = (FrameworkElement)child;
           TranslateElement(childElement, baml.Find(childElement));
+        }
+        else if (child is Run)
+        {
+          Run run = (Run)child;
+          TranslateRun(run, baml.FindInline(run));
         }
       }
 
@@ -124,16 +143,24 @@ namespace Soluling.WPF
 
         foreach (PropertyInfo property in properties)
         {
-          Object value;
+          object value;
 
           if (property.Name == "Content")
             value = baml.Value;
           else
             value = baml.FindProperty(property.Name);
 
-          if ((value != null) && property.CanWrite && (value is string))
-            //property.SetValue(element, ((string)value).ToUpper(), null);
-            property.SetValue(element, value, null);
+          if ((value != null) && (value is string) && property.CanWrite)
+          {
+            try
+            {
+              property.SetValue(element, value, null);
+            }
+            catch
+            { 
+              // Reason for this might be an invalid translation. Do not one error fail the whole translation process.
+            }
+          }
         }
       }
     }
@@ -189,6 +216,16 @@ namespace Soluling.WPF
       resourceName = resourceName + ".resources";
 
       Stream stream = assembly.GetManifestResourceStream(resourceName);
+
+      if ((stream == null) && (language != "") && (language == Language.OriginalId))
+      {
+        resourceName = assemblyName + ".g." + language + ".resources";
+        stream = assembly.GetManifestResourceStream(resourceName);
+      }
+
+      if (stream == null)
+        return null;
+
       BamlControl current = null;
 
       using (var resourceReader = new ResourceReader(stream))
@@ -288,12 +325,45 @@ namespace Soluling.WPF
       return controls.Find(control => control.MemberName == name);
     }
 
-    public BamlControl Find(string name)
+    public BamlControl FindInline(Inline element)
     {
+      foreach (var control in controls)
+      {
+        foreach (var subControl in control.controls)
+        {
+          if (subControl.Name == element.Name)
+            return subControl;
+        }
+      }
+
+      foreach (var control in controls)
+      {
+        foreach (var subControl in control.controls)
+        {
+          if (subControl.Uid == element.Name)
+            return subControl;
+        }
+      }
+
+      return null;
+    }
+
+    public BamlControl Find(string name, FrameworkElement element)
+    {
+      // Find by Name or x:Name attribute
       var item = controls.Find(control => control.Name == name);
 
+      // Find bu Uid or x:Uid attribute
       if (item == null)
         item = controls.Find(control => control.Uid == name);
+
+      // Find by type name
+      if (item == null)
+      {
+        var typeName = element.GetType().FullName;
+
+        item = controls.Find(control => control.ElementName == typeName);
+      }
 
       return item;
     }
@@ -305,7 +375,7 @@ namespace Soluling.WPF
       if (name == "")
         name = element.Uid;
 
-      BamlControl result = Find(name);
+      BamlControl result = Find(name, element);
 
       if (result != null)
         return result;
@@ -314,7 +384,7 @@ namespace Soluling.WPF
       result = FindMemberName("Children");
 
       if (result != null)
-        result = result.Find(name);
+        result = result.Find(name, element);
 
       if (result != null)
         return result;
@@ -323,7 +393,7 @@ namespace Soluling.WPF
       result = FindMemberName("Items");
 
       if (result != null)
-        result = result.Find(name);
+        result = result.Find(name, element);
 
       return result;
     }
