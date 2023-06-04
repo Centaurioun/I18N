@@ -1,14 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20221123T132447Z" version="1.0.965" stringid="1017">
+<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20230425T125759Z" version="1.0.992" stringid="1017">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Debug\DatabaseGrid.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\DatabaseGrid\Win32\Debug\DatabaseGrid.exe" original="en" lastmodified="20221123T132447Z" hassignatureread="1" version="dvXE2">
+  <lang id="ja"/>
+  <node class="TDelphiSource" name="Win32\Debug\DatabaseGrid.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\DatabaseGrid\Win32\Debug\DatabaseGrid.exe" original="en" lastmodified="20230425T125759Z" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData" created="20200530T205110Z">
       <node class="TDelphiFormNode" name="TLOGINDIALOG" type="TLoginDialog" resname="TLOGINDIALOG" objectname="LoginDialog">
         <row id="Left">307</row>
         <row id="Top">131</row>
-        <row id="Caption" si="505">Database Login</row>
+        <row id="Caption" si="505">
+          <value>Database Login</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Kirjautuminen tietokantaan</lang>
+          <lang id="ja" rw="0" time="20230424T210809Z">データベース ログイン</lang>
+        </row>
         <row id="ClientHeight">147</row>
         <row id="ClientWidth">283</row>
         <item name="OKButton" type="TButton">
@@ -16,14 +21,22 @@
           <row id="Top">114</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="506">&amp;OK</row>
+          <row id="Caption" si="506">
+            <value>&amp;OK</value>
+            <lang id="fi" rw="0" time="20230424T210725Z">&amp;OK</lang>
+            <lang id="ja" rw="0" time="20230424T210828Z">OK(&amp;O)</lang>
+          </row>
         </item>
         <item name="CancelButton" type="TButton">
           <row id="Left">200</row>
           <row id="Top">114</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="507">Cancel</row>
+          <row id="Caption" si="507">
+            <value>Cancel</value>
+            <lang id="fi" rw="0" time="20230424T211003Z">Peru</lang>
+            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+          </row>
         </item>
         <item name="Panel" type="TPanel">
           <row id="Left">8</row>
@@ -35,7 +48,11 @@
             <row id="Top">6</row>
             <row id="Width">50</row>
             <row id="Height">13</row>
-            <row id="Caption" si="508">Database:</row>
+            <row id="Caption" si="508">
+              <value>Database:</value>
+              <lang id="fi" rw="0" time="20230424T210725Z">Tietokanta:</lang>
+              <lang id="ja" rw="0" time="20230424T210809Z">データベース:</lang>
+            </row>
           </item>
           <item name="DatabaseName" type="TLabel">
             <row id="Left">106</row>
@@ -59,14 +76,22 @@
               <row id="Top">8</row>
               <row id="Width">56</row>
               <row id="Height">13</row>
-              <row id="Caption" si="509">&amp;User Name:</row>
+              <row id="Caption" si="509">
+                <value>&amp;User Name:</value>
+                <lang id="fi" rw="0" time="20230424T210725Z">&amp;Käyttäjänimi:</lang>
+                <lang id="ja" rw="0" time="20230424T210839Z">ユーザー名(&amp;U):</lang>
+              </row>
             </item>
             <item name="Label2" type="TLabel">
               <row id="Left">8</row>
               <row id="Top">36</row>
               <row id="Width">50</row>
               <row id="Height">13</row>
-              <row id="Caption" si="510">&amp;Password:</row>
+              <row id="Caption" si="510">
+                <value>&amp;Password:</value>
+                <lang id="fi" rw="0" time="20230424T210725Z">&amp;Salasana:</lang>
+                <lang id="ja" rw="0" time="20230424T210834Z">パスワード(&amp;P):</lang>
+              </row>
             </item>
             <item name="UserName" type="TEdit">
               <row id="Left">101</row>
@@ -105,7 +130,11 @@
         <font id="Font" name="MS Sans Serif" size="8"/>
         <row id="Left">205</row>
         <row id="Top">126</row>
-        <row id="Caption" si="512">Data Sample</row>
+        <row id="Caption" si="512">
+          <value>Data Sample</value>
+          <lang id="fi" rw="0" time="20230424T210942Z">Data-esimerkki</lang>
+          <lang id="ja" rw="0" time="20230424T210809Z">データサンプル</lang>
+        </row>
         <row id="ClientHeight">103</row>
         <row id="ClientWidth">733</row>
         <item name="DBGrid1" type="TDBGrid">
@@ -118,26 +147,54 @@
           <row id="Left">16</row>
           <row id="Top">48</row>
           <item name="DatabaseMenu" type="TMenuItem">
-            <row id="Caption" si="513">Database</row>
+            <row id="Caption" si="513">
+              <value>Database</value>
+              <lang id="fi" rw="0" time="20230424T210725Z">Tietokanta</lang>
+              <lang id="ja" rw="0" time="20230424T210809Z">データベース</lang>
+            </row>
             <item name="OpenMenu" type="TMenuItem">
-              <row id="Caption" si="514">Open</row>
+              <row id="Caption" si="514">
+                <value>Open</value>
+                <lang id="fi" rw="0" time="20230424T210948Z">Avaa</lang>
+                <lang id="ja" rw="0" time="20230424T210809Z">開ける</lang>
+              </row>
             </item>
             <item name="CloseMenu" type="TMenuItem">
-              <row id="Caption" si="515">Close</row>
+              <row id="Caption" si="515">
+                <value>Close</value>
+                <lang id="fi" rw="0" time="20230424T210951Z">Sulje</lang>
+                <lang id="ja" rw="0" time="20230424T210809Z">近い</lang>
+              </row>
             </item>
             <item name="N1" type="TMenuItem"/>
             <item name="LanguageMenu" type="TMenuItem">
-              <row id="Caption" si="516">Language...</row>
+              <row id="Caption" si="516">
+                <value>Language...</value>
+                <lang id="fi" rw="0" time="20230424T210725Z">Kieli...</lang>
+                <lang id="ja" rw="0" time="20230424T210809Z">言語...</lang>
+              </row>
             </item>
             <item name="N2" type="TMenuItem"/>
             <item name="ExitMenu" type="TMenuItem">
-              <row id="Caption" si="517">Exit</row>
+              <row id="Caption" si="517">
+                <value>Exit</value>
+                <lang id="fi" rw="0" time="20230424T210725Z">Poistu</lang>
+                <lang id="ja" rw="0" time="20230424T210809Z">出口</lang>
+              </row>
             </item>
           </item>
           <item name="HelpMenu" type="TMenuItem">
-            <row id="Caption" si="518">Help</row>
+            <row id="Caption" si="518">
+              <value>Help</value>
+              <lang id="fi" rw="0" time="20230424T210923Z">Ohje</lang>
+              <lang id="ja" rw="0" time="20230424T210809Z">ヘルプ</lang>
+            </row>
             <item name="AboutMenu" type="TMenuItem">
-              <row id="Caption" si="519">About</row>
+              <row id="Caption" si="519">
+                <value>About</value>
+                <lang id="fi" rw="0" time="20230424T210958Z">Tietoa</lang>
+                <lang id="ja" rw="0" time="20230424T210809Z">だいたい</lang>
+              </row>
             </item>
           </item>
         </item>
@@ -178,7 +235,11 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">256</row>
         <row id="Top">347</row>
-        <row id="Caption" si="520">Select Language</row>
+        <row id="Caption" si="520">
+          <value>Select Language</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Valitse kieli</lang>
+          <lang id="ja" rw="0" time="20230424T210809Z">言語を選択する</lang>
+        </row>
         <row id="ClientHeight">193</row>
         <row id="ClientWidth">291</row>
         <item name="LanguageList" type="TListBox">
@@ -192,14 +253,22 @@
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="521">OK</row>
+          <row id="Caption" si="521">
+            <value>OK</value>
+            <lang id="fi" rw="0" time="20230424T210725Z">OK</lang>
+            <lang id="ja" rw="0" time="20230424T210809Z">OK</lang>
+          </row>
         </item>
         <item name="CancelButton" type="TButton">
           <row id="Left">208</row>
           <row id="Top">40</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="522">Cancel</row>
+          <row id="Caption" si="522">
+            <value>Cancel</value>
+            <lang id="fi" rw="0" time="20230424T211002Z">Peru</lang>
+            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+          </row>
         </item>
         <data>
           VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
@@ -216,7 +285,11 @@
       <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" objectname="PasswordDialog">
         <row id="Left">260</row>
         <row id="Top">184</row>
-        <row id="Caption" si="523">Enter password</row>
+        <row id="Caption" si="523">
+          <value>Enter password</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Kirjoita salasana</lang>
+          <lang id="ja" rw="0" time="20230424T210809Z">パスワードを入力する</lang>
+        </row>
         <row id="ClientHeight">132</row>
         <row id="ClientWidth">273</row>
         <item name="OKButton" type="TButton">
@@ -224,21 +297,33 @@
           <row id="Top">98</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="524">&amp;OK</row>
+          <row id="Caption" si="524">
+            <value>&amp;OK</value>
+            <lang id="fi" rw="0" time="20230424T210725Z">&amp;OK</lang>
+            <lang id="ja" rw="0" time="20230424T210829Z">OK(&amp;O)</lang>
+          </row>
         </item>
         <item name="CancelButton" type="TButton">
           <row id="Left">190</row>
           <row id="Top">98</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" si="525">Cancel</row>
+          <row id="Caption" si="525">
+            <value>Cancel</value>
+            <lang id="fi" rw="0" time="20230424T211003Z">Peru</lang>
+            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+          </row>
         </item>
         <item name="GroupBox1" type="TGroupBox">
           <row id="Left">8</row>
           <row id="Top">8</row>
           <row id="Width">257</row>
           <row id="Height">81</row>
-          <row id="Caption" si="526">Password</row>
+          <row id="Caption" si="526">
+            <value>Password</value>
+            <lang id="fi" rw="0" time="20230424T210725Z">Salasana</lang>
+            <lang id="ja" rw="0" time="20230424T210809Z">パスワード</lang>
+          </row>
           <item name="Edit" type="TEdit">
             <row id="Left">16</row>
             <row id="Top">18</row>
@@ -250,21 +335,33 @@
             <row id="Top">46</row>
             <row id="Width">65</row>
             <row id="Height">25</row>
-            <row id="Caption" si="528">&amp;Add</row>
+            <row id="Caption" si="528">
+              <value>&amp;Add</value>
+              <lang id="fi" rw="0" time="20230424T211011Z">&amp;Lisää</lang>
+              <lang id="ja" rw="0" time="20230424T210820Z">追加(&amp;A)</lang>
+            </row>
           </item>
           <item name="RemoveButton" type="TButton">
             <row id="Left">88</row>
             <row id="Top">46</row>
             <row id="Width">65</row>
             <row id="Height">25</row>
-            <row id="Caption" si="529">&amp;Remove</row>
+            <row id="Caption" si="529">
+              <value>&amp;Remove</value>
+              <lang id="fi" rw="0" time="20230424T210725Z">&amp;Poista</lang>
+              <lang id="ja" rw="0" time="20230424T210822Z">削除(&amp;R)</lang>
+            </row>
           </item>
           <item name="RemoveAllButton" type="TButton">
             <row id="Left">160</row>
             <row id="Top">46</row>
             <row id="Width">81</row>
             <row id="Height">25</row>
-            <row id="Caption" si="530">Re&amp;move all</row>
+            <row id="Caption" si="530">
+              <value>Re&amp;move all</value>
+              <lang id="fi" rw="0" time="20230424T210737Z">Poista &amp;kaikki</lang>
+              <lang id="ja" rw="0" time="20230424T210815Z">すべて削除する(&amp;M)</lang>
+            </row>
           </item>
         </item>
         <data>
@@ -290,12 +387,36 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1" created="20200530T205132Z">
-        <row id="SOrigin" si="535">Origin</row>
-        <row id="SDescription" si="536">Description</row>
-        <row id="SAboutMessage" si="537">This application shows how to localize database content.</row>
-        <row id="SName" si="532">Name</row>
-        <row id="SFieldplayers" si="533">Fieldplayers</row>
-        <row id="SGoalie" si="534">Goalie</row>
+        <row id="SOrigin" si="535">
+          <value>Origin</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Alkuperä</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">元</lang>
+        </row>
+        <row id="SDescription" si="536">
+          <value>Description</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Kuvaus</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">説明</lang>
+        </row>
+        <row id="SAboutMessage" si="537">
+          <value>This application shows how to localize database content.</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Tämä sovellus näyttää kuinka lokalisoidaan tietokannan sisältö.</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">このアプリケーションでは、データベース コンテンツをローカライズする方法を示します。</lang>
+        </row>
+        <row id="SName" si="532">
+          <value>Name</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Nimi</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">名前</lang>
+        </row>
+        <row id="SFieldplayers" si="533">
+          <value>Fieldplayers</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Kenttäpelaajat</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">フィールドプレーヤー</lang>
+        </row>
+        <row id="SGoalie" si="534">
+          <value>Goalie</value>
+          <lang id="fi" rw="0" time="20230424T210725Z">Maalivahti</lang>
+          <lang id="ja" rw="0" time="20230424T210755Z">ゴールキーパー</lang>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
@@ -322,7 +443,6 @@
   <mt optimizeusage="0">
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>

@@ -13,7 +13,7 @@
     <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData">
-      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+      <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TFORM1" objectname="MainForm">
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
