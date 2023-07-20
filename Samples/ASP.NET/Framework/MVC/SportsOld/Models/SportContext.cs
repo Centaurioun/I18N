@@ -1,8 +1,5 @@
 ﻿using System.Data.Entity;
 
-namespace Sports.Models
-{
-    public class SportContext : DbContext
-    {
-    }
+namespace Sports.Models {
+public class SportContext : DbContext {}
 }

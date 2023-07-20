@@ -1,12 +1,7 @@
 ﻿using System.Windows.Forms;
 
-namespace Font
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-    }
+namespace Font {
+public partial class Form1 : Form {
+  public Form1() { InitializeComponent(); }
+}
 }

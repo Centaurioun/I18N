@@ -10,16 +10,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Styles
-{
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
-    public partial class Window1 : Window
-    {
-        public Window1()
-        {
-            InitializeComponent();
-        }
-    }
+namespace Styles {
+/// <summary>
+/// Interaction logic for Window1.xaml
+/// </summary>
+public partial class Window1 : Window {
+  public Window1() { InitializeComponent(); }
+}
 }
