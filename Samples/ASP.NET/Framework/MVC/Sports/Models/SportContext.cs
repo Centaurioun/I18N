@@ -2,9 +2,6 @@
 
 namespace Sports.Models {
 public class SportContext : DbContext {
-    public DbSet<Sport> Sports {
-        get;
-        set;
-    }
+  public DbSet<Sport> Sports { get; set; }
 }
 }

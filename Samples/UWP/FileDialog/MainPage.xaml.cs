@@ -11,24 +11,22 @@ namespace FileDialog {
 /// An empty page that can be used on its own or navigated to within a Frame.
 /// </summary>
 public sealed partial class MainPage : Page {
-    public MainPage() {
-        InitializeComponent();
-    }
+  public MainPage() { InitializeComponent(); }
 
-    private async void Button_Click(object sender, RoutedEventArgs e) {
-        var openPicker = new FileOpenPicker();
-        openPicker.ViewMode = PickerViewMode.Thumbnail;
-        openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
-        openPicker.FileTypeFilter.Add(".jpg");
-        openPicker.FileTypeFilter.Add(".jpeg");
-        openPicker.FileTypeFilter.Add(".png");
+  private async void Button_Click(object sender, RoutedEventArgs e) {
+    var openPicker = new FileOpenPicker();
+    openPicker.ViewMode = PickerViewMode.Thumbnail;
+    openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+    openPicker.FileTypeFilter.Add(".jpg");
+    openPicker.FileTypeFilter.Add(".jpeg");
+    openPicker.FileTypeFilter.Add(".png");
 
-        var file = await openPicker.PickSingleFileAsync();
+    var file = await openPicker.PickSingleFileAsync();
 
-        if (file != null)
-            OutputTextBlock.Text = "Picked photo: " + file.Path;
-        else
-            OutputTextBlock.Text = "Operation cancelled.";
-    }
+    if (file != null)
+      OutputTextBlock.Text = "Picked photo: " + file.Path;
+    else
+      OutputTextBlock.Text = "Operation cancelled.";
+  }
 }
 }

@@ -2,8 +2,6 @@
 
 namespace SubDir.Sub {
 public partial class SubForm : Form {
-    public SubForm() {
-        InitializeComponent();
-    }
+  public SubForm() { InitializeComponent(); }
 }
 }

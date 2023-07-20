@@ -8,8 +8,6 @@ using System.Windows.Forms;
 
 namespace Tab {
 public partial class Form1 : Form {
-    public Form1() {
-        InitializeComponent();
-    }
+  public Form1() { InitializeComponent(); }
 }
 }

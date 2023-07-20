@@ -8,8 +8,6 @@ using System.Windows.Forms;
 
 namespace WindowsForms {
 public partial class SimpleForm : Form {
-    public SimpleForm() {
-        InitializeComponent();
-    }
+  public SimpleForm() { InitializeComponent(); }
 }
 }

@@ -5,17 +5,17 @@ using System.Web.Routing;
 
 namespace LocalizedViews {
 public class MvcApplication : System.Web.HttpApplication {
-    protected void Application_Start() {
-        AreaRegistration.RegisterAllAreas();
-        RouteConfig.RegisterRoutes(RouteTable.Routes);
+  protected void Application_Start() {
+    AreaRegistration.RegisterAllAreas();
+    RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-        ViewEngines.Engines.Clear();
-        ViewEngines.Engines.Add(new NewTool.MVC.LocalizedRazorViewEngine());
+    ViewEngines.Engines.Clear();
+    ViewEngines.Engines.Add(new NewTool.MVC.LocalizedRazorViewEngine());
 
-        // Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
-        // Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
-    }
+    // Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
+    // Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+  }
 
-    protected void Application_BeginRequest() {}
+  protected void Application_BeginRequest() {}
 }
 }
