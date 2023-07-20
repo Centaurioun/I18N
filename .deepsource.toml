@@ -8,3 +8,6 @@ name = "test-coverage"
 
 [[analyzers]]
 name = "csharp"
+
+[[transformers]]
+name = "dotnet-format"
