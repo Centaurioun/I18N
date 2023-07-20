@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace Plural.Controllers
 {
-  public class DefaultController : Controller
-  {
-    // GET: Default
-    public ActionResult Index()
+    public class DefaultController : Controller
     {
-      return View();
+        // GET: Default
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
-  }
 }

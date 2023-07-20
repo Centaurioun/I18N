@@ -14,14 +14,14 @@ using System.Windows.Shapes;
 
 namespace WpfApp2.SharedSub
 {
-  /// <summary>
-  /// Interaction logic for SharedSubWindow.xaml
-  /// </summary>
-  public partial class SharedSubWindow : Window
-  {
-    public SharedSubWindow()
+    /// <summary>
+    /// Interaction logic for SharedSubWindow.xaml
+    /// </summary>
+    public partial class SharedSubWindow : Window
     {
-      InitializeComponent();
+        public SharedSubWindow()
+        {
+            InitializeComponent();
+        }
     }
-  }
 }

@@ -2,14 +2,14 @@
 
 namespace Pages
 {
-  /// <summary>
-  /// Interaction logic for Page1.xaml
-  /// </summary>
-  public partial class Page1 : Page
-  {
-    public Page1()
+    /// <summary>
+    /// Interaction logic for Page1.xaml
+    /// </summary>
+    public partial class Page1 : Page
     {
-      InitializeComponent();
+        public Page1()
+        {
+            InitializeComponent();
+        }
     }
-  }
 }

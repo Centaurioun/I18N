@@ -3,19 +3,19 @@ using Sports.Models;
 
 namespace Sports.Controllers
 {
-  public class DefaultController : Controller
-  {
-    public ActionResult Index()
+    public class DefaultController : Controller
     {
-      var model = new Sport
-      {
-        Name = "Ice Hockey",
-        FieldPlayers = 5,
-        Goalie = true,
-        Origin = "Canada"
-      };
+        public ActionResult Index()
+        {
+            var model = new Sport
+            {
+                Name = "Ice Hockey",
+                FieldPlayers = 5,
+                Goalie = true,
+                Origin = "Canada"
+            };
 
-      return View(model);
+            return View(model);
+        }
     }
-  }
 }

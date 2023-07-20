@@ -4,13 +4,13 @@ namespace Simple;
 
 public partial class App : Application
 {
-	public App()
-	{
-    Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
-    Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
-    
-    InitializeComponent();
+    public App()
+    {
+        Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
 
-    MainPage = new AppShell();
-	}
+        InitializeComponent();
+
+        MainPage = new AppShell();
+    }
 }

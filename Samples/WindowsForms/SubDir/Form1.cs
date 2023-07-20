@@ -3,16 +3,16 @@ using SubDir.Sub;
 
 namespace SubDir
 {
-  public partial class MainForm : Form
-  {
-    public MainForm()
+    public partial class MainForm : Form
     {
-      InitializeComponent();
-    }
+        public MainForm()
+        {
+            InitializeComponent();
+        }
 
-    private void MainForm_MouseDoubleClick(object sender, MouseEventArgs e)
-    {
-      new SubForm().ShowDialog();
+        private void MainForm_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            new SubForm().ShowDialog();
+        }
     }
-  }
 }

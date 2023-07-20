@@ -1,6 +1,6 @@
 ﻿namespace SharedServer
 {
-  public class SharedStrings
-  {
-  }
+    public class SharedStrings
+    {
+    }
 }

@@ -18,7 +18,7 @@ var app = builder.Build();
 app.UseRequestLocalizationWithAvailableLanguages(Assembly.GetExecutingAssembly().Location, "en");
 
 if (!app.Environment.IsDevelopment())
-  app.UseExceptionHandler("/Error");
+    app.UseExceptionHandler("/Error");
 
 app.UseStaticFiles();
 app.MapRazorPages();

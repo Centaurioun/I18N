@@ -2,11 +2,11 @@
 
 namespace WindowsForms
 {
-  public partial class BaseForm : Form
-  {
-    public BaseForm()
+    public partial class BaseForm : Form
     {
-      InitializeComponent();
+        public BaseForm()
+        {
+            InitializeComponent();
+        }
     }
-  }
 }

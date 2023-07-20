@@ -1,14 +1,14 @@
 ﻿// Generated from CLDR data. Do not edit.
 namespace Soluling
 {
-  /// <summary>
-  /// Contains number abbreviation rules for each language.
-  /// </summary>
-  public class AbbreviatedNumberData
-  {
-    // Afrikaans
-    private static readonly AbbreviationRule[] AF_LONG =
+    /// <summary>
+    /// Contains number abbreviation rules for each language.
+    /// </summary>
+    public class AbbreviatedNumberData
     {
+        // Afrikaans
+        private static readonly AbbreviationRule[] AF_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 duisend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 duisend" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 duisend" },
@@ -35,8 +35,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljoen" }
     };
 
-    private static readonly AbbreviationRule[] AF_SHORT =
-    {
+        private static readonly AbbreviationRule[] AF_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -63,8 +63,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] AF_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] AF_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -91,9 +91,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 bn" }
     };
 
-    // Aghem
-    private static readonly AbbreviationRule[] AGQ_CURRENCY =
-    {
+        // Aghem
+        private static readonly AbbreviationRule[] AGQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -108,9 +108,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Akan
-    private static readonly AbbreviationRule[] AK_CURRENCY =
-    {
+        // Akan
+        private static readonly AbbreviationRule[] AK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -137,9 +137,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Amharic
-    private static readonly AbbreviationRule[] AM_LONG =
-    {
+        // Amharic
+        private static readonly AbbreviationRule[] AM_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ሺ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ሺ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ሺ" },
@@ -166,8 +166,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ትሪሊዮን" }
     };
 
-    private static readonly AbbreviationRule[] AM_SHORT =
-    {
+        private static readonly AbbreviationRule[] AM_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ሺ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ሺ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ሺ" },
@@ -194,8 +194,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ት" }
     };
 
-    private static readonly AbbreviationRule[] AM_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] AM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0 ሺ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 ሺ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00 ሺ" },
@@ -222,9 +222,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 ት" }
     };
 
-    // Arabic
-    private static readonly AbbreviationRule[] AR_LONG =
-    {
+        // Arabic
+        private static readonly AbbreviationRule[] AR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 ألف" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ألف" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 ألف" },
@@ -299,8 +299,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 تريليون" }
     };
 
-    private static readonly AbbreviationRule[] AR_SHORT =
-    {
+        private static readonly AbbreviationRule[] AR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 ألف" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ألف" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 ألف" },
@@ -375,9 +375,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ترليو" }
     };
 
-    // Assamese
-    private static readonly AbbreviationRule[] AS_CURRENCY =
-    {
+        // Assamese
+        private static readonly AbbreviationRule[] AS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -404,9 +404,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Asu
-    private static readonly AbbreviationRule[] ASA_CURRENCY =
-    {
+        // Asu
+        private static readonly AbbreviationRule[] ASA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -433,9 +433,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Asturian
-    private static readonly AbbreviationRule[] AST_LONG =
-    {
+        // Asturian
+        private static readonly AbbreviationRule[] AST_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 millar" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 millares" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 millares" },
@@ -462,8 +462,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] AST_SHORT =
-    {
+        private static readonly AbbreviationRule[] AST_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -490,9 +490,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    // Azerbaijani, Latin
-    private static readonly AbbreviationRule[] AZ_LONG =
-    {
+        // Azerbaijani, Latin
+        private static readonly AbbreviationRule[] AZ_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -519,8 +519,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] AZ_SHORT =
-    {
+        private static readonly AbbreviationRule[] AZ_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -547,8 +547,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] AZ_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] AZ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -575,9 +575,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Azerbaijani, Cyrillic
-    private static readonly AbbreviationRule[] AZ_CYRL_CURRENCY =
-    {
+        // Azerbaijani, Cyrillic
+        private static readonly AbbreviationRule[] AZ_CYRL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -604,9 +604,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Basaa
-    private static readonly AbbreviationRule[] BAS_CURRENCY =
-    {
+        // Basaa
+        private static readonly AbbreviationRule[] BAS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -621,9 +621,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Belarusian
-    private static readonly AbbreviationRule[] BE_LONG =
-    {
+        // Belarusian
+        private static readonly AbbreviationRule[] BE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тысяча" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тысячы" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тысяч" },
@@ -674,8 +674,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трыльёна" }
     };
 
-    private static readonly AbbreviationRule[] BE_SHORT =
-    {
+        private static readonly AbbreviationRule[] BE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тыс." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тыс." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тыс." },
@@ -726,8 +726,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] BE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] BE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тыс. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тыс. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тыс. ¤" },
@@ -778,9 +778,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Bemba
-    private static readonly AbbreviationRule[] BEM_CURRENCY =
-    {
+        // Bemba
+        private static readonly AbbreviationRule[] BEM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -807,9 +807,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Bena
-    private static readonly AbbreviationRule[] BEZ_CURRENCY =
-    {
+        // Bena
+        private static readonly AbbreviationRule[] BEZ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -836,9 +836,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Bulgarian
-    private static readonly AbbreviationRule[] BG_LONG =
-    {
+        // Bulgarian
+        private static readonly AbbreviationRule[] BG_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хил." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хиляди" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 хиляди" },
@@ -865,8 +865,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трилиона" }
     };
 
-    private static readonly AbbreviationRule[] BG_SHORT =
-    {
+        private static readonly AbbreviationRule[] BG_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хил." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хил." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 хил." },
@@ -893,8 +893,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн." }
     };
 
-    private static readonly AbbreviationRule[] BG_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] BG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хил. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хил. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 хил. ¤" },
@@ -921,9 +921,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн. ¤" }
     };
 
-    // Bamanankan
-    private static readonly AbbreviationRule[] BM_CURRENCY =
-    {
+        // Bamanankan
+        private static readonly AbbreviationRule[] BM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -938,9 +938,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Bangla
-    private static readonly AbbreviationRule[] BN_LONG =
-    {
+        // Bangla
+        private static readonly AbbreviationRule[] BN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 হাজার" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 হাজার" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 হাজার" },
@@ -967,8 +967,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ট্রিলিয়ন" }
     };
 
-    private static readonly AbbreviationRule[] BN_SHORT =
-    {
+        private static readonly AbbreviationRule[] BN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 হাজার" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 হাজার" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 হাজার" },
@@ -995,9 +995,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    // Tibetan
-    private static readonly AbbreviationRule[] BO_CURRENCY =
-    {
+        // Tibetan
+        private static readonly AbbreviationRule[] BO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -1012,9 +1012,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Breton
-    private static readonly AbbreviationRule[] BR_CURRENCY =
-    {
+        // Breton
+        private static readonly AbbreviationRule[] BR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0K ¤" },
@@ -1077,9 +1077,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Bodo
-    private static readonly AbbreviationRule[] BRX_CURRENCY =
-    {
+        // Bodo
+        private static readonly AbbreviationRule[] BRX_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -1106,9 +1106,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Bosnian, Latin
-    private static readonly AbbreviationRule[] BS_LONG =
-    {
+        // Bosnian, Latin
+        private static readonly AbbreviationRule[] BS_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hiljada" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hiljade" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hiljada" },
@@ -1147,8 +1147,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biliona" }
     };
 
-    private static readonly AbbreviationRule[] BS_SHORT =
-    {
+        private static readonly AbbreviationRule[] BS_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hilj." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hilj." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hilj." },
@@ -1187,8 +1187,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] BS_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] BS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hilj. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hilj. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hilj. ¤" },
@@ -1227,9 +1227,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Bosnian, Cyrillic
-    private static readonly AbbreviationRule[] BS_CYRL_LONG =
-    {
+        // Bosnian, Cyrillic
+        private static readonly AbbreviationRule[] BS_CYRL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
@@ -1268,8 +1268,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 бил" }
     };
 
-    private static readonly AbbreviationRule[] BS_CYRL_SHORT =
-    {
+        private static readonly AbbreviationRule[] BS_CYRL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
@@ -1308,8 +1308,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 бил" }
     };
 
-    private static readonly AbbreviationRule[] BS_CYRL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] BS_CYRL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
@@ -1348,9 +1348,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 бил ¤" }
     };
 
-    // Catalan
-    private static readonly AbbreviationRule[] CA_LONG =
-    {
+        // Catalan
+        private static readonly AbbreviationRule[] CA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 miler" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 milers" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 milers" },
@@ -1377,8 +1377,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilions" }
     };
 
-    private static readonly AbbreviationRule[] CA_SHORT =
-    {
+        private static readonly AbbreviationRule[] CA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0m" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0m" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00m" },
@@ -1405,8 +1405,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B" }
     };
 
-    private static readonly AbbreviationRule[] CA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] CA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0m ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0m ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00m ¤" },
@@ -1433,9 +1433,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B ¤" }
     };
 
-    // Chechen
-    private static readonly AbbreviationRule[] CE_LONG =
-    {
+        // Chechen
+        private static readonly AbbreviationRule[] CE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 эзар" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 эзар" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 эзар" },
@@ -1462,8 +1462,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 триллион" }
     };
 
-    private static readonly AbbreviationRule[] CE_SHORT =
-    {
+        private static readonly AbbreviationRule[] CE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 эзар" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 эзар" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 эзар" },
@@ -1490,8 +1490,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] CE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] CE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 эзар ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 эзар ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 эзар ¤" },
@@ -1518,9 +1518,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Chiga
-    private static readonly AbbreviationRule[] CGG_CURRENCY =
-    {
+        // Chiga
+        private static readonly AbbreviationRule[] CGG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -1547,9 +1547,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Cherokee
-    private static readonly AbbreviationRule[] CHR_LONG =
-    {
+        // Cherokee
+        private static readonly AbbreviationRule[] CHR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ᎢᏯᎦᏴᎵ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ᎢᏯᎦᏴᎵ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ᎢᏯᎦᏴᎵ" },
@@ -1576,8 +1576,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ᎢᏯᏦᎠᏗᏅᏛ" }
     };
 
-    private static readonly AbbreviationRule[] CHR_SHORT =
-    {
+        private static readonly AbbreviationRule[] CHR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -1604,8 +1604,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] CHR_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] CHR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -1632,9 +1632,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Czech
-    private static readonly AbbreviationRule[] CS_LONG =
-    {
+        // Czech
+        private static readonly AbbreviationRule[] CS_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tisíc" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tisíce" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tisíce" },
@@ -1685,8 +1685,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilionů" }
     };
 
-    private static readonly AbbreviationRule[] CS_SHORT =
-    {
+        private static readonly AbbreviationRule[] CS_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tis." },
@@ -1737,8 +1737,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] CS_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] CS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tis. ¤" },
@@ -1789,9 +1789,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Welsh
-    private static readonly AbbreviationRule[] CY_LONG =
-    {
+        // Welsh
+        private static readonly AbbreviationRule[] CY_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 fil" },
@@ -1866,8 +1866,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 triliwn" }
     };
 
-    private static readonly AbbreviationRule[] CY_SHORT =
-    {
+        private static readonly AbbreviationRule[] CY_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0K" },
@@ -1942,8 +1942,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] CY_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] CY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "¤0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤0K" },
@@ -2018,9 +2018,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Danish
-    private static readonly AbbreviationRule[] DA_LONG =
-    {
+        // Danish
+        private static readonly AbbreviationRule[] DA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tusind" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tusind" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tusind" },
@@ -2047,8 +2047,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billioner" }
     };
 
-    private static readonly AbbreviationRule[] DA_SHORT =
-    {
+        private static readonly AbbreviationRule[] DA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 td" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 td" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 td" },
@@ -2075,8 +2075,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bio" }
     };
 
-    private static readonly AbbreviationRule[] DA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] DA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 td ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 td ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 td ¤" },
@@ -2103,9 +2103,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bio ¤" }
     };
 
-    // Taita
-    private static readonly AbbreviationRule[] DAV_CURRENCY =
-    {
+        // Taita
+        private static readonly AbbreviationRule[] DAV_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -2120,9 +2120,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // German
-    private static readonly AbbreviationRule[] DE_LONG =
-    {
+        // German
+        private static readonly AbbreviationRule[] DE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Tausend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Tausend" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Tausend" },
@@ -2149,8 +2149,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Billionen" }
     };
 
-    private static readonly AbbreviationRule[] DE_SHORT =
-    {
+        private static readonly AbbreviationRule[] DE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Tsd." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Tsd." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Tsd." },
@@ -2177,8 +2177,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio." }
     };
 
-    private static readonly AbbreviationRule[] DE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] DE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Tsd. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Tsd. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Tsd. ¤" },
@@ -2205,9 +2205,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio. ¤" }
     };
 
-    // Zarma
-    private static readonly AbbreviationRule[] DJE_CURRENCY =
-    {
+        // Zarma
+        private static readonly AbbreviationRule[] DJE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -2222,9 +2222,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Lower Sorbian
-    private static readonly AbbreviationRule[] DSB_LONG =
-    {
+        // Lower Sorbian
+        private static readonly AbbreviationRule[] DSB_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tysac" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tysac" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tysac" },
@@ -2275,8 +2275,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilionow" }
     };
 
-    private static readonly AbbreviationRule[] DSB_SHORT =
-    {
+        private static readonly AbbreviationRule[] DSB_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys." },
@@ -2327,8 +2327,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] DSB_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] DSB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys. ¤" },
@@ -2379,9 +2379,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Duala
-    private static readonly AbbreviationRule[] DUA_CURRENCY =
-    {
+        // Duala
+        private static readonly AbbreviationRule[] DUA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -2396,9 +2396,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Jola-Fonyi
-    private static readonly AbbreviationRule[] DYO_CURRENCY =
-    {
+        // Jola-Fonyi
+        private static readonly AbbreviationRule[] DYO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -2413,9 +2413,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Dzongkha
-    private static readonly AbbreviationRule[] DZ_LONG =
-    {
+        // Dzongkha
+        private static readonly AbbreviationRule[] DZ_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "སྟོང་ཕྲག 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "ཁྲི་ཕྲག 0" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "འབུམ་ཕྲག 0" },
@@ -2430,8 +2430,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "དུང་ཕྱུར་ས་ཡ་ 0" }
     };
 
-    private static readonly AbbreviationRule[] DZ_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] DZ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -2446,9 +2446,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Embu
-    private static readonly AbbreviationRule[] EBU_CURRENCY =
-    {
+        // Embu
+        private static readonly AbbreviationRule[] EBU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -2463,9 +2463,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Ewe
-    private static readonly AbbreviationRule[] EE_LONG =
-    {
+        // Ewe
+        private static readonly AbbreviationRule[] EE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "akpe 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "akpe 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "akpe 00" },
@@ -2492,8 +2492,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "biliɔn 000" }
     };
 
-    private static readonly AbbreviationRule[] EE_SHORT =
-    {
+        private static readonly AbbreviationRule[] EE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -2520,8 +2520,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000B" }
     };
 
-    private static readonly AbbreviationRule[] EE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] EE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -2548,9 +2548,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000B" }
     };
 
-    // Greek
-    private static readonly AbbreviationRule[] EL_LONG =
-    {
+        // Greek
+        private static readonly AbbreviationRule[] EL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 χιλιάδα" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 χιλιάδες" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 χιλιάδες" },
@@ -2577,8 +2577,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 τρισεκατομμύρια" }
     };
 
-    private static readonly AbbreviationRule[] EL_SHORT =
-    {
+        private static readonly AbbreviationRule[] EL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 χιλ." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 χιλ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 χιλ." },
@@ -2605,8 +2605,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 τρισ." }
     };
 
-    private static readonly AbbreviationRule[] EL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] EL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 χιλ. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 χιλ. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 χιλ. ¤" },
@@ -2633,9 +2633,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 τρισ. ¤" }
     };
 
-    // English
-    private static readonly AbbreviationRule[] EN_LONG =
-    {
+        // English
+        private static readonly AbbreviationRule[] EN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 thousand" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 thousand" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 thousand" },
@@ -2662,8 +2662,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trillion" }
     };
 
-    private static readonly AbbreviationRule[] EN_SHORT =
-    {
+        private static readonly AbbreviationRule[] EN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -2690,8 +2690,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] EN_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] EN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -2718,9 +2718,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Esperanto
-    private static readonly AbbreviationRule[] EO_CURRENCY =
-    {
+        // Esperanto
+        private static readonly AbbreviationRule[] EO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -2747,9 +2747,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Spanish
-    private static readonly AbbreviationRule[] ES_LONG =
-    {
+        // Spanish
+        private static readonly AbbreviationRule[] ES_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mil" },
@@ -2776,8 +2776,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billones" }
     };
 
-    private static readonly AbbreviationRule[] ES_SHORT =
-    {
+        private static readonly AbbreviationRule[] ES_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 K" },
@@ -2804,8 +2804,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B" }
     };
 
-    private static readonly AbbreviationRule[] ES_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] ES_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 K ¤" },
@@ -2832,9 +2832,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B ¤" }
     };
 
-    // Estonian
-    private static readonly AbbreviationRule[] ET_LONG =
-    {
+        // Estonian
+        private static readonly AbbreviationRule[] ET_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tuhat" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tuhat" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tuhat" },
@@ -2861,8 +2861,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 triljonit" }
     };
 
-    private static readonly AbbreviationRule[] ET_SHORT =
-    {
+        private static readonly AbbreviationRule[] ET_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tuh" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tuh" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tuh" },
@@ -2889,8 +2889,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trl" }
     };
 
-    private static readonly AbbreviationRule[] ET_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] ET_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tuh ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tuh ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tuh ¤" },
@@ -2917,9 +2917,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trl ¤" }
     };
 
-    // Basque
-    private static readonly AbbreviationRule[] EU_LONG =
-    {
+        // Basque
+        private static readonly AbbreviationRule[] EU_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0000" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0000" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00000" },
@@ -2946,8 +2946,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilioi" }
     };
 
-    private static readonly AbbreviationRule[] EU_SHORT =
-    {
+        private static readonly AbbreviationRule[] EU_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0000" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0000" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00000" },
@@ -2974,8 +2974,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B" }
     };
 
-    private static readonly AbbreviationRule[] EU_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] EU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0000 ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0000 ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00000 ¤" },
@@ -3002,9 +3002,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B ¤" }
     };
 
-    // Ewondo
-    private static readonly AbbreviationRule[] EWO_CURRENCY =
-    {
+        // Ewondo
+        private static readonly AbbreviationRule[] EWO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -3019,9 +3019,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Persian
-    private static readonly AbbreviationRule[] FA_LONG =
-    {
+        // Persian
+        private static readonly AbbreviationRule[] FA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 هزار" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 هزار" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 هزار" },
@@ -3048,8 +3048,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 هزارمیلیارد" }
     };
 
-    private static readonly AbbreviationRule[] FA_SHORT =
-    {
+        private static readonly AbbreviationRule[] FA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 هزار" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 هزار" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 هزار" },
@@ -3076,9 +3076,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ت" }
     };
 
-    // Fulah
-    private static readonly AbbreviationRule[] FF_CURRENCY =
-    {
+        // Fulah
+        private static readonly AbbreviationRule[] FF_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -3105,9 +3105,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Finnish
-    private static readonly AbbreviationRule[] FI_LONG =
-    {
+        // Finnish
+        private static readonly AbbreviationRule[] FI_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tuhat" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tuhatta" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tuhatta" },
@@ -3134,8 +3134,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljoonaa" }
     };
 
-    private static readonly AbbreviationRule[] FI_SHORT =
-    {
+        private static readonly AbbreviationRule[] FI_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 t." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 t." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 t." },
@@ -3162,8 +3162,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilj." }
     };
 
-    private static readonly AbbreviationRule[] FI_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] FI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 t. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 t. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 t. ¤" },
@@ -3190,9 +3190,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilj. ¤" }
     };
 
-    // Filipino
-    private static readonly AbbreviationRule[] FIL_LONG =
-    {
+        // Filipino
+        private static readonly AbbreviationRule[] FIL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 libo" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 na libo" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 libo" },
@@ -3219,8 +3219,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 na trilyon" }
     };
 
-    private static readonly AbbreviationRule[] FIL_SHORT =
-    {
+        private static readonly AbbreviationRule[] FIL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -3247,8 +3247,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] FIL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] FIL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -3275,9 +3275,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Faroese
-    private static readonly AbbreviationRule[] FO_LONG =
-    {
+        // Faroese
+        private static readonly AbbreviationRule[] FO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 túsund" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 túsund" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 túsund" },
@@ -3304,8 +3304,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billiónir" }
     };
 
-    private static readonly AbbreviationRule[] FO_SHORT =
-    {
+        private static readonly AbbreviationRule[] FO_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tús." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tús." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tús." },
@@ -3332,8 +3332,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bió." }
     };
 
-    private static readonly AbbreviationRule[] FO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] FO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tús. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tús. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tús. ¤" },
@@ -3360,9 +3360,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bió. ¤" }
     };
 
-    // French
-    private static readonly AbbreviationRule[] FR_LONG =
-    {
+        // French
+        private static readonly AbbreviationRule[] FR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 millier" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mille" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mille" },
@@ -3389,8 +3389,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billions" }
     };
 
-    private static readonly AbbreviationRule[] FR_SHORT =
-    {
+        private static readonly AbbreviationRule[] FR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 k" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 k" },
@@ -3417,8 +3417,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bn" }
     };
 
-    private static readonly AbbreviationRule[] FR_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] FR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 k ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 k ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 k ¤" },
@@ -3445,9 +3445,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bn ¤" }
     };
 
-    // Friulian
-    private static readonly AbbreviationRule[] FUR_CURRENCY =
-    {
+        // Friulian
+        private static readonly AbbreviationRule[] FUR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -3474,9 +3474,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Western Frisian
-    private static readonly AbbreviationRule[] FY_LONG =
-    {
+        // Western Frisian
+        private static readonly AbbreviationRule[] FY_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tûzen" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tûzen" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tûzen" },
@@ -3503,8 +3503,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljoen" }
     };
 
-    private static readonly AbbreviationRule[] FY_SHORT =
-    {
+        private static readonly AbbreviationRule[] FY_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -3531,8 +3531,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bln." }
     };
 
-    private static readonly AbbreviationRule[] FY_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] FY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -3559,9 +3559,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000 bln." }
     };
 
-    // Irish
-    private static readonly AbbreviationRule[] GA_LONG =
-    {
+        // Irish
+        private static readonly AbbreviationRule[] GA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mhíle" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 mhíle" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 mhíle" },
@@ -3624,8 +3624,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilliún" }
     };
 
-    private static readonly AbbreviationRule[] GA_SHORT =
-    {
+        private static readonly AbbreviationRule[] GA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0k" },
@@ -3688,8 +3688,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] GA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] GA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤0k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "¤0k" },
@@ -3752,9 +3752,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Scottish Gaelic
-    private static readonly AbbreviationRule[] GD_LONG =
-    {
+        // Scottish Gaelic
+        private static readonly AbbreviationRule[] GD_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mhìle" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 mhìle" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 mìle" },
@@ -3805,8 +3805,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trillean" }
     };
 
-    private static readonly AbbreviationRule[] GD_SHORT =
-    {
+        private static readonly AbbreviationRule[] GD_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0K" },
@@ -3857,9 +3857,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    // Galician
-    private static readonly AbbreviationRule[] GL_LONG =
-    {
+        // Galician
+        private static readonly AbbreviationRule[] GL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -3886,8 +3886,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billóns" }
     };
 
-    private static readonly AbbreviationRule[] GL_SHORT =
-    {
+        private static readonly AbbreviationRule[] GL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -3914,8 +3914,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bill." }
     };
 
-    private static readonly AbbreviationRule[] GL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] GL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -3942,9 +3942,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0" }
     };
 
-    // Swiss German
-    private static readonly AbbreviationRule[] GSW_LONG =
-    {
+        // Swiss German
+        private static readonly AbbreviationRule[] GSW_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tausend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tausend" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tausend" },
@@ -3971,8 +3971,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Billionen" }
     };
 
-    private static readonly AbbreviationRule[] GSW_SHORT =
-    {
+        private static readonly AbbreviationRule[] GSW_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tsd" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tsd" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tsd" },
@@ -3999,8 +3999,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio" }
     };
 
-    private static readonly AbbreviationRule[] GSW_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] GSW_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tsd ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tsd ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tsd ¤" },
@@ -4027,9 +4027,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio ¤" }
     };
 
-    // Gujarati
-    private static readonly AbbreviationRule[] GU_LONG =
-    {
+        // Gujarati
+        private static readonly AbbreviationRule[] GU_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 હજાર" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 હજાર" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 હજાર" },
@@ -4056,8 +4056,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0 જલધિ" }
     };
 
-    private static readonly AbbreviationRule[] GU_SHORT =
-    {
+        private static readonly AbbreviationRule[] GU_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 હજાર" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 હજાર" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 હજાર" },
@@ -4084,9 +4084,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0 જલધિ" }
     };
 
-    // Gusii
-    private static readonly AbbreviationRule[] GUZ_CURRENCY =
-    {
+        // Gusii
+        private static readonly AbbreviationRule[] GUZ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -4101,9 +4101,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Manx
-    private static readonly AbbreviationRule[] GV_CURRENCY =
-    {
+        // Manx
+        private static readonly AbbreviationRule[] GV_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "¤0K" },
@@ -4166,9 +4166,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Hausa
-    private static readonly AbbreviationRule[] HA_LONG =
-    {
+        // Hausa
+        private static readonly AbbreviationRule[] HA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "Dubu 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "Dubu 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "Dubu 00" },
@@ -4195,8 +4195,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "Triliyan 000" }
     };
 
-    private static readonly AbbreviationRule[] HA_SHORT =
-    {
+        private static readonly AbbreviationRule[] HA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0D" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0D" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00D" },
@@ -4223,8 +4223,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] HA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0D" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0D" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00D" },
@@ -4251,9 +4251,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Hawaiian
-    private static readonly AbbreviationRule[] HAW_CURRENCY =
-    {
+        // Hawaiian
+        private static readonly AbbreviationRule[] HAW_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -4280,9 +4280,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Hebrew
-    private static readonly AbbreviationRule[] HE_LONG =
-    {
+        // Hebrew
+        private static readonly AbbreviationRule[] HE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "‏0 אלף" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "‏0 אלף" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "‏0 אלף" },
@@ -4333,8 +4333,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "‏000 טריליון" }
     };
 
-    private static readonly AbbreviationRule[] HE_SHORT =
-    {
+        private static readonly AbbreviationRule[] HE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0K" },
@@ -4385,8 +4385,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] HE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "¤0K" },
@@ -4437,9 +4437,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Hindi
-    private static readonly AbbreviationRule[] HI_LONG =
-    {
+        // Hindi
+        private static readonly AbbreviationRule[] HI_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 हज़ार" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 हज़ार" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 हज़ार" },
@@ -4466,8 +4466,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0000 खरब" }
     };
 
-    private static readonly AbbreviationRule[] HI_SHORT =
-    {
+        private static readonly AbbreviationRule[] HI_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 हज़ार" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 हज़ार" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 हज़ार" },
@@ -4494,9 +4494,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 नील" }
     };
 
-    // Croatian
-    private static readonly AbbreviationRule[] HR_LONG =
-    {
+        // Croatian
+        private static readonly AbbreviationRule[] HR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tisuća" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tisuće" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tisuća" },
@@ -4535,8 +4535,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilijuna" }
     };
 
-    private static readonly AbbreviationRule[] HR_SHORT =
-    {
+        private static readonly AbbreviationRule[] HR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tis." },
@@ -4575,8 +4575,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] HR_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0000¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0000¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0000¤" },
@@ -4615,9 +4615,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Upper Sorbian
-    private static readonly AbbreviationRule[] HSB_LONG =
-    {
+        // Upper Sorbian
+        private static readonly AbbreviationRule[] HSB_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tysac" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tysac" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tysac" },
@@ -4668,8 +4668,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilionow" }
     };
 
-    private static readonly AbbreviationRule[] HSB_SHORT =
-    {
+        private static readonly AbbreviationRule[] HSB_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys." },
@@ -4720,8 +4720,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] HSB_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HSB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys. ¤" },
@@ -4772,9 +4772,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Hungarian
-    private static readonly AbbreviationRule[] HU_LONG =
-    {
+        // Hungarian
+        private static readonly AbbreviationRule[] HU_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ezer" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ezer" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ezer" },
@@ -4801,8 +4801,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billió" }
     };
 
-    private static readonly AbbreviationRule[] HU_SHORT =
-    {
+        private static readonly AbbreviationRule[] HU_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 E" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 E" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 E" },
@@ -4829,8 +4829,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B" }
     };
 
-    private static readonly AbbreviationRule[] HU_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 E ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 E ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 E ¤" },
@@ -4857,9 +4857,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 B ¤" }
     };
 
-    // Armenian
-    private static readonly AbbreviationRule[] HY_LONG =
-    {
+        // Armenian
+        private static readonly AbbreviationRule[] HY_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 հազար" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 հազար" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 հազար" },
@@ -4886,8 +4886,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 տրիլիոն" }
     };
 
-    private static readonly AbbreviationRule[] HY_SHORT =
-    {
+        private static readonly AbbreviationRule[] HY_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 հզր" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 հզր" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 հզր" },
@@ -4914,8 +4914,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 տրլն" }
     };
 
-    private static readonly AbbreviationRule[] HY_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] HY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 հզր ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 հզր ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 հզր ¤" },
@@ -4942,9 +4942,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 տրլն ¤" }
     };
 
-    // Indonesian
-    private static readonly AbbreviationRule[] ID_LONG =
-    {
+        // Indonesian
+        private static readonly AbbreviationRule[] ID_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ribu" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 ribu" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 ribu" },
@@ -4959,8 +4959,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 triliun" }
     };
 
-    private static readonly AbbreviationRule[] ID_SHORT =
-    {
+        private static readonly AbbreviationRule[] ID_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 rb" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 rb" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 rb" },
@@ -4975,8 +4975,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 T" }
     };
 
-    private static readonly AbbreviationRule[] ID_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] ID_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 rb" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00 rb" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000 rb" },
@@ -4991,9 +4991,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 T" }
     };
 
-    // Yi
-    private static readonly AbbreviationRule[] II_CURRENCY =
-    {
+        // Yi
+        private static readonly AbbreviationRule[] II_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -5008,9 +5008,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Icelandic
-    private static readonly AbbreviationRule[] IS_LONG =
-    {
+        // Icelandic
+        private static readonly AbbreviationRule[] IS_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 þúsund" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 þúsund" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 þúsund" },
@@ -5037,8 +5037,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billjónir" }
     };
 
-    private static readonly AbbreviationRule[] IS_SHORT =
-    {
+        private static readonly AbbreviationRule[] IS_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 þ." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 þ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 þ." },
@@ -5065,8 +5065,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] IS_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] IS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 þ. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 þ. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 þ. ¤" },
@@ -5093,9 +5093,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn ¤" }
     };
 
-    // Italian
-    private static readonly AbbreviationRule[] IT_LONG =
-    {
+        // Italian
+        private static readonly AbbreviationRule[] IT_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mila" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mila" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mila" },
@@ -5122,8 +5122,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 mila miliardi" }
     };
 
-    private static readonly AbbreviationRule[] IT_SHORT =
-    {
+        private static readonly AbbreviationRule[] IT_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -5150,8 +5150,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bln" }
     };
 
-    private static readonly AbbreviationRule[] IT_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] IT_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "0" },
@@ -5178,9 +5178,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bln ¤" }
     };
 
-    // Japanese
-    private static readonly AbbreviationRule[] JA_LONG =
-    {
+        // Japanese
+        private static readonly AbbreviationRule[] JA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0万" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00万" },
@@ -5195,8 +5195,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    private static readonly AbbreviationRule[] JA_SHORT =
-    {
+        private static readonly AbbreviationRule[] JA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0万" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00万" },
@@ -5211,8 +5211,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    private static readonly AbbreviationRule[] JA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] JA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤0万" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤00万" },
@@ -5227,9 +5227,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000兆" }
     };
 
-    // Ngomba
-    private static readonly AbbreviationRule[] JGO_CURRENCY =
-    {
+        // Ngomba
+        private static readonly AbbreviationRule[] JGO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -5256,9 +5256,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Machame
-    private static readonly AbbreviationRule[] JMC_CURRENCY =
-    {
+        // Machame
+        private static readonly AbbreviationRule[] JMC_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -5285,9 +5285,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Georgian
-    private static readonly AbbreviationRule[] KA_LONG =
-    {
+        // Georgian
+        private static readonly AbbreviationRule[] KA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ათასი" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ათასი" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ათასი" },
@@ -5314,8 +5314,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ტრილიონი" }
     };
 
-    private static readonly AbbreviationRule[] KA_SHORT =
-    {
+        private static readonly AbbreviationRule[] KA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ათ." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ათ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ათ." },
@@ -5342,8 +5342,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ტრლ." }
     };
 
-    private static readonly AbbreviationRule[] KA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ათ. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ათ. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ათ. ¤" },
@@ -5370,9 +5370,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ტრლ. ¤" }
     };
 
-    // Kabyle
-    private static readonly AbbreviationRule[] KAB_CURRENCY =
-    {
+        // Kabyle
+        private static readonly AbbreviationRule[] KAB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -5399,9 +5399,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Kamba
-    private static readonly AbbreviationRule[] KAM_CURRENCY =
-    {
+        // Kamba
+        private static readonly AbbreviationRule[] KAM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -5416,9 +5416,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Makonde
-    private static readonly AbbreviationRule[] KDE_CURRENCY =
-    {
+        // Makonde
+        private static readonly AbbreviationRule[] KDE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -5433,9 +5433,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Kabuverdianu
-    private static readonly AbbreviationRule[] KEA_LONG =
-    {
+        // Kabuverdianu
+        private static readonly AbbreviationRule[] KEA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 mil" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 mil" },
@@ -5450,8 +5450,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilhãu" }
     };
 
-    private static readonly AbbreviationRule[] KEA_SHORT =
-    {
+        private static readonly AbbreviationRule[] KEA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 mil" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 mil" },
@@ -5466,8 +5466,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bi" }
     };
 
-    private static readonly AbbreviationRule[] KEA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KEA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 mil ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 mil ¤" },
@@ -5482,9 +5482,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bi ¤" }
     };
 
-    // Koyra Chiini
-    private static readonly AbbreviationRule[] KHQ_CURRENCY =
-    {
+        // Koyra Chiini
+        private static readonly AbbreviationRule[] KHQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -5499,9 +5499,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Kikuyu
-    private static readonly AbbreviationRule[] KI_CURRENCY =
-    {
+        // Kikuyu
+        private static readonly AbbreviationRule[] KI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -5516,9 +5516,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Kazakh
-    private static readonly AbbreviationRule[] KK_LONG =
-    {
+        // Kazakh
+        private static readonly AbbreviationRule[] KK_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 мың" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 мың" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 мың" },
@@ -5545,8 +5545,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 триллион" }
     };
 
-    private static readonly AbbreviationRule[] KK_SHORT =
-    {
+        private static readonly AbbreviationRule[] KK_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 мың" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 мың" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 мың" },
@@ -5573,8 +5573,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] KK_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 мың ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 мың ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 мың ¤" },
@@ -5601,9 +5601,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Kako
-    private static readonly AbbreviationRule[] KKJ_CURRENCY =
-    {
+        // Kako
+        private static readonly AbbreviationRule[] KKJ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -5630,9 +5630,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Greenlandic
-    private static readonly AbbreviationRule[] KL_LONG =
-    {
+        // Greenlandic
+        private static readonly AbbreviationRule[] KL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tusind" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tusind" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tusind" },
@@ -5659,8 +5659,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billioner" }
     };
 
-    private static readonly AbbreviationRule[] KL_SHORT =
-    {
+        private static readonly AbbreviationRule[] KL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 td" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 td" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 td" },
@@ -5687,8 +5687,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] KL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0 td" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 td" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00 td" },
@@ -5715,9 +5715,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 bn" }
     };
 
-    // Kalenjin
-    private static readonly AbbreviationRule[] KLN_CURRENCY =
-    {
+        // Kalenjin
+        private static readonly AbbreviationRule[] KLN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -5732,9 +5732,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Khmer
-    private static readonly AbbreviationRule[] KM_LONG =
-    {
+        // Khmer
+        private static readonly AbbreviationRule[] KM_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ពាន់" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0​មឺុន" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0សែន" },
@@ -5749,8 +5749,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0​សែន​កោដិ" }
     };
 
-    private static readonly AbbreviationRule[] KM_SHORT =
-    {
+        private static readonly AbbreviationRule[] KM_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ពាន់" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0​មឺុន" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0សែន" },
@@ -5765,8 +5765,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0​សែន​កោដិ" }
     };
 
-    private static readonly AbbreviationRule[] KM_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0ពាន់" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤0​មឺុន" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤0សែន" },
@@ -5781,9 +5781,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤0​សែន​កោដិ" }
     };
 
-    // Kannada
-    private static readonly AbbreviationRule[] KN_LONG =
-    {
+        // Kannada
+        private static readonly AbbreviationRule[] KN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ಸಾವಿರ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ಸಾವಿರ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ಸಾವಿರ" },
@@ -5810,8 +5810,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ಟ್ರಿಲಿಯನ್‌" }
     };
 
-    private static readonly AbbreviationRule[] KN_SHORT =
-    {
+        private static readonly AbbreviationRule[] KN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0ಸಾ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ಸಾ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00ಸಾ" },
@@ -5838,9 +5838,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000ಟ್ರಿ" }
     };
 
-    // Korean
-    private static readonly AbbreviationRule[] KO_LONG =
-    {
+        // Korean
+        private static readonly AbbreviationRule[] KO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0천" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0만" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00만" },
@@ -5855,8 +5855,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000조" }
     };
 
-    private static readonly AbbreviationRule[] KO_SHORT =
-    {
+        private static readonly AbbreviationRule[] KO_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0천" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0만" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00만" },
@@ -5871,8 +5871,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000조" }
     };
 
-    private static readonly AbbreviationRule[] KO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0천" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤0만" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤00만" },
@@ -5887,9 +5887,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000조" }
     };
 
-    // Konkani
-    private static readonly AbbreviationRule[] KOK_CURRENCY =
-    {
+        // Konkani
+        private static readonly AbbreviationRule[] KOK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -5904,9 +5904,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Kashmiri
-    private static readonly AbbreviationRule[] KS_CURRENCY =
-    {
+        // Kashmiri
+        private static readonly AbbreviationRule[] KS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -5933,9 +5933,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Shambala
-    private static readonly AbbreviationRule[] KSB_CURRENCY =
-    {
+        // Shambala
+        private static readonly AbbreviationRule[] KSB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -5962,9 +5962,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Bafia
-    private static readonly AbbreviationRule[] KSF_CURRENCY =
-    {
+        // Bafia
+        private static readonly AbbreviationRule[] KSF_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -5979,9 +5979,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Colognian
-    private static readonly AbbreviationRule[] KSH_LONG =
-    {
+        // Colognian
+        private static readonly AbbreviationRule[] KSH_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 Dousend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Dousend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Dousend" },
@@ -6020,8 +6020,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Billionen" }
     };
 
-    private static readonly AbbreviationRule[] KSH_SHORT =
-    {
+        private static readonly AbbreviationRule[] KSH_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 tsd" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tsd" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tsd" },
@@ -6060,8 +6060,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio" }
     };
 
-    private static readonly AbbreviationRule[] KSH_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KSH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 tsd ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tsd ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tsd ¤" },
@@ -6100,9 +6100,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio ¤" }
     };
 
-    // Cornish
-    private static readonly AbbreviationRule[] KW_CURRENCY =
-    {
+        // Cornish
+        private static readonly AbbreviationRule[] KW_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
@@ -6141,9 +6141,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Kyrgyz
-    private static readonly AbbreviationRule[] KY_LONG =
-    {
+        // Kyrgyz
+        private static readonly AbbreviationRule[] KY_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 миӊ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 миӊ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 миӊ" },
@@ -6170,8 +6170,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 триллион" }
     };
 
-    private static readonly AbbreviationRule[] KY_SHORT =
-    {
+        private static readonly AbbreviationRule[] KY_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 миӊ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 миӊ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 миӊ" },
@@ -6198,8 +6198,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] KY_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] KY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 миӊ ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 миӊ ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 миӊ ¤" },
@@ -6226,9 +6226,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Langi
-    private static readonly AbbreviationRule[] LAG_CURRENCY =
-    {
+        // Langi
+        private static readonly AbbreviationRule[] LAG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
@@ -6267,9 +6267,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Luxembourgish
-    private static readonly AbbreviationRule[] LB_LONG =
-    {
+        // Luxembourgish
+        private static readonly AbbreviationRule[] LB_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Dausend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Dausend" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Dausend" },
@@ -6296,8 +6296,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Billiounen" }
     };
 
-    private static readonly AbbreviationRule[] LB_SHORT =
-    {
+        private static readonly AbbreviationRule[] LB_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Dsd." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Dsd." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Dsd." },
@@ -6324,8 +6324,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio." }
     };
 
-    private static readonly AbbreviationRule[] LB_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] LB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 Dsd. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 Dsd. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 Dsd. ¤" },
@@ -6352,9 +6352,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bio. ¤" }
     };
 
-    // Ganda
-    private static readonly AbbreviationRule[] LG_CURRENCY =
-    {
+        // Ganda
+        private static readonly AbbreviationRule[] LG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -6381,9 +6381,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Lakota
-    private static readonly AbbreviationRule[] LKT_CURRENCY =
-    {
+        // Lakota
+        private static readonly AbbreviationRule[] LKT_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -6398,9 +6398,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Lingala
-    private static readonly AbbreviationRule[] LN_CURRENCY =
-    {
+        // Lingala
+        private static readonly AbbreviationRule[] LN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -6427,9 +6427,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Lao
-    private static readonly AbbreviationRule[] LO_LONG =
-    {
+        // Lao
+        private static readonly AbbreviationRule[] LO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ພັນ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00ພັນ" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000ພັນ" },
@@ -6444,8 +6444,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000ລ້ານລ້ານ" }
     };
 
-    private static readonly AbbreviationRule[] LO_SHORT =
-    {
+        private static readonly AbbreviationRule[] LO_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ພັນ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00ພັນ" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000ພັນ" },
@@ -6460,8 +6460,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000ພັນຕື້" }
     };
 
-    private static readonly AbbreviationRule[] LO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] LO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 ພັນ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00 ພັນ" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000 ກີບ" },
@@ -6476,9 +6476,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 ລ້ານລ້ານ" }
     };
 
-    // Lithuanian
-    private static readonly AbbreviationRule[] LT_LONG =
-    {
+        // Lithuanian
+        private static readonly AbbreviationRule[] LT_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkstantis" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tūkstančiai" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tūkstančio" },
@@ -6529,8 +6529,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilijonų" }
     };
 
-    private static readonly AbbreviationRule[] LT_SHORT =
-    {
+        private static readonly AbbreviationRule[] LT_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkst." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tūkst." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tūkst." },
@@ -6581,8 +6581,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trln." }
     };
 
-    private static readonly AbbreviationRule[] LT_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] LT_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkst. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tūkst. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tūkst. ¤" },
@@ -6633,9 +6633,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trln. ¤" }
     };
 
-    // Luba-Katanga
-    private static readonly AbbreviationRule[] LU_CURRENCY =
-    {
+        // Luba-Katanga
+        private static readonly AbbreviationRule[] LU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -6650,9 +6650,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Luo
-    private static readonly AbbreviationRule[] LUO_CURRENCY =
-    {
+        // Luo
+        private static readonly AbbreviationRule[] LUO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -6667,9 +6667,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Luyia
-    private static readonly AbbreviationRule[] LUY_CURRENCY =
-    {
+        // Luyia
+        private static readonly AbbreviationRule[] LUY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -6684,9 +6684,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Latvian
-    private static readonly AbbreviationRule[] LV_LONG =
-    {
+        // Latvian
+        private static readonly AbbreviationRule[] LV_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 tūkstoši" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkstotis" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tūkstoši" },
@@ -6725,8 +6725,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 triljoni" }
     };
 
-    private static readonly AbbreviationRule[] LV_SHORT =
-    {
+        private static readonly AbbreviationRule[] LV_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 tūkst." },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkst." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tūkst." },
@@ -6765,8 +6765,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilj." }
     };
 
-    private static readonly AbbreviationRule[] LV_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] LV_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Zero, Value = "0 tūkst. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tūkst. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tūkst. ¤" },
@@ -6805,9 +6805,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 trilj." }
     };
 
-    // Masai
-    private static readonly AbbreviationRule[] MAS_CURRENCY =
-    {
+        // Masai
+        private static readonly AbbreviationRule[] MAS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -6834,9 +6834,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Meru
-    private static readonly AbbreviationRule[] MER_CURRENCY =
-    {
+        // Meru
+        private static readonly AbbreviationRule[] MER_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -6851,9 +6851,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Morisyen
-    private static readonly AbbreviationRule[] MFE_CURRENCY =
-    {
+        // Morisyen
+        private static readonly AbbreviationRule[] MFE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -6868,9 +6868,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Malagasy
-    private static readonly AbbreviationRule[] MG_CURRENCY =
-    {
+        // Malagasy
+        private static readonly AbbreviationRule[] MG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -6897,9 +6897,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Makhuwa-Meetto
-    private static readonly AbbreviationRule[] MGH_CURRENCY =
-    {
+        // Makhuwa-Meetto
+        private static readonly AbbreviationRule[] MGH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -6914,9 +6914,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Metaʼ
-    private static readonly AbbreviationRule[] MGO_CURRENCY =
-    {
+        // Metaʼ
+        private static readonly AbbreviationRule[] MGO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -6943,9 +6943,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Macedonian
-    private static readonly AbbreviationRule[] MK_LONG =
-    {
+        // Macedonian
+        private static readonly AbbreviationRule[] MK_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 илјада" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 илјади" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 илјади" },
@@ -6972,8 +6972,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трилиони" }
     };
 
-    private static readonly AbbreviationRule[] MK_SHORT =
-    {
+        private static readonly AbbreviationRule[] MK_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 илј." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 илј." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 илј." },
@@ -7000,8 +7000,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трил." }
     };
 
-    private static readonly AbbreviationRule[] MK_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] MK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0 илј." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0 илј." },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00 илј." },
@@ -7028,9 +7028,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000 трил." }
     };
 
-    // Malayalam
-    private static readonly AbbreviationRule[] ML_LONG =
-    {
+        // Malayalam
+        private static readonly AbbreviationRule[] ML_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ആയിരം" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ആയിരം" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ആയിരം" },
@@ -7057,8 +7057,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ട്രില്യൺ" }
     };
 
-    private static readonly AbbreviationRule[] ML_SHORT =
-    {
+        private static readonly AbbreviationRule[] ML_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -7085,8 +7085,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] ML_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] ML_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -7113,9 +7113,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Mongolian, Cyrillic
-    private static readonly AbbreviationRule[] MN_LONG =
-    {
+        // Mongolian, Cyrillic
+        private static readonly AbbreviationRule[] MN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 мянга" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 мянга" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 мянга" },
@@ -7142,8 +7142,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 их наяд" }
     };
 
-    private static readonly AbbreviationRule[] MN_SHORT =
-    {
+        private static readonly AbbreviationRule[] MN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0мянга" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0мянга" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00мянга" },
@@ -7170,8 +7170,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000ИН" }
     };
 
-    private static readonly AbbreviationRule[] MN_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] MN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0Мянга" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0Мянга" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00Мянга" },
@@ -7198,9 +7198,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000ИН" }
     };
 
-    // Marathi
-    private static readonly AbbreviationRule[] MR_LONG =
-    {
+        // Marathi
+        private static readonly AbbreviationRule[] MR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 हजार" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 हजार" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 हजार" },
@@ -7227,8 +7227,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 पद्म" }
     };
 
-    private static readonly AbbreviationRule[] MR_SHORT =
-    {
+        private static readonly AbbreviationRule[] MR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ह" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ह" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ह" },
@@ -7255,9 +7255,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 पद्म" }
     };
 
-    // Malay
-    private static readonly AbbreviationRule[] MS_LONG =
-    {
+        // Malay
+        private static readonly AbbreviationRule[] MS_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ribu" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 ribu" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 ribu" },
@@ -7272,8 +7272,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilion" }
     };
 
-    private static readonly AbbreviationRule[] MS_SHORT =
-    {
+        private static readonly AbbreviationRule[] MS_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K" },
@@ -7288,8 +7288,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] MS_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] MS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -7304,9 +7304,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Maltese
-    private static readonly AbbreviationRule[] MT_CURRENCY =
-    {
+        // Maltese
+        private static readonly AbbreviationRule[] MT_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "¤0K" },
@@ -7357,9 +7357,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Mundang
-    private static readonly AbbreviationRule[] MUA_CURRENCY =
-    {
+        // Mundang
+        private static readonly AbbreviationRule[] MUA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -7374,9 +7374,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Burmese
-    private static readonly AbbreviationRule[] MY_LONG =
-    {
+        // Burmese
+        private static readonly AbbreviationRule[] MY_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ထောင်" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0သောင်း" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0သိန်း" },
@@ -7391,8 +7391,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0ကောဋိ" }
     };
 
-    private static readonly AbbreviationRule[] MY_SHORT =
-    {
+        private static readonly AbbreviationRule[] MY_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ထောင်" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0သောင်း" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0သိန်း" },
@@ -7407,8 +7407,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "0ကောဋိ" }
     };
 
-    private static readonly AbbreviationRule[] MY_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] MY_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0ထောင်" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 0သောင်း" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 0သိန်း" },
@@ -7423,9 +7423,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 0ကောဋိ" }
     };
 
-    // Nama
-    private static readonly AbbreviationRule[] NAQ_CURRENCY =
-    {
+        // Nama
+        private static readonly AbbreviationRule[] NAQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
@@ -7464,9 +7464,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Norwegian Bokmål
-    private static readonly AbbreviationRule[] NB_LONG =
-    {
+        // Norwegian Bokmål
+        private static readonly AbbreviationRule[] NB_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tusen" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tusen" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tusen" },
@@ -7493,8 +7493,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billioner" }
     };
 
-    private static readonly AbbreviationRule[] NB_SHORT =
-    {
+        private static readonly AbbreviationRule[] NB_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0k" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0k" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00k" },
@@ -7521,9 +7521,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bill" }
     };
 
-    // North Ndebele
-    private static readonly AbbreviationRule[] ND_CURRENCY =
-    {
+        // North Ndebele
+        private static readonly AbbreviationRule[] ND_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -7550,9 +7550,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Nepali
-    private static readonly AbbreviationRule[] NE_LONG =
-    {
+        // Nepali
+        private static readonly AbbreviationRule[] NE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 हजार" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 हजार" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 हजार" },
@@ -7579,8 +7579,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 शंख" }
     };
 
-    private static readonly AbbreviationRule[] NE_SHORT =
-    {
+        private static readonly AbbreviationRule[] NE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 हजार" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 हजार" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 हजार" },
@@ -7607,9 +7607,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 शंख" }
     };
 
-    // Dutch
-    private static readonly AbbreviationRule[] NL_LONG =
-    {
+        // Dutch
+        private static readonly AbbreviationRule[] NL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 duizend" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 duizend" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 duizend" },
@@ -7636,8 +7636,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljoen" }
     };
 
-    private static readonly AbbreviationRule[] NL_SHORT =
-    {
+        private static readonly AbbreviationRule[] NL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -7664,9 +7664,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bln." }
     };
 
-    // Kwasio
-    private static readonly AbbreviationRule[] NMG_CURRENCY =
-    {
+        // Kwasio
+        private static readonly AbbreviationRule[] NMG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -7681,9 +7681,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Norwegian Nynorsk
-    private static readonly AbbreviationRule[] NN_LONG =
-    {
+        // Norwegian Nynorsk
+        private static readonly AbbreviationRule[] NN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tusen" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tusen" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tusen" },
@@ -7710,8 +7710,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 billioner" }
     };
 
-    private static readonly AbbreviationRule[] NN_SHORT =
-    {
+        private static readonly AbbreviationRule[] NN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tn" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tn" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tn" },
@@ -7738,8 +7738,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] NN_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] NN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tn ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tn ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tn ¤" },
@@ -7766,9 +7766,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn ¤" }
     };
 
-    // Ngiemboon
-    private static readonly AbbreviationRule[] NNH_CURRENCY =
-    {
+        // Ngiemboon
+        private static readonly AbbreviationRule[] NNH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -7795,9 +7795,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Nuer
-    private static readonly AbbreviationRule[] NUS_CURRENCY =
-    {
+        // Nuer
+        private static readonly AbbreviationRule[] NUS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -7812,9 +7812,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Nyankole
-    private static readonly AbbreviationRule[] NYN_CURRENCY =
-    {
+        // Nyankole
+        private static readonly AbbreviationRule[] NYN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -7841,9 +7841,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Oromo
-    private static readonly AbbreviationRule[] OM_CURRENCY =
-    {
+        // Oromo
+        private static readonly AbbreviationRule[] OM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -7870,9 +7870,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Odia
-    private static readonly AbbreviationRule[] OR_CURRENCY =
-    {
+        // Odia
+        private static readonly AbbreviationRule[] OR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -7899,9 +7899,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Ossetic
-    private static readonly AbbreviationRule[] OS_CURRENCY =
-    {
+        // Ossetic
+        private static readonly AbbreviationRule[] OS_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -7928,9 +7928,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Punjabi
-    private static readonly AbbreviationRule[] PA_LONG =
-    {
+        // Punjabi
+        private static readonly AbbreviationRule[] PA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ਹਜ਼ਾਰ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ਹਜ਼ਾਰ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ਹਜ਼ਾਰ" },
@@ -7957,8 +7957,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 ਨੀਲ" }
     };
 
-    private static readonly AbbreviationRule[] PA_SHORT =
-    {
+        private static readonly AbbreviationRule[] PA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ਹਜ਼ਾਰ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ਹਜ਼ਾਰ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ਹਜ਼ਾਰ" },
@@ -7985,9 +7985,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "00 ਨੀਲ" }
     };
 
-    // Punjabi
-    private static readonly AbbreviationRule[] PA_ARAB_CURRENCY =
-    {
+        // Punjabi
+        private static readonly AbbreviationRule[] PA_ARAB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -8014,9 +8014,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Polish
-    private static readonly AbbreviationRule[] PL_LONG =
-    {
+        // Polish
+        private static readonly AbbreviationRule[] PL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tysiąc" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tysiące" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tysięcy" },
@@ -8067,8 +8067,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biliona" }
     };
 
-    private static readonly AbbreviationRule[] PL_SHORT =
-    {
+        private static readonly AbbreviationRule[] PL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tys." },
@@ -8119,8 +8119,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bln" }
     };
 
-    private static readonly AbbreviationRule[] PL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] PL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tys. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tys. ¤" },
@@ -8171,9 +8171,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bln ¤" }
     };
 
-    // Portuguese
-    private static readonly AbbreviationRule[] PT_LONG =
-    {
+        // Portuguese
+        private static readonly AbbreviationRule[] PT_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mil" },
@@ -8200,8 +8200,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilhões" }
     };
 
-    private static readonly AbbreviationRule[] PT_SHORT =
-    {
+        private static readonly AbbreviationRule[] PT_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mil" },
@@ -8228,8 +8228,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 tri" }
     };
 
-    private static readonly AbbreviationRule[] PT_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] PT_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0 mil" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 mil" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00 mil" },
@@ -8256,9 +8256,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 tri" }
     };
 
-    // 
-    private static readonly AbbreviationRule[] QU_CURRENCY =
-    {
+        // 
+        private static readonly AbbreviationRule[] QU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -8273,9 +8273,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Romansh
-    private static readonly AbbreviationRule[] RM_CURRENCY =
-    {
+        // Romansh
+        private static readonly AbbreviationRule[] RM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -8302,9 +8302,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Rundi
-    private static readonly AbbreviationRule[] RN_CURRENCY =
-    {
+        // Rundi
+        private static readonly AbbreviationRule[] RN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -8319,9 +8319,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Romanian
-    private static readonly AbbreviationRule[] RO_LONG =
-    {
+        // Romanian
+        private static readonly AbbreviationRule[] RO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mie" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 mii" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 de mii" },
@@ -8360,8 +8360,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 de trilioane" }
     };
 
-    private static readonly AbbreviationRule[] RO_SHORT =
-    {
+        private static readonly AbbreviationRule[] RO_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 K" },
@@ -8400,8 +8400,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 tril." }
     };
 
-    private static readonly AbbreviationRule[] RO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] RO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mie ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 mii ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mii ¤" },
@@ -8440,9 +8440,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 tril. ¤" }
     };
 
-    // Rombo
-    private static readonly AbbreviationRule[] ROF_CURRENCY =
-    {
+        // Rombo
+        private static readonly AbbreviationRule[] ROF_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -8469,9 +8469,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // 
-    private static readonly AbbreviationRule[] ROOT_SHORT =
-    {
+        // 
+        private static readonly AbbreviationRule[] ROOT_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K" },
@@ -8486,9 +8486,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    // Russian
-    private static readonly AbbreviationRule[] RU_LONG =
-    {
+        // Russian
+        private static readonly AbbreviationRule[] RU_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тысяча" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тысячи" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тысяч" },
@@ -8539,8 +8539,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 триллиона" }
     };
 
-    private static readonly AbbreviationRule[] RU_SHORT =
-    {
+        private static readonly AbbreviationRule[] RU_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тыс." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тыс." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тыс." },
@@ -8591,8 +8591,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] RU_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] RU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тыс. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тыс. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тыс. ¤" },
@@ -8643,9 +8643,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Kinyarwanda
-    private static readonly AbbreviationRule[] RW_CURRENCY =
-    {
+        // Kinyarwanda
+        private static readonly AbbreviationRule[] RW_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000K" },
@@ -8660,9 +8660,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Rwa
-    private static readonly AbbreviationRule[] RWK_CURRENCY =
-    {
+        // Rwa
+        private static readonly AbbreviationRule[] RWK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -8689,9 +8689,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Sakha
-    private static readonly AbbreviationRule[] SAH_LONG =
-    {
+        // Sakha
+        private static readonly AbbreviationRule[] SAH_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 тыһыынча" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 тыһыынча" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 тыһыынча" },
@@ -8706,8 +8706,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 триллион" }
     };
 
-    private static readonly AbbreviationRule[] SAH_SHORT =
-    {
+        private static readonly AbbreviationRule[] SAH_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 тыһ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 тыһ." },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 тыһ." },
@@ -8722,8 +8722,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] SAH_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SAH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 тыһ. ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 тыһ. ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 тыһ. ¤" },
@@ -8738,9 +8738,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Samburu
-    private static readonly AbbreviationRule[] SAQ_CURRENCY =
-    {
+        // Samburu
+        private static readonly AbbreviationRule[] SAQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -8767,9 +8767,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Sangu
-    private static readonly AbbreviationRule[] SBP_CURRENCY =
-    {
+        // Sangu
+        private static readonly AbbreviationRule[] SBP_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -8784,9 +8784,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Northern Sami
-    private static readonly AbbreviationRule[] SE_LONG =
-    {
+        // Northern Sami
+        private static readonly AbbreviationRule[] SE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 duhát" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 duháhat" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 duháhat" },
@@ -8825,8 +8825,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljonat" }
     };
 
-    private static readonly AbbreviationRule[] SE_SHORT =
-    {
+        private static readonly AbbreviationRule[] SE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 dt" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 dt" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 dt" },
@@ -8865,8 +8865,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] SE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 dt ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 dt ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 dt ¤" },
@@ -8905,9 +8905,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn ¤" }
     };
 
-    // Sena
-    private static readonly AbbreviationRule[] SEH_CURRENCY =
-    {
+        // Sena
+        private static readonly AbbreviationRule[] SEH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K¤" },
@@ -8934,9 +8934,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Koyraboro Senni
-    private static readonly AbbreviationRule[] SES_CURRENCY =
-    {
+        // Koyraboro Senni
+        private static readonly AbbreviationRule[] SES_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -8951,9 +8951,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Sango
-    private static readonly AbbreviationRule[] SG_CURRENCY =
-    {
+        // Sango
+        private static readonly AbbreviationRule[] SG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -8968,9 +8968,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Tachelhit
-    private static readonly AbbreviationRule[] SHI_CURRENCY =
-    {
+        // Tachelhit
+        private static readonly AbbreviationRule[] SHI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
@@ -9009,9 +9009,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Tachelhit, Latin
-    private static readonly AbbreviationRule[] SHI_LATN_CURRENCY =
-    {
+        // Tachelhit, Latin
+        private static readonly AbbreviationRule[] SHI_LATN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0K¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
@@ -9050,9 +9050,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Sinhala
-    private static readonly AbbreviationRule[] SI_LONG =
-    {
+        // Sinhala
+        private static readonly AbbreviationRule[] SI_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "දහස 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "දහස 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "දහස 00" },
@@ -9079,8 +9079,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "ට්‍රිලියන 000" }
     };
 
-    private static readonly AbbreviationRule[] SI_SHORT =
-    {
+        private static readonly AbbreviationRule[] SI_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "ද0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "ද0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "ද00" },
@@ -9107,8 +9107,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "ට්‍රි000" }
     };
 
-    private static readonly AbbreviationRule[] SI_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ද0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ද0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ද00" },
@@ -9135,9 +9135,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ට්‍රි000" }
     };
 
-    // Slovak
-    private static readonly AbbreviationRule[] SK_LONG =
-    {
+        // Slovak
+        private static readonly AbbreviationRule[] SK_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tisíc" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tisíce" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tisíca" },
@@ -9188,8 +9188,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biliónov" }
     };
 
-    private static readonly AbbreviationRule[] SK_SHORT =
-    {
+        private static readonly AbbreviationRule[] SK_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tis." },
@@ -9240,8 +9240,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] SK_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 tis. ¤" },
@@ -9292,9 +9292,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Slovenian
-    private static readonly AbbreviationRule[] SL_LONG =
-    {
+        // Slovenian
+        private static readonly AbbreviationRule[] SL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tisoč" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tisoč" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tisoč" },
@@ -9345,8 +9345,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilijonov" }
     };
 
-    private static readonly AbbreviationRule[] SL_SHORT =
-    {
+        private static readonly AbbreviationRule[] SL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tis." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis." },
@@ -9397,8 +9397,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] SL_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SL_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tis. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 tis. ¤" },
@@ -9449,9 +9449,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Sami, Inari
-    private static readonly AbbreviationRule[] SMN_LONG =
-    {
+        // Sami, Inari
+        private static readonly AbbreviationRule[] SMN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tuhháát" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "0 tuhháát" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tuhháát" },
@@ -9490,8 +9490,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljovn" }
     };
 
-    private static readonly AbbreviationRule[] SMN_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SMN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Two, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
@@ -9530,9 +9530,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Shona
-    private static readonly AbbreviationRule[] SN_CURRENCY =
-    {
+        // Shona
+        private static readonly AbbreviationRule[] SN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -9559,9 +9559,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Somali
-    private static readonly AbbreviationRule[] SO_LONG =
-    {
+        // Somali
+        private static readonly AbbreviationRule[] SO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "Kun" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -9570,8 +9570,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K" }
     };
 
-    private static readonly AbbreviationRule[] SO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -9598,9 +9598,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Albanian
-    private static readonly AbbreviationRule[] SQ_LONG =
-    {
+        // Albanian
+        private static readonly AbbreviationRule[] SQ_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mijë" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mijë" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mijë" },
@@ -9627,8 +9627,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bilion" }
     };
 
-    private static readonly AbbreviationRule[] SQ_SHORT =
-    {
+        private static readonly AbbreviationRule[] SQ_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mijë" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mijë" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mijë" },
@@ -9655,8 +9655,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bln" }
     };
 
-    private static readonly AbbreviationRule[] SQ_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 mijë ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 mijë ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 mijë ¤" },
@@ -9683,9 +9683,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Bln ¤" }
     };
 
-    // Serbian, Cyrillic
-    private static readonly AbbreviationRule[] SR_LONG =
-    {
+        // Serbian, Cyrillic
+        private static readonly AbbreviationRule[] SR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хиљада" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 хиљаде" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хиљада" },
@@ -9724,8 +9724,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 билиона" }
     };
 
-    private static readonly AbbreviationRule[] SR_SHORT =
-    {
+        private static readonly AbbreviationRule[] SR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хиљ." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 хиљ." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хиљ." },
@@ -9764,8 +9764,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 бил." }
     };
 
-    private static readonly AbbreviationRule[] SR_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 хиљ. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 хиљ. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 хиљ. ¤" },
@@ -9804,9 +9804,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 бил. ¤" }
     };
 
-    // Serbian, Latin
-    private static readonly AbbreviationRule[] SR_LATN_LONG =
-    {
+        // Serbian, Latin
+        private static readonly AbbreviationRule[] SR_LATN_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hiljada" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hiljade" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hiljada" },
@@ -9845,8 +9845,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biliona" }
     };
 
-    private static readonly AbbreviationRule[] SR_LATN_SHORT =
-    {
+        private static readonly AbbreviationRule[] SR_LATN_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hilj." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hilj." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hilj." },
@@ -9885,8 +9885,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil." }
     };
 
-    private static readonly AbbreviationRule[] SR_LATN_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SR_LATN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 hilj. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 hilj. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 hilj. ¤" },
@@ -9925,9 +9925,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bil. ¤" }
     };
 
-    // Swedish
-    private static readonly AbbreviationRule[] SV_LONG =
-    {
+        // Swedish
+        private static readonly AbbreviationRule[] SV_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tusen" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tusen" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tusen" },
@@ -9954,8 +9954,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 biljoner" }
     };
 
-    private static readonly AbbreviationRule[] SV_SHORT =
-    {
+        private static readonly AbbreviationRule[] SV_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tn" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tn" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tn" },
@@ -9982,8 +9982,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn" }
     };
 
-    private static readonly AbbreviationRule[] SV_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SV_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 tn ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 tn ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 tn ¤" },
@@ -10010,9 +10010,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 bn ¤" }
     };
 
-    // Kiswahili
-    private static readonly AbbreviationRule[] SW_LONG =
-    {
+        // Kiswahili
+        private static readonly AbbreviationRule[] SW_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "Elfu 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "Elfu 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "Elfu 00" },
@@ -10039,8 +10039,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "Trilioni 000" }
     };
 
-    private static readonly AbbreviationRule[] SW_SHORT =
-    {
+        private static readonly AbbreviationRule[] SW_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "elfu 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "elfu 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "elfu 00" },
@@ -10067,8 +10067,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "T000" }
     };
 
-    private static readonly AbbreviationRule[] SW_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] SW_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤elfu 0" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤elfu 0" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤elfu 00" },
@@ -10095,9 +10095,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤T000" }
     };
 
-    // Tamil
-    private static readonly AbbreviationRule[] TA_LONG =
-    {
+        // Tamil
+        private static readonly AbbreviationRule[] TA_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ஆயிரம்" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ஆயிரம்" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ஆயிரம்" },
@@ -10124,8 +10124,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 டிரில்லியன்" }
     };
 
-    private static readonly AbbreviationRule[] TA_SHORT =
-    {
+        private static readonly AbbreviationRule[] TA_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0ஆ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0ஆ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00ஆ" },
@@ -10152,8 +10152,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000டி" }
     };
 
-    private static readonly AbbreviationRule[] TA_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TA_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0ஆ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0ஆ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00ஆ" },
@@ -10180,9 +10180,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000டி" }
     };
 
-    // Telugu
-    private static readonly AbbreviationRule[] TE_LONG =
-    {
+        // Telugu
+        private static readonly AbbreviationRule[] TE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 వేయి" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 వేలు" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 వేలు" },
@@ -10209,8 +10209,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ట్రిలియన్లు" }
     };
 
-    private static readonly AbbreviationRule[] TE_SHORT =
-    {
+        private static readonly AbbreviationRule[] TE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0వే" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0వే" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00వే" },
@@ -10237,8 +10237,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000ట్రి" }
     };
 
-    private static readonly AbbreviationRule[] TE_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0వే" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0వే" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00వే" },
@@ -10265,9 +10265,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000ట్రి" }
     };
 
-    // Teso
-    private static readonly AbbreviationRule[] TEO_CURRENCY =
-    {
+        // Teso
+        private static readonly AbbreviationRule[] TEO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -10294,9 +10294,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Thai
-    private static readonly AbbreviationRule[] TH_LONG =
-    {
+        // Thai
+        private static readonly AbbreviationRule[] TH_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 พัน" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0 หมื่น" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0 แสน" },
@@ -10311,8 +10311,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ล้านล้าน" }
     };
 
-    private static readonly AbbreviationRule[] TH_SHORT =
-    {
+        private static readonly AbbreviationRule[] TH_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 พ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0 ม." },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0 ส." },
@@ -10327,8 +10327,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ล.ล." }
     };
 
-    private static readonly AbbreviationRule[] TH_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0 พ." },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤0 ม." },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤0 ส." },
@@ -10343,9 +10343,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000 ล.ล." }
     };
 
-    // Tigrinya
-    private static readonly AbbreviationRule[] TI_CURRENCY =
-    {
+        // Tigrinya
+        private static readonly AbbreviationRule[] TI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -10372,9 +10372,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Turkmen
-    private static readonly AbbreviationRule[] TK_LONG =
-    {
+        // Turkmen
+        private static readonly AbbreviationRule[] TK_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 müň" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 müň" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 müň" },
@@ -10401,8 +10401,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trillion" }
     };
 
-    private static readonly AbbreviationRule[] TK_SHORT =
-    {
+        private static readonly AbbreviationRule[] TK_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 müň" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 müň" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 müň" },
@@ -10429,8 +10429,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trln" }
     };
 
-    private static readonly AbbreviationRule[] TK_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 müň ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 müň ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 müň ¤" },
@@ -10457,9 +10457,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trln ¤" }
     };
 
-    // Tongan
-    private static readonly AbbreviationRule[] TO_LONG =
-    {
+        // Tongan
+        private static readonly AbbreviationRule[] TO_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 afe" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0 mano" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "0 kilu" },
@@ -10474,8 +10474,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 tiliona" }
     };
 
-    private static readonly AbbreviationRule[] TO_SHORT =
-    {
+        private static readonly AbbreviationRule[] TO_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0k" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00k" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000k" },
@@ -10490,8 +10490,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] TO_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0k" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤ 00k" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤ 000k" },
@@ -10506,9 +10506,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Turkish
-    private static readonly AbbreviationRule[] TR_LONG =
-    {
+        // Turkish
+        private static readonly AbbreviationRule[] TR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 bin" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 bin" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 bin" },
@@ -10535,8 +10535,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trilyon" }
     };
 
-    private static readonly AbbreviationRule[] TR_SHORT =
-    {
+        private static readonly AbbreviationRule[] TR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 B" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 B" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 B" },
@@ -10563,8 +10563,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Tn" }
     };
 
-    private static readonly AbbreviationRule[] TR_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] TR_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 B ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 B ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 B ¤" },
@@ -10591,9 +10591,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 Tn ¤" }
     };
 
-    // Tasawaq
-    private static readonly AbbreviationRule[] TWQ_CURRENCY =
-    {
+        // Tasawaq
+        private static readonly AbbreviationRule[] TWQ_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -10608,9 +10608,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Central Atlas Tamazight
-    private static readonly AbbreviationRule[] TZM_CURRENCY =
-    {
+        // Central Atlas Tamazight
+        private static readonly AbbreviationRule[] TZM_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -10637,9 +10637,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Uyghur
-    private static readonly AbbreviationRule[] UG_LONG =
-    {
+        // Uyghur
+        private static readonly AbbreviationRule[] UG_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 مىڭ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 مىڭ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 مىڭ" },
@@ -10666,8 +10666,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 تىرىليون" }
     };
 
-    private static readonly AbbreviationRule[] UG_SHORT =
-    {
+        private static readonly AbbreviationRule[] UG_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0مىڭ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0مىڭ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00مىڭ" },
@@ -10694,8 +10694,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] UG_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] UG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0مىڭ" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0مىڭ" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00مىڭ" },
@@ -10722,9 +10722,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Ukrainian
-    private static readonly AbbreviationRule[] UK_LONG =
-    {
+        // Ukrainian
+        private static readonly AbbreviationRule[] UK_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тисяча" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тисячі" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тисяч" },
@@ -10775,8 +10775,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трильйона" }
     };
 
-    private static readonly AbbreviationRule[] UK_SHORT =
-    {
+        private static readonly AbbreviationRule[] UK_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тис." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тис." },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тис." },
@@ -10827,8 +10827,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн" }
     };
 
-    private static readonly AbbreviationRule[] UK_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] UK_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 тис. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Few, Value = "0 тис. ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Many, Value = "0 тис. ¤" },
@@ -10879,9 +10879,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трлн ¤" }
     };
 
-    // Urdu
-    private static readonly AbbreviationRule[] UR_LONG =
-    {
+        // Urdu
+        private static readonly AbbreviationRule[] UR_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ہزار" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ہزار" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ہزار" },
@@ -10908,8 +10908,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ٹریلین" }
     };
 
-    private static readonly AbbreviationRule[] UR_SHORT =
-    {
+        private static readonly AbbreviationRule[] UR_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ہزار" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ہزار" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ہزار" },
@@ -10936,9 +10936,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 ٹریلین" }
     };
 
-    // Uzbek, Latin
-    private static readonly AbbreviationRule[] UZ_LONG =
-    {
+        // Uzbek, Latin
+        private static readonly AbbreviationRule[] UZ_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ming" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ming" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ming" },
@@ -10965,8 +10965,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trillion" }
     };
 
-    private static readonly AbbreviationRule[] UZ_SHORT =
-    {
+        private static readonly AbbreviationRule[] UZ_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 ming" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 ming" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 ming" },
@@ -10993,9 +10993,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 trln" }
     };
 
-    // Uzbek, Perso-Arabic
-    private static readonly AbbreviationRule[] UZ_ARAB_CURRENCY =
-    {
+        // Uzbek, Perso-Arabic
+        private static readonly AbbreviationRule[] UZ_ARAB_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -11022,9 +11022,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Uzbek, Cyrillic
-    private static readonly AbbreviationRule[] UZ_CYRL_LONG =
-    {
+        // Uzbek, Cyrillic
+        private static readonly AbbreviationRule[] UZ_CYRL_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 минг" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 минг" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 минг" },
@@ -11051,8 +11051,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 трилион" }
     };
 
-    private static readonly AbbreviationRule[] UZ_CYRL_SHORT =
-    {
+        private static readonly AbbreviationRule[] UZ_CYRL_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0минг" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0минг" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00минг" },
@@ -11079,9 +11079,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000трлн" }
     };
 
-    // Vai
-    private static readonly AbbreviationRule[] VAI_CURRENCY =
-    {
+        // Vai
+        private static readonly AbbreviationRule[] VAI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -11096,9 +11096,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Vai, Latin
-    private static readonly AbbreviationRule[] VAI_LATN_CURRENCY =
-    {
+        // Vai, Latin
+        private static readonly AbbreviationRule[] VAI_LATN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -11113,9 +11113,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Vietnamese
-    private static readonly AbbreviationRule[] VI_LONG =
-    {
+        // Vietnamese
+        private static readonly AbbreviationRule[] VI_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 nghìn" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 nghìn" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 nghìn" },
@@ -11130,8 +11130,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 nghìn tỷ" }
     };
 
-    private static readonly AbbreviationRule[] VI_SHORT =
-    {
+        private static readonly AbbreviationRule[] VI_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 N" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 N" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 N" },
@@ -11146,8 +11146,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 NT" }
     };
 
-    private static readonly AbbreviationRule[] VI_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] VI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 N ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00 N ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000 N ¤" },
@@ -11162,9 +11162,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 NT ¤" }
     };
 
-    // Vunjo
-    private static readonly AbbreviationRule[] VUN_CURRENCY =
-    {
+        // Vunjo
+        private static readonly AbbreviationRule[] VUN_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -11191,9 +11191,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // Walser
-    private static readonly AbbreviationRule[] WAE_CURRENCY =
-    {
+        // Walser
+        private static readonly AbbreviationRule[] WAE_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -11220,9 +11220,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Soga
-    private static readonly AbbreviationRule[] XOG_CURRENCY =
-    {
+        // Soga
+        private static readonly AbbreviationRule[] XOG_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K ¤" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K ¤" },
@@ -11249,9 +11249,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Yangben
-    private static readonly AbbreviationRule[] YAV_CURRENCY =
-    {
+        // Yangben
+        private static readonly AbbreviationRule[] YAV_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K ¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K ¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K ¤" },
@@ -11266,9 +11266,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T ¤" }
     };
 
-    // Yiddish
-    private static readonly AbbreviationRule[] YI_CURRENCY =
-    {
+        // Yiddish
+        private static readonly AbbreviationRule[] YI_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤ 0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤ 0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤ 00K" },
@@ -11295,9 +11295,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤ 000T" }
     };
 
-    // Yoruba
-    private static readonly AbbreviationRule[] YO_CURRENCY =
-    {
+        // Yoruba
+        private static readonly AbbreviationRule[] YO_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "¤00K" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "¤000K" },
@@ -11312,9 +11312,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    // 
-    private static readonly AbbreviationRule[] YUE_LONG =
-    {
+        // 
+        private static readonly AbbreviationRule[] YUE_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0萬" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00萬" },
@@ -11329,8 +11329,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    private static readonly AbbreviationRule[] YUE_SHORT =
-    {
+        private static readonly AbbreviationRule[] YUE_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0萬" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00萬" },
@@ -11345,9 +11345,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    // Standard Moroccan Tamazight
-    private static readonly AbbreviationRule[] ZGH_CURRENCY =
-    {
+        // Standard Moroccan Tamazight
+        private static readonly AbbreviationRule[] ZGH_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K¤" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "00K¤" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "000K¤" },
@@ -11362,9 +11362,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T¤" }
     };
 
-    // Chinese, Simplified
-    private static readonly AbbreviationRule[] ZH_LONG =
-    {
+        // Chinese, Simplified
+        private static readonly AbbreviationRule[] ZH_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0万" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00万" },
@@ -11379,8 +11379,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    private static readonly AbbreviationRule[] ZH_SHORT =
-    {
+        private static readonly AbbreviationRule[] ZH_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0万" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00万" },
@@ -11395,9 +11395,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    // Chinese, Traditional
-    private static readonly AbbreviationRule[] ZH_HANT_LONG =
-    {
+        // Chinese, Traditional
+        private static readonly AbbreviationRule[] ZH_HANT_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0萬" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00萬" },
@@ -11412,8 +11412,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    private static readonly AbbreviationRule[] ZH_HANT_SHORT =
-    {
+        private static readonly AbbreviationRule[] ZH_HANT_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0千" },
       new AbbreviationRule { Range = 10000, Plural = Plural.Other, Value = "0萬" },
       new AbbreviationRule { Range = 100000, Plural = Plural.Other, Value = "00萬" },
@@ -11428,9 +11428,9 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000兆" }
     };
 
-    // isiZulu
-    private static readonly AbbreviationRule[] ZU_LONG =
-    {
+        // isiZulu
+        private static readonly AbbreviationRule[] ZU_LONG =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0 inkulungwane" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0 inkulungwane" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00 inkulungwane" },
@@ -11457,8 +11457,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000 isigidintathu" }
     };
 
-    private static readonly AbbreviationRule[] ZU_SHORT =
-    {
+        private static readonly AbbreviationRule[] ZU_SHORT =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "00K" },
@@ -11485,8 +11485,8 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "000T" }
     };
 
-    private static readonly AbbreviationRule[] ZU_CURRENCY =
-    {
+        private static readonly AbbreviationRule[] ZU_CURRENCY =
+        {
       new AbbreviationRule { Range = 1000, Plural = Plural.One, Value = "¤0K" },
       new AbbreviationRule { Range = 1000, Plural = Plural.Other, Value = "¤0K" },
       new AbbreviationRule { Range = 10000, Plural = Plural.One, Value = "¤00K" },
@@ -11513,214 +11513,214 @@ namespace Soluling
       new AbbreviationRule { Range = 100000000000000, Plural = Plural.Other, Value = "¤000T" }
     };
 
-    private static readonly AbbreviationRule[] EMPTY = {};
+        private static readonly AbbreviationRule[] EMPTY = { };
 
-    /// <summary>
-    /// Initialize data.
-    /// </summary>
-    public static void Initialize()
-    {
-    }
+        /// <summary>
+        /// Initialize data.
+        /// </summary>
+        public static void Initialize()
+        {
+        }
 
-    static AbbreviatedNumberData()
-    {
-      AbbreviatedNumber.Register("af", AF_LONG, AF_SHORT, AF_CURRENCY);
-      AbbreviatedNumber.Register("agq", EMPTY, EMPTY, AGQ_CURRENCY);
-      AbbreviatedNumber.Register("ak", EMPTY, EMPTY, AK_CURRENCY);
-      AbbreviatedNumber.Register("am", AM_LONG, AM_SHORT, AM_CURRENCY);
-      AbbreviatedNumber.Register("ar", AR_LONG, AR_SHORT, EMPTY);
-      AbbreviatedNumber.Register("as", EMPTY, EMPTY, AS_CURRENCY);
-      AbbreviatedNumber.Register("asa", EMPTY, EMPTY, ASA_CURRENCY);
-      AbbreviatedNumber.Register("ast", AST_LONG, AST_SHORT, EMPTY);
-      AbbreviatedNumber.Register("az", AZ_LONG, AZ_SHORT, AZ_CURRENCY);
-      AbbreviatedNumber.Register("az-Cyrl", EMPTY, EMPTY, AZ_CYRL_CURRENCY);
-      AbbreviatedNumber.Register("bas", EMPTY, EMPTY, BAS_CURRENCY);
-      AbbreviatedNumber.Register("be", BE_LONG, BE_SHORT, BE_CURRENCY);
-      AbbreviatedNumber.Register("bem", EMPTY, EMPTY, BEM_CURRENCY);
-      AbbreviatedNumber.Register("bez", EMPTY, EMPTY, BEZ_CURRENCY);
-      AbbreviatedNumber.Register("bg", BG_LONG, BG_SHORT, BG_CURRENCY);
-      AbbreviatedNumber.Register("bm", EMPTY, EMPTY, BM_CURRENCY);
-      AbbreviatedNumber.Register("bn", BN_LONG, BN_SHORT, EMPTY);
-      AbbreviatedNumber.Register("bo", EMPTY, EMPTY, BO_CURRENCY);
-      AbbreviatedNumber.Register("br", EMPTY, EMPTY, BR_CURRENCY);
-      AbbreviatedNumber.Register("brx", EMPTY, EMPTY, BRX_CURRENCY);
-      AbbreviatedNumber.Register("bs", BS_LONG, BS_SHORT, BS_CURRENCY);
-      AbbreviatedNumber.Register("bs-Cyrl", BS_CYRL_LONG, BS_CYRL_SHORT, BS_CYRL_CURRENCY);
-      AbbreviatedNumber.Register("ca", CA_LONG, CA_SHORT, CA_CURRENCY);
-      AbbreviatedNumber.Register("ce", CE_LONG, CE_SHORT, CE_CURRENCY);
-      AbbreviatedNumber.Register("cgg", EMPTY, EMPTY, CGG_CURRENCY);
-      AbbreviatedNumber.Register("chr", CHR_LONG, CHR_SHORT, CHR_CURRENCY);
-      AbbreviatedNumber.Register("cs", CS_LONG, CS_SHORT, CS_CURRENCY);
-      AbbreviatedNumber.Register("cy", CY_LONG, CY_SHORT, CY_CURRENCY);
-      AbbreviatedNumber.Register("da", DA_LONG, DA_SHORT, DA_CURRENCY);
-      AbbreviatedNumber.Register("dav", EMPTY, EMPTY, DAV_CURRENCY);
-      AbbreviatedNumber.Register("de", DE_LONG, DE_SHORT, DE_CURRENCY);
-      AbbreviatedNumber.Register("dje", EMPTY, EMPTY, DJE_CURRENCY);
-      AbbreviatedNumber.Register("dsb", DSB_LONG, DSB_SHORT, DSB_CURRENCY);
-      AbbreviatedNumber.Register("dua", EMPTY, EMPTY, DUA_CURRENCY);
-      AbbreviatedNumber.Register("dyo", EMPTY, EMPTY, DYO_CURRENCY);
-      AbbreviatedNumber.Register("dz", DZ_LONG, EMPTY, DZ_CURRENCY);
-      AbbreviatedNumber.Register("ebu", EMPTY, EMPTY, EBU_CURRENCY);
-      AbbreviatedNumber.Register("ee", EE_LONG, EE_SHORT, EE_CURRENCY);
-      AbbreviatedNumber.Register("el", EL_LONG, EL_SHORT, EL_CURRENCY);
-      AbbreviatedNumber.Register("en", EN_LONG, EN_SHORT, EN_CURRENCY);
-      AbbreviatedNumber.Register("eo", EMPTY, EMPTY, EO_CURRENCY);
-      AbbreviatedNumber.Register("es", ES_LONG, ES_SHORT, ES_CURRENCY);
-      AbbreviatedNumber.Register("et", ET_LONG, ET_SHORT, ET_CURRENCY);
-      AbbreviatedNumber.Register("eu", EU_LONG, EU_SHORT, EU_CURRENCY);
-      AbbreviatedNumber.Register("ewo", EMPTY, EMPTY, EWO_CURRENCY);
-      AbbreviatedNumber.Register("fa", FA_LONG, FA_SHORT, EMPTY);
-      AbbreviatedNumber.Register("ff", EMPTY, EMPTY, FF_CURRENCY);
-      AbbreviatedNumber.Register("fi", FI_LONG, FI_SHORT, FI_CURRENCY);
-      AbbreviatedNumber.Register("fil", FIL_LONG, FIL_SHORT, FIL_CURRENCY);
-      AbbreviatedNumber.Register("fo", FO_LONG, FO_SHORT, FO_CURRENCY);
-      AbbreviatedNumber.Register("fr", FR_LONG, FR_SHORT, FR_CURRENCY);
-      AbbreviatedNumber.Register("fur", EMPTY, EMPTY, FUR_CURRENCY);
-      AbbreviatedNumber.Register("fy", FY_LONG, FY_SHORT, FY_CURRENCY);
-      AbbreviatedNumber.Register("ga", GA_LONG, GA_SHORT, GA_CURRENCY);
-      AbbreviatedNumber.Register("gd", GD_LONG, GD_SHORT, EMPTY);
-      AbbreviatedNumber.Register("gl", GL_LONG, GL_SHORT, GL_CURRENCY);
-      AbbreviatedNumber.Register("gsw", GSW_LONG, GSW_SHORT, GSW_CURRENCY);
-      AbbreviatedNumber.Register("gu", GU_LONG, GU_SHORT, EMPTY);
-      AbbreviatedNumber.Register("guz", EMPTY, EMPTY, GUZ_CURRENCY);
-      AbbreviatedNumber.Register("gv", EMPTY, EMPTY, GV_CURRENCY);
-      AbbreviatedNumber.Register("ha", HA_LONG, HA_SHORT, HA_CURRENCY);
-      AbbreviatedNumber.Register("haw", EMPTY, EMPTY, HAW_CURRENCY);
-      AbbreviatedNumber.Register("he", HE_LONG, HE_SHORT, HE_CURRENCY);
-      AbbreviatedNumber.Register("hi", HI_LONG, HI_SHORT, EMPTY);
-      AbbreviatedNumber.Register("hr", HR_LONG, HR_SHORT, HR_CURRENCY);
-      AbbreviatedNumber.Register("hsb", HSB_LONG, HSB_SHORT, HSB_CURRENCY);
-      AbbreviatedNumber.Register("hu", HU_LONG, HU_SHORT, HU_CURRENCY);
-      AbbreviatedNumber.Register("hy", HY_LONG, HY_SHORT, HY_CURRENCY);
-      AbbreviatedNumber.Register("id", ID_LONG, ID_SHORT, ID_CURRENCY);
-      AbbreviatedNumber.Register("ii", EMPTY, EMPTY, II_CURRENCY);
-      AbbreviatedNumber.Register("is", IS_LONG, IS_SHORT, IS_CURRENCY);
-      AbbreviatedNumber.Register("it", IT_LONG, IT_SHORT, IT_CURRENCY);
-      AbbreviatedNumber.Register("ja", JA_LONG, JA_SHORT, JA_CURRENCY);
-      AbbreviatedNumber.Register("jgo", EMPTY, EMPTY, JGO_CURRENCY);
-      AbbreviatedNumber.Register("jmc", EMPTY, EMPTY, JMC_CURRENCY);
-      AbbreviatedNumber.Register("ka", KA_LONG, KA_SHORT, KA_CURRENCY);
-      AbbreviatedNumber.Register("kab", EMPTY, EMPTY, KAB_CURRENCY);
-      AbbreviatedNumber.Register("kam", EMPTY, EMPTY, KAM_CURRENCY);
-      AbbreviatedNumber.Register("kde", EMPTY, EMPTY, KDE_CURRENCY);
-      AbbreviatedNumber.Register("kea", KEA_LONG, KEA_SHORT, KEA_CURRENCY);
-      AbbreviatedNumber.Register("khq", EMPTY, EMPTY, KHQ_CURRENCY);
-      AbbreviatedNumber.Register("ki", EMPTY, EMPTY, KI_CURRENCY);
-      AbbreviatedNumber.Register("kk", KK_LONG, KK_SHORT, KK_CURRENCY);
-      AbbreviatedNumber.Register("kkj", EMPTY, EMPTY, KKJ_CURRENCY);
-      AbbreviatedNumber.Register("kl", KL_LONG, KL_SHORT, KL_CURRENCY);
-      AbbreviatedNumber.Register("kln", EMPTY, EMPTY, KLN_CURRENCY);
-      AbbreviatedNumber.Register("km", KM_LONG, KM_SHORT, KM_CURRENCY);
-      AbbreviatedNumber.Register("kn", KN_LONG, KN_SHORT, EMPTY);
-      AbbreviatedNumber.Register("ko", KO_LONG, KO_SHORT, KO_CURRENCY);
-      AbbreviatedNumber.Register("kok", EMPTY, EMPTY, KOK_CURRENCY);
-      AbbreviatedNumber.Register("ks", EMPTY, EMPTY, KS_CURRENCY);
-      AbbreviatedNumber.Register("ksb", EMPTY, EMPTY, KSB_CURRENCY);
-      AbbreviatedNumber.Register("ksf", EMPTY, EMPTY, KSF_CURRENCY);
-      AbbreviatedNumber.Register("ksh", KSH_LONG, KSH_SHORT, KSH_CURRENCY);
-      AbbreviatedNumber.Register("kw", EMPTY, EMPTY, KW_CURRENCY);
-      AbbreviatedNumber.Register("ky", KY_LONG, KY_SHORT, KY_CURRENCY);
-      AbbreviatedNumber.Register("lag", EMPTY, EMPTY, LAG_CURRENCY);
-      AbbreviatedNumber.Register("lb", LB_LONG, LB_SHORT, LB_CURRENCY);
-      AbbreviatedNumber.Register("lg", EMPTY, EMPTY, LG_CURRENCY);
-      AbbreviatedNumber.Register("lkt", EMPTY, EMPTY, LKT_CURRENCY);
-      AbbreviatedNumber.Register("ln", EMPTY, EMPTY, LN_CURRENCY);
-      AbbreviatedNumber.Register("lo", LO_LONG, LO_SHORT, LO_CURRENCY);
-      AbbreviatedNumber.Register("lt", LT_LONG, LT_SHORT, LT_CURRENCY);
-      AbbreviatedNumber.Register("lu", EMPTY, EMPTY, LU_CURRENCY);
-      AbbreviatedNumber.Register("luo", EMPTY, EMPTY, LUO_CURRENCY);
-      AbbreviatedNumber.Register("luy", EMPTY, EMPTY, LUY_CURRENCY);
-      AbbreviatedNumber.Register("lv", LV_LONG, LV_SHORT, LV_CURRENCY);
-      AbbreviatedNumber.Register("mas", EMPTY, EMPTY, MAS_CURRENCY);
-      AbbreviatedNumber.Register("mer", EMPTY, EMPTY, MER_CURRENCY);
-      AbbreviatedNumber.Register("mfe", EMPTY, EMPTY, MFE_CURRENCY);
-      AbbreviatedNumber.Register("mg", EMPTY, EMPTY, MG_CURRENCY);
-      AbbreviatedNumber.Register("mgh", EMPTY, EMPTY, MGH_CURRENCY);
-      AbbreviatedNumber.Register("mgo", EMPTY, EMPTY, MGO_CURRENCY);
-      AbbreviatedNumber.Register("mk", MK_LONG, MK_SHORT, MK_CURRENCY);
-      AbbreviatedNumber.Register("ml", ML_LONG, ML_SHORT, ML_CURRENCY);
-      AbbreviatedNumber.Register("mn", MN_LONG, MN_SHORT, MN_CURRENCY);
-      AbbreviatedNumber.Register("mr", MR_LONG, MR_SHORT, EMPTY);
-      AbbreviatedNumber.Register("ms", MS_LONG, MS_SHORT, MS_CURRENCY);
-      AbbreviatedNumber.Register("mt", EMPTY, EMPTY, MT_CURRENCY);
-      AbbreviatedNumber.Register("mua", EMPTY, EMPTY, MUA_CURRENCY);
-      AbbreviatedNumber.Register("my", MY_LONG, MY_SHORT, MY_CURRENCY);
-      AbbreviatedNumber.Register("naq", EMPTY, EMPTY, NAQ_CURRENCY);
-      AbbreviatedNumber.Register("nb", NB_LONG, NB_SHORT, EMPTY);
-      AbbreviatedNumber.Register("nd", EMPTY, EMPTY, ND_CURRENCY);
-      AbbreviatedNumber.Register("ne", NE_LONG, NE_SHORT, EMPTY);
-      AbbreviatedNumber.Register("nl", NL_LONG, NL_SHORT, EMPTY);
-      AbbreviatedNumber.Register("nmg", EMPTY, EMPTY, NMG_CURRENCY);
-      AbbreviatedNumber.Register("nn", NN_LONG, NN_SHORT, NN_CURRENCY);
-      AbbreviatedNumber.Register("nnh", EMPTY, EMPTY, NNH_CURRENCY);
-      AbbreviatedNumber.Register("nus", EMPTY, EMPTY, NUS_CURRENCY);
-      AbbreviatedNumber.Register("nyn", EMPTY, EMPTY, NYN_CURRENCY);
-      AbbreviatedNumber.Register("om", EMPTY, EMPTY, OM_CURRENCY);
-      AbbreviatedNumber.Register("or", EMPTY, EMPTY, OR_CURRENCY);
-      AbbreviatedNumber.Register("os", EMPTY, EMPTY, OS_CURRENCY);
-      AbbreviatedNumber.Register("pa", PA_LONG, PA_SHORT, EMPTY);
-      AbbreviatedNumber.Register("pa-Arab", EMPTY, EMPTY, PA_ARAB_CURRENCY);
-      AbbreviatedNumber.Register("pl", PL_LONG, PL_SHORT, PL_CURRENCY);
-      AbbreviatedNumber.Register("pt", PT_LONG, PT_SHORT, PT_CURRENCY);
-      AbbreviatedNumber.Register("qu", EMPTY, EMPTY, QU_CURRENCY);
-      AbbreviatedNumber.Register("rm", EMPTY, EMPTY, RM_CURRENCY);
-      AbbreviatedNumber.Register("rn", EMPTY, EMPTY, RN_CURRENCY);
-      AbbreviatedNumber.Register("ro", RO_LONG, RO_SHORT, RO_CURRENCY);
-      AbbreviatedNumber.Register("rof", EMPTY, EMPTY, ROF_CURRENCY);
-      AbbreviatedNumber.Register("root", EMPTY, ROOT_SHORT, EMPTY);
-      AbbreviatedNumber.Register("ru", RU_LONG, RU_SHORT, RU_CURRENCY);
-      AbbreviatedNumber.Register("rw", EMPTY, EMPTY, RW_CURRENCY);
-      AbbreviatedNumber.Register("rwk", EMPTY, EMPTY, RWK_CURRENCY);
-      AbbreviatedNumber.Register("sah", SAH_LONG, SAH_SHORT, SAH_CURRENCY);
-      AbbreviatedNumber.Register("saq", EMPTY, EMPTY, SAQ_CURRENCY);
-      AbbreviatedNumber.Register("sbp", EMPTY, EMPTY, SBP_CURRENCY);
-      AbbreviatedNumber.Register("se", SE_LONG, SE_SHORT, SE_CURRENCY);
-      AbbreviatedNumber.Register("seh", EMPTY, EMPTY, SEH_CURRENCY);
-      AbbreviatedNumber.Register("ses", EMPTY, EMPTY, SES_CURRENCY);
-      AbbreviatedNumber.Register("sg", EMPTY, EMPTY, SG_CURRENCY);
-      AbbreviatedNumber.Register("shi", EMPTY, EMPTY, SHI_CURRENCY);
-      AbbreviatedNumber.Register("shi-Latn", EMPTY, EMPTY, SHI_LATN_CURRENCY);
-      AbbreviatedNumber.Register("si", SI_LONG, SI_SHORT, SI_CURRENCY);
-      AbbreviatedNumber.Register("sk", SK_LONG, SK_SHORT, SK_CURRENCY);
-      AbbreviatedNumber.Register("sl", SL_LONG, SL_SHORT, SL_CURRENCY);
-      AbbreviatedNumber.Register("smn", SMN_LONG, EMPTY, SMN_CURRENCY);
-      AbbreviatedNumber.Register("sn", EMPTY, EMPTY, SN_CURRENCY);
-      AbbreviatedNumber.Register("so", SO_LONG, EMPTY, SO_CURRENCY);
-      AbbreviatedNumber.Register("sq", SQ_LONG, SQ_SHORT, SQ_CURRENCY);
-      AbbreviatedNumber.Register("sr", SR_LONG, SR_SHORT, SR_CURRENCY);
-      AbbreviatedNumber.Register("sr-Latn", SR_LATN_LONG, SR_LATN_SHORT, SR_LATN_CURRENCY);
-      AbbreviatedNumber.Register("sv", SV_LONG, SV_SHORT, SV_CURRENCY);
-      AbbreviatedNumber.Register("sw", SW_LONG, SW_SHORT, SW_CURRENCY);
-      AbbreviatedNumber.Register("ta", TA_LONG, TA_SHORT, TA_CURRENCY);
-      AbbreviatedNumber.Register("te", TE_LONG, TE_SHORT, TE_CURRENCY);
-      AbbreviatedNumber.Register("teo", EMPTY, EMPTY, TEO_CURRENCY);
-      AbbreviatedNumber.Register("th", TH_LONG, TH_SHORT, TH_CURRENCY);
-      AbbreviatedNumber.Register("ti", EMPTY, EMPTY, TI_CURRENCY);
-      AbbreviatedNumber.Register("tk", TK_LONG, TK_SHORT, TK_CURRENCY);
-      AbbreviatedNumber.Register("to", TO_LONG, TO_SHORT, TO_CURRENCY);
-      AbbreviatedNumber.Register("tr", TR_LONG, TR_SHORT, TR_CURRENCY);
-      AbbreviatedNumber.Register("twq", EMPTY, EMPTY, TWQ_CURRENCY);
-      AbbreviatedNumber.Register("tzm", EMPTY, EMPTY, TZM_CURRENCY);
-      AbbreviatedNumber.Register("ug", UG_LONG, UG_SHORT, UG_CURRENCY);
-      AbbreviatedNumber.Register("uk", UK_LONG, UK_SHORT, UK_CURRENCY);
-      AbbreviatedNumber.Register("ur", UR_LONG, UR_SHORT, EMPTY);
-      AbbreviatedNumber.Register("uz", UZ_LONG, UZ_SHORT, EMPTY);
-      AbbreviatedNumber.Register("uz-Arab", EMPTY, EMPTY, UZ_ARAB_CURRENCY);
-      AbbreviatedNumber.Register("uz-Cyrl", UZ_CYRL_LONG, UZ_CYRL_SHORT, EMPTY);
-      AbbreviatedNumber.Register("vai", EMPTY, EMPTY, VAI_CURRENCY);
-      AbbreviatedNumber.Register("vai-Latn", EMPTY, EMPTY, VAI_LATN_CURRENCY);
-      AbbreviatedNumber.Register("vi", VI_LONG, VI_SHORT, VI_CURRENCY);
-      AbbreviatedNumber.Register("vun", EMPTY, EMPTY, VUN_CURRENCY);
-      AbbreviatedNumber.Register("wae", EMPTY, EMPTY, WAE_CURRENCY);
-      AbbreviatedNumber.Register("xog", EMPTY, EMPTY, XOG_CURRENCY);
-      AbbreviatedNumber.Register("yav", EMPTY, EMPTY, YAV_CURRENCY);
-      AbbreviatedNumber.Register("yi", EMPTY, EMPTY, YI_CURRENCY);
-      AbbreviatedNumber.Register("yo", EMPTY, EMPTY, YO_CURRENCY);
-      AbbreviatedNumber.Register("yue", YUE_LONG, YUE_SHORT, EMPTY);
-      AbbreviatedNumber.Register("zgh", EMPTY, EMPTY, ZGH_CURRENCY);
-      AbbreviatedNumber.Register("zh", ZH_LONG, ZH_SHORT, EMPTY);
-      AbbreviatedNumber.Register("zh-Hant", ZH_HANT_LONG, ZH_HANT_SHORT, EMPTY);
-      AbbreviatedNumber.Register("zu", ZU_LONG, ZU_SHORT, ZU_CURRENCY);
+        static AbbreviatedNumberData()
+        {
+            AbbreviatedNumber.Register("af", AF_LONG, AF_SHORT, AF_CURRENCY);
+            AbbreviatedNumber.Register("agq", EMPTY, EMPTY, AGQ_CURRENCY);
+            AbbreviatedNumber.Register("ak", EMPTY, EMPTY, AK_CURRENCY);
+            AbbreviatedNumber.Register("am", AM_LONG, AM_SHORT, AM_CURRENCY);
+            AbbreviatedNumber.Register("ar", AR_LONG, AR_SHORT, EMPTY);
+            AbbreviatedNumber.Register("as", EMPTY, EMPTY, AS_CURRENCY);
+            AbbreviatedNumber.Register("asa", EMPTY, EMPTY, ASA_CURRENCY);
+            AbbreviatedNumber.Register("ast", AST_LONG, AST_SHORT, EMPTY);
+            AbbreviatedNumber.Register("az", AZ_LONG, AZ_SHORT, AZ_CURRENCY);
+            AbbreviatedNumber.Register("az-Cyrl", EMPTY, EMPTY, AZ_CYRL_CURRENCY);
+            AbbreviatedNumber.Register("bas", EMPTY, EMPTY, BAS_CURRENCY);
+            AbbreviatedNumber.Register("be", BE_LONG, BE_SHORT, BE_CURRENCY);
+            AbbreviatedNumber.Register("bem", EMPTY, EMPTY, BEM_CURRENCY);
+            AbbreviatedNumber.Register("bez", EMPTY, EMPTY, BEZ_CURRENCY);
+            AbbreviatedNumber.Register("bg", BG_LONG, BG_SHORT, BG_CURRENCY);
+            AbbreviatedNumber.Register("bm", EMPTY, EMPTY, BM_CURRENCY);
+            AbbreviatedNumber.Register("bn", BN_LONG, BN_SHORT, EMPTY);
+            AbbreviatedNumber.Register("bo", EMPTY, EMPTY, BO_CURRENCY);
+            AbbreviatedNumber.Register("br", EMPTY, EMPTY, BR_CURRENCY);
+            AbbreviatedNumber.Register("brx", EMPTY, EMPTY, BRX_CURRENCY);
+            AbbreviatedNumber.Register("bs", BS_LONG, BS_SHORT, BS_CURRENCY);
+            AbbreviatedNumber.Register("bs-Cyrl", BS_CYRL_LONG, BS_CYRL_SHORT, BS_CYRL_CURRENCY);
+            AbbreviatedNumber.Register("ca", CA_LONG, CA_SHORT, CA_CURRENCY);
+            AbbreviatedNumber.Register("ce", CE_LONG, CE_SHORT, CE_CURRENCY);
+            AbbreviatedNumber.Register("cgg", EMPTY, EMPTY, CGG_CURRENCY);
+            AbbreviatedNumber.Register("chr", CHR_LONG, CHR_SHORT, CHR_CURRENCY);
+            AbbreviatedNumber.Register("cs", CS_LONG, CS_SHORT, CS_CURRENCY);
+            AbbreviatedNumber.Register("cy", CY_LONG, CY_SHORT, CY_CURRENCY);
+            AbbreviatedNumber.Register("da", DA_LONG, DA_SHORT, DA_CURRENCY);
+            AbbreviatedNumber.Register("dav", EMPTY, EMPTY, DAV_CURRENCY);
+            AbbreviatedNumber.Register("de", DE_LONG, DE_SHORT, DE_CURRENCY);
+            AbbreviatedNumber.Register("dje", EMPTY, EMPTY, DJE_CURRENCY);
+            AbbreviatedNumber.Register("dsb", DSB_LONG, DSB_SHORT, DSB_CURRENCY);
+            AbbreviatedNumber.Register("dua", EMPTY, EMPTY, DUA_CURRENCY);
+            AbbreviatedNumber.Register("dyo", EMPTY, EMPTY, DYO_CURRENCY);
+            AbbreviatedNumber.Register("dz", DZ_LONG, EMPTY, DZ_CURRENCY);
+            AbbreviatedNumber.Register("ebu", EMPTY, EMPTY, EBU_CURRENCY);
+            AbbreviatedNumber.Register("ee", EE_LONG, EE_SHORT, EE_CURRENCY);
+            AbbreviatedNumber.Register("el", EL_LONG, EL_SHORT, EL_CURRENCY);
+            AbbreviatedNumber.Register("en", EN_LONG, EN_SHORT, EN_CURRENCY);
+            AbbreviatedNumber.Register("eo", EMPTY, EMPTY, EO_CURRENCY);
+            AbbreviatedNumber.Register("es", ES_LONG, ES_SHORT, ES_CURRENCY);
+            AbbreviatedNumber.Register("et", ET_LONG, ET_SHORT, ET_CURRENCY);
+            AbbreviatedNumber.Register("eu", EU_LONG, EU_SHORT, EU_CURRENCY);
+            AbbreviatedNumber.Register("ewo", EMPTY, EMPTY, EWO_CURRENCY);
+            AbbreviatedNumber.Register("fa", FA_LONG, FA_SHORT, EMPTY);
+            AbbreviatedNumber.Register("ff", EMPTY, EMPTY, FF_CURRENCY);
+            AbbreviatedNumber.Register("fi", FI_LONG, FI_SHORT, FI_CURRENCY);
+            AbbreviatedNumber.Register("fil", FIL_LONG, FIL_SHORT, FIL_CURRENCY);
+            AbbreviatedNumber.Register("fo", FO_LONG, FO_SHORT, FO_CURRENCY);
+            AbbreviatedNumber.Register("fr", FR_LONG, FR_SHORT, FR_CURRENCY);
+            AbbreviatedNumber.Register("fur", EMPTY, EMPTY, FUR_CURRENCY);
+            AbbreviatedNumber.Register("fy", FY_LONG, FY_SHORT, FY_CURRENCY);
+            AbbreviatedNumber.Register("ga", GA_LONG, GA_SHORT, GA_CURRENCY);
+            AbbreviatedNumber.Register("gd", GD_LONG, GD_SHORT, EMPTY);
+            AbbreviatedNumber.Register("gl", GL_LONG, GL_SHORT, GL_CURRENCY);
+            AbbreviatedNumber.Register("gsw", GSW_LONG, GSW_SHORT, GSW_CURRENCY);
+            AbbreviatedNumber.Register("gu", GU_LONG, GU_SHORT, EMPTY);
+            AbbreviatedNumber.Register("guz", EMPTY, EMPTY, GUZ_CURRENCY);
+            AbbreviatedNumber.Register("gv", EMPTY, EMPTY, GV_CURRENCY);
+            AbbreviatedNumber.Register("ha", HA_LONG, HA_SHORT, HA_CURRENCY);
+            AbbreviatedNumber.Register("haw", EMPTY, EMPTY, HAW_CURRENCY);
+            AbbreviatedNumber.Register("he", HE_LONG, HE_SHORT, HE_CURRENCY);
+            AbbreviatedNumber.Register("hi", HI_LONG, HI_SHORT, EMPTY);
+            AbbreviatedNumber.Register("hr", HR_LONG, HR_SHORT, HR_CURRENCY);
+            AbbreviatedNumber.Register("hsb", HSB_LONG, HSB_SHORT, HSB_CURRENCY);
+            AbbreviatedNumber.Register("hu", HU_LONG, HU_SHORT, HU_CURRENCY);
+            AbbreviatedNumber.Register("hy", HY_LONG, HY_SHORT, HY_CURRENCY);
+            AbbreviatedNumber.Register("id", ID_LONG, ID_SHORT, ID_CURRENCY);
+            AbbreviatedNumber.Register("ii", EMPTY, EMPTY, II_CURRENCY);
+            AbbreviatedNumber.Register("is", IS_LONG, IS_SHORT, IS_CURRENCY);
+            AbbreviatedNumber.Register("it", IT_LONG, IT_SHORT, IT_CURRENCY);
+            AbbreviatedNumber.Register("ja", JA_LONG, JA_SHORT, JA_CURRENCY);
+            AbbreviatedNumber.Register("jgo", EMPTY, EMPTY, JGO_CURRENCY);
+            AbbreviatedNumber.Register("jmc", EMPTY, EMPTY, JMC_CURRENCY);
+            AbbreviatedNumber.Register("ka", KA_LONG, KA_SHORT, KA_CURRENCY);
+            AbbreviatedNumber.Register("kab", EMPTY, EMPTY, KAB_CURRENCY);
+            AbbreviatedNumber.Register("kam", EMPTY, EMPTY, KAM_CURRENCY);
+            AbbreviatedNumber.Register("kde", EMPTY, EMPTY, KDE_CURRENCY);
+            AbbreviatedNumber.Register("kea", KEA_LONG, KEA_SHORT, KEA_CURRENCY);
+            AbbreviatedNumber.Register("khq", EMPTY, EMPTY, KHQ_CURRENCY);
+            AbbreviatedNumber.Register("ki", EMPTY, EMPTY, KI_CURRENCY);
+            AbbreviatedNumber.Register("kk", KK_LONG, KK_SHORT, KK_CURRENCY);
+            AbbreviatedNumber.Register("kkj", EMPTY, EMPTY, KKJ_CURRENCY);
+            AbbreviatedNumber.Register("kl", KL_LONG, KL_SHORT, KL_CURRENCY);
+            AbbreviatedNumber.Register("kln", EMPTY, EMPTY, KLN_CURRENCY);
+            AbbreviatedNumber.Register("km", KM_LONG, KM_SHORT, KM_CURRENCY);
+            AbbreviatedNumber.Register("kn", KN_LONG, KN_SHORT, EMPTY);
+            AbbreviatedNumber.Register("ko", KO_LONG, KO_SHORT, KO_CURRENCY);
+            AbbreviatedNumber.Register("kok", EMPTY, EMPTY, KOK_CURRENCY);
+            AbbreviatedNumber.Register("ks", EMPTY, EMPTY, KS_CURRENCY);
+            AbbreviatedNumber.Register("ksb", EMPTY, EMPTY, KSB_CURRENCY);
+            AbbreviatedNumber.Register("ksf", EMPTY, EMPTY, KSF_CURRENCY);
+            AbbreviatedNumber.Register("ksh", KSH_LONG, KSH_SHORT, KSH_CURRENCY);
+            AbbreviatedNumber.Register("kw", EMPTY, EMPTY, KW_CURRENCY);
+            AbbreviatedNumber.Register("ky", KY_LONG, KY_SHORT, KY_CURRENCY);
+            AbbreviatedNumber.Register("lag", EMPTY, EMPTY, LAG_CURRENCY);
+            AbbreviatedNumber.Register("lb", LB_LONG, LB_SHORT, LB_CURRENCY);
+            AbbreviatedNumber.Register("lg", EMPTY, EMPTY, LG_CURRENCY);
+            AbbreviatedNumber.Register("lkt", EMPTY, EMPTY, LKT_CURRENCY);
+            AbbreviatedNumber.Register("ln", EMPTY, EMPTY, LN_CURRENCY);
+            AbbreviatedNumber.Register("lo", LO_LONG, LO_SHORT, LO_CURRENCY);
+            AbbreviatedNumber.Register("lt", LT_LONG, LT_SHORT, LT_CURRENCY);
+            AbbreviatedNumber.Register("lu", EMPTY, EMPTY, LU_CURRENCY);
+            AbbreviatedNumber.Register("luo", EMPTY, EMPTY, LUO_CURRENCY);
+            AbbreviatedNumber.Register("luy", EMPTY, EMPTY, LUY_CURRENCY);
+            AbbreviatedNumber.Register("lv", LV_LONG, LV_SHORT, LV_CURRENCY);
+            AbbreviatedNumber.Register("mas", EMPTY, EMPTY, MAS_CURRENCY);
+            AbbreviatedNumber.Register("mer", EMPTY, EMPTY, MER_CURRENCY);
+            AbbreviatedNumber.Register("mfe", EMPTY, EMPTY, MFE_CURRENCY);
+            AbbreviatedNumber.Register("mg", EMPTY, EMPTY, MG_CURRENCY);
+            AbbreviatedNumber.Register("mgh", EMPTY, EMPTY, MGH_CURRENCY);
+            AbbreviatedNumber.Register("mgo", EMPTY, EMPTY, MGO_CURRENCY);
+            AbbreviatedNumber.Register("mk", MK_LONG, MK_SHORT, MK_CURRENCY);
+            AbbreviatedNumber.Register("ml", ML_LONG, ML_SHORT, ML_CURRENCY);
+            AbbreviatedNumber.Register("mn", MN_LONG, MN_SHORT, MN_CURRENCY);
+            AbbreviatedNumber.Register("mr", MR_LONG, MR_SHORT, EMPTY);
+            AbbreviatedNumber.Register("ms", MS_LONG, MS_SHORT, MS_CURRENCY);
+            AbbreviatedNumber.Register("mt", EMPTY, EMPTY, MT_CURRENCY);
+            AbbreviatedNumber.Register("mua", EMPTY, EMPTY, MUA_CURRENCY);
+            AbbreviatedNumber.Register("my", MY_LONG, MY_SHORT, MY_CURRENCY);
+            AbbreviatedNumber.Register("naq", EMPTY, EMPTY, NAQ_CURRENCY);
+            AbbreviatedNumber.Register("nb", NB_LONG, NB_SHORT, EMPTY);
+            AbbreviatedNumber.Register("nd", EMPTY, EMPTY, ND_CURRENCY);
+            AbbreviatedNumber.Register("ne", NE_LONG, NE_SHORT, EMPTY);
+            AbbreviatedNumber.Register("nl", NL_LONG, NL_SHORT, EMPTY);
+            AbbreviatedNumber.Register("nmg", EMPTY, EMPTY, NMG_CURRENCY);
+            AbbreviatedNumber.Register("nn", NN_LONG, NN_SHORT, NN_CURRENCY);
+            AbbreviatedNumber.Register("nnh", EMPTY, EMPTY, NNH_CURRENCY);
+            AbbreviatedNumber.Register("nus", EMPTY, EMPTY, NUS_CURRENCY);
+            AbbreviatedNumber.Register("nyn", EMPTY, EMPTY, NYN_CURRENCY);
+            AbbreviatedNumber.Register("om", EMPTY, EMPTY, OM_CURRENCY);
+            AbbreviatedNumber.Register("or", EMPTY, EMPTY, OR_CURRENCY);
+            AbbreviatedNumber.Register("os", EMPTY, EMPTY, OS_CURRENCY);
+            AbbreviatedNumber.Register("pa", PA_LONG, PA_SHORT, EMPTY);
+            AbbreviatedNumber.Register("pa-Arab", EMPTY, EMPTY, PA_ARAB_CURRENCY);
+            AbbreviatedNumber.Register("pl", PL_LONG, PL_SHORT, PL_CURRENCY);
+            AbbreviatedNumber.Register("pt", PT_LONG, PT_SHORT, PT_CURRENCY);
+            AbbreviatedNumber.Register("qu", EMPTY, EMPTY, QU_CURRENCY);
+            AbbreviatedNumber.Register("rm", EMPTY, EMPTY, RM_CURRENCY);
+            AbbreviatedNumber.Register("rn", EMPTY, EMPTY, RN_CURRENCY);
+            AbbreviatedNumber.Register("ro", RO_LONG, RO_SHORT, RO_CURRENCY);
+            AbbreviatedNumber.Register("rof", EMPTY, EMPTY, ROF_CURRENCY);
+            AbbreviatedNumber.Register("root", EMPTY, ROOT_SHORT, EMPTY);
+            AbbreviatedNumber.Register("ru", RU_LONG, RU_SHORT, RU_CURRENCY);
+            AbbreviatedNumber.Register("rw", EMPTY, EMPTY, RW_CURRENCY);
+            AbbreviatedNumber.Register("rwk", EMPTY, EMPTY, RWK_CURRENCY);
+            AbbreviatedNumber.Register("sah", SAH_LONG, SAH_SHORT, SAH_CURRENCY);
+            AbbreviatedNumber.Register("saq", EMPTY, EMPTY, SAQ_CURRENCY);
+            AbbreviatedNumber.Register("sbp", EMPTY, EMPTY, SBP_CURRENCY);
+            AbbreviatedNumber.Register("se", SE_LONG, SE_SHORT, SE_CURRENCY);
+            AbbreviatedNumber.Register("seh", EMPTY, EMPTY, SEH_CURRENCY);
+            AbbreviatedNumber.Register("ses", EMPTY, EMPTY, SES_CURRENCY);
+            AbbreviatedNumber.Register("sg", EMPTY, EMPTY, SG_CURRENCY);
+            AbbreviatedNumber.Register("shi", EMPTY, EMPTY, SHI_CURRENCY);
+            AbbreviatedNumber.Register("shi-Latn", EMPTY, EMPTY, SHI_LATN_CURRENCY);
+            AbbreviatedNumber.Register("si", SI_LONG, SI_SHORT, SI_CURRENCY);
+            AbbreviatedNumber.Register("sk", SK_LONG, SK_SHORT, SK_CURRENCY);
+            AbbreviatedNumber.Register("sl", SL_LONG, SL_SHORT, SL_CURRENCY);
+            AbbreviatedNumber.Register("smn", SMN_LONG, EMPTY, SMN_CURRENCY);
+            AbbreviatedNumber.Register("sn", EMPTY, EMPTY, SN_CURRENCY);
+            AbbreviatedNumber.Register("so", SO_LONG, EMPTY, SO_CURRENCY);
+            AbbreviatedNumber.Register("sq", SQ_LONG, SQ_SHORT, SQ_CURRENCY);
+            AbbreviatedNumber.Register("sr", SR_LONG, SR_SHORT, SR_CURRENCY);
+            AbbreviatedNumber.Register("sr-Latn", SR_LATN_LONG, SR_LATN_SHORT, SR_LATN_CURRENCY);
+            AbbreviatedNumber.Register("sv", SV_LONG, SV_SHORT, SV_CURRENCY);
+            AbbreviatedNumber.Register("sw", SW_LONG, SW_SHORT, SW_CURRENCY);
+            AbbreviatedNumber.Register("ta", TA_LONG, TA_SHORT, TA_CURRENCY);
+            AbbreviatedNumber.Register("te", TE_LONG, TE_SHORT, TE_CURRENCY);
+            AbbreviatedNumber.Register("teo", EMPTY, EMPTY, TEO_CURRENCY);
+            AbbreviatedNumber.Register("th", TH_LONG, TH_SHORT, TH_CURRENCY);
+            AbbreviatedNumber.Register("ti", EMPTY, EMPTY, TI_CURRENCY);
+            AbbreviatedNumber.Register("tk", TK_LONG, TK_SHORT, TK_CURRENCY);
+            AbbreviatedNumber.Register("to", TO_LONG, TO_SHORT, TO_CURRENCY);
+            AbbreviatedNumber.Register("tr", TR_LONG, TR_SHORT, TR_CURRENCY);
+            AbbreviatedNumber.Register("twq", EMPTY, EMPTY, TWQ_CURRENCY);
+            AbbreviatedNumber.Register("tzm", EMPTY, EMPTY, TZM_CURRENCY);
+            AbbreviatedNumber.Register("ug", UG_LONG, UG_SHORT, UG_CURRENCY);
+            AbbreviatedNumber.Register("uk", UK_LONG, UK_SHORT, UK_CURRENCY);
+            AbbreviatedNumber.Register("ur", UR_LONG, UR_SHORT, EMPTY);
+            AbbreviatedNumber.Register("uz", UZ_LONG, UZ_SHORT, EMPTY);
+            AbbreviatedNumber.Register("uz-Arab", EMPTY, EMPTY, UZ_ARAB_CURRENCY);
+            AbbreviatedNumber.Register("uz-Cyrl", UZ_CYRL_LONG, UZ_CYRL_SHORT, EMPTY);
+            AbbreviatedNumber.Register("vai", EMPTY, EMPTY, VAI_CURRENCY);
+            AbbreviatedNumber.Register("vai-Latn", EMPTY, EMPTY, VAI_LATN_CURRENCY);
+            AbbreviatedNumber.Register("vi", VI_LONG, VI_SHORT, VI_CURRENCY);
+            AbbreviatedNumber.Register("vun", EMPTY, EMPTY, VUN_CURRENCY);
+            AbbreviatedNumber.Register("wae", EMPTY, EMPTY, WAE_CURRENCY);
+            AbbreviatedNumber.Register("xog", EMPTY, EMPTY, XOG_CURRENCY);
+            AbbreviatedNumber.Register("yav", EMPTY, EMPTY, YAV_CURRENCY);
+            AbbreviatedNumber.Register("yi", EMPTY, EMPTY, YI_CURRENCY);
+            AbbreviatedNumber.Register("yo", EMPTY, EMPTY, YO_CURRENCY);
+            AbbreviatedNumber.Register("yue", YUE_LONG, YUE_SHORT, EMPTY);
+            AbbreviatedNumber.Register("zgh", EMPTY, EMPTY, ZGH_CURRENCY);
+            AbbreviatedNumber.Register("zh", ZH_LONG, ZH_SHORT, EMPTY);
+            AbbreviatedNumber.Register("zh-Hant", ZH_HANT_LONG, ZH_HANT_SHORT, EMPTY);
+            AbbreviatedNumber.Register("zu", ZU_LONG, ZU_SHORT, ZU_CURRENCY);
+        }
     }
-  }
 }

@@ -16,8 +16,8 @@ namespace HelloWorld
 
         private void Page_Loaded_1(object sender, RoutedEventArgs e)
         {
-          var rl = new ResourceLoader();
-          text2.Text = rl.GetString("HowAreYou");
+            var rl = new ResourceLoader();
+            text2.Text = rl.GetString("HowAreYou");
         }
     }
 }

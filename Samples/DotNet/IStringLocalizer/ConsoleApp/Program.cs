@@ -9,79 +9,79 @@ using Microsoft.Extensions.Localization;
 
 namespace ConsoleApp
 {
-  interface IService
-  {
-    void Process(string value);
-  }
-
-  class Service: IService
-  {
-    private IStringLocalizer _localizer;
-
-    public Service() //IStringLocalizer<Service> localizer)
+    interface IService
     {
-      //_localizer = localizer;
+        void Process(string value);
     }
 
-    public void Process(string value)
+    class Service : IService
     {
-      //Console.WriteLine(_localizer["Hello"]);
-      Console.WriteLine(value);
-    }
-  }
+        private IStringLocalizer _localizer;
 
-  public class Program
-  {
-    static void Main()
-    {
-      var host = Host.CreateDefaultBuilder()
-        .ConfigureServices((context, services) =>
+        public Service() //IStringLocalizer<Service> localizer)
         {
-          services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
-          services.AddSingleton<IService, Service>();
+            //_localizer = localizer;
+        }
 
-          services.AddTransient<IMainService, MainService>();
-        })
-        .Build();
-
-      var service = ActivatorUtilities.CreateInstance<IMainService>(host.Services);
-      service.Run();
+        public void Process(string value)
+        {
+            //Console.WriteLine(_localizer["Hello"]);
+            Console.WriteLine(value);
+        }
     }
 
-/*
-    static void Main()
+    public class Program
     {
-      var services = new ServiceCollection();
-      services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
-      services.AddSingleton(typeof(IStringLocalizer<Service>), typeof(StringLocalizer<Service>));
-      services.AddSingleton<IService, Service>();
-      
-      var serviceProvider = services.BuildServiceProvider();
+        static void Main()
+        {
+            var host = Host.CreateDefaultBuilder()
+              .ConfigureServices((context, services) =>
+              {
+                  services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+                  services.AddSingleton<IService, Service>();
 
-      var service = serviceProvider.GetService<IService>();
-      service.Process("This is a sample");
+                  services.AddTransient<IMainService, MainService>();
+              })
+              .Build();
+
+            var service = ActivatorUtilities.CreateInstance<IMainService>(host.Services);
+            service.Run();
+        }
+
+        /*
+            static void Main()
+            {
+              var services = new ServiceCollection();
+              services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+              services.AddSingleton(typeof(IStringLocalizer<Service>), typeof(StringLocalizer<Service>));
+              services.AddSingleton<IService, Service>();
+
+              var serviceProvider = services.BuildServiceProvider();
+
+              var service = serviceProvider.GetService<IService>();
+              service.Process("This is a sample");
+            }
+        */
     }
-*/
-  }
 
-  interface IMainService
-  {
-    void Run();
-  }
-
-  public class MainService: IMainService
-  {
-    private IService _service;
-
-    public MainService() //(IService service)
+    interface IMainService
     {
-      //_service = service;
+        void Run();
     }
 
-    public void Run()
+    public class MainService : IMainService
     {
-      Console.WriteLine("This is a sample");
-      //_service.Process("This is a sample");
+        private IService _service;
+
+        public MainService() //(IService service)
+        {
+            //_service = service;
+        }
+
+        public void Run()
+        {
+            Console.WriteLine("This is a sample");
+            //_service.Process("This is a sample");
+        }
     }
-  }
 }

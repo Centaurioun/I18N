@@ -4,22 +4,22 @@ using Soluling.AspNet;
 
 namespace RazorDriving.Controllers
 {
-  [Route("localizedimages")]
-  [ApiController]
-  public class ImageController : ControllerBase
-  {
-    private readonly IWebHostEnvironment hostingEnvironment;
-
-    public ImageController(IWebHostEnvironment hostingEnvironment)
+    [Route("localizedimages")]
+    [ApiController]
+    public class ImageController : ControllerBase
     {
-      this.hostingEnvironment = hostingEnvironment;
-    }
+        private readonly IWebHostEnvironment hostingEnvironment;
 
-    [HttpGet]
-    [Route("{name}")]
-    public IActionResult GetFlag(string name)
-    {
-      return this.GetImage(hostingEnvironment.WebRootPath, name);
+        public ImageController(IWebHostEnvironment hostingEnvironment)
+        {
+            this.hostingEnvironment = hostingEnvironment;
+        }
+
+        [HttpGet]
+        [Route("{name}")]
+        public IActionResult GetFlag(string name)
+        {
+            return this.GetImage(hostingEnvironment.WebRootPath, name);
+        }
     }
-  }
 }

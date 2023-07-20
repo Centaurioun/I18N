@@ -8,14 +8,14 @@ using System.Globalization;
 
 namespace BiDiArabic
 {
-  /// <summary>
-  /// Interaction logic for App.xaml
-  /// </summary>
-  public partial class App : Application
-  {
-    public App()
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
     {
-      Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+        public App()
+        {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+        }
     }
-  }
 }

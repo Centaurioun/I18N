@@ -2,18 +2,18 @@
 
 namespace MultiServerLibrary
 {
-  public class MyClass
-  {
-    private IStringLocalizer _localizer;
-
-    public MyClass(IStringLocalizer<MyClass> localizer)
+    public class MyClass
     {
-      _localizer = localizer;
-    }
+        private IStringLocalizer _localizer;
 
-    public string GetValue()
-    {
-      return _localizer["This is a sample"];
+        public MyClass(IStringLocalizer<MyClass> localizer)
+        {
+            _localizer = localizer;
+        }
+
+        public string GetValue()
+        {
+            return _localizer["This is a sample"];
+        }
     }
-  }
 }

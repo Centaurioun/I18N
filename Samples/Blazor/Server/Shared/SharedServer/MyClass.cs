@@ -2,18 +2,18 @@
 
 namespace SharedServer
 {
-  public class MyClass
-  {
-    private IStringLocalizer _localizer;
-
-    public MyClass(IStringLocalizer<SharedStrings> localizer)
+    public class MyClass
     {
-      _localizer = localizer;
-    }
+        private IStringLocalizer _localizer;
 
-    public string GetValue()
-    {
-      return _localizer["This is a sample"];
+        public MyClass(IStringLocalizer<SharedStrings> localizer)
+        {
+            _localizer = localizer;
+        }
+
+        public string GetValue()
+        {
+            return _localizer["This is a sample"];
+        }
     }
-  }
 }

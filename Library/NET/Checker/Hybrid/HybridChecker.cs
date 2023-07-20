@@ -4,23 +4,23 @@ using Soluling.WPF;
 
 namespace Soluling.Forms
 {
-  /// <summary>
-  /// Represents the checker class that extends Windows Forms checker such way that it can check the WPF user control embedded to Windows Forms application.
-  /// </summary>
-  public class HybridChecker: Soluling.Forms.FormsChecker
-  {
-    /// <inheritdoc/>
-    protected override void ProcessControl(Control control)
+    /// <summary>
+    /// Represents the checker class that extends Windows Forms checker such way that it can check the WPF user control embedded to Windows Forms application.
+    /// </summary>
+    public class HybridChecker : Soluling.Forms.FormsChecker
     {
-      if (control is ElementHost)
-      {
-        ElementHost elementHost = (ElementHost)control;
-        Control form = GetForm(elementHost);
-        WpfChecker checker = new WpfChecker(this);
-        checker.ScreenshotFilePrefix = form.Name + "_";
+        /// <inheritdoc/>
+        protected override void ProcessControl(Control control)
+        {
+            if (control is ElementHost)
+            {
+                ElementHost elementHost = (ElementHost)control;
+                Control form = GetForm(elementHost);
+                WpfChecker checker = new WpfChecker(this);
+                checker.ScreenshotFilePrefix = form.Name + "_";
 
-        checker.Process(elementHost.Child);
-      }
+                checker.Process(elementHost.Child);
+            }
+        }
     }
-  }
 }

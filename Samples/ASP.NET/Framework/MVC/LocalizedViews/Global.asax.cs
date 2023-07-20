@@ -22,5 +22,5 @@ namespace LocalizedViews
         protected void Application_BeginRequest()
         {
         }
-  }
+    }
 }

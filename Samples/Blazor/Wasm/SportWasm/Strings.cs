@@ -1,6 +1,6 @@
 ﻿namespace SportWasm
 {
-  public class Strings
-  {
-  }
+    public class Strings
+    {
+    }
 }

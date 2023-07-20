@@ -1,6 +1,6 @@
 ﻿namespace SportServer
 {
-  public class Strings
-  {
-  }
+    public class Strings
+    {
+    }
 }

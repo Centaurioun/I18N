@@ -23,7 +23,7 @@ var localizationOptions = new RequestLocalizationOptions()
 app.UseRequestLocalization(localizationOptions);
 
 if (!app.Environment.IsDevelopment())
-  app.UseExceptionHandler("/Error");
+    app.UseExceptionHandler("/Error");
 
 app.UseStaticFiles();
 app.UseRouting();

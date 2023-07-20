@@ -4,80 +4,80 @@ using Soluling;
 
 namespace Driving
 {
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
-  public partial class MainWindow : Window
-  {
-    public MainWindow()
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
     {
-      InitializeComponent();
-    }
-
-    private double Distance
-    {
-      get 
-      { 
-        try
+        public MainWindow()
         {
-          return System.Convert.ToDouble(distanceTextBox.Text); 
+            InitializeComponent();
         }
-        catch
+
+        private double Distance
         {
-          return 0;
+            get
+            {
+                try
+                {
+                    return System.Convert.ToDouble(distanceTextBox.Text);
+                }
+                catch
+                {
+                    return 0;
+                }
+            }
         }
-      }
-    }
 
-    private double Speed
-    {
-      get 
-      { 
-        try
+        private double Speed
         {
-          return System.Convert.ToDouble(speedTextBox.Text); 
+            get
+            {
+                try
+                {
+                    return System.Convert.ToDouble(speedTextBox.Text);
+                }
+                catch
+                {
+                    return 0;
+                }
+            }
         }
-        catch
+
+        private void UpdateItems()
         {
-          return 0;
+            calculateButton.IsEnabled = (Distance > 0) && (Speed > 0);
+            calculateMenu.IsEnabled = calculateButton.IsEnabled;
         }
-      }
-    }
 
-    private void UpdateItems()
-    {
-      calculateButton.IsEnabled = (Distance > 0) && (Speed > 0);
-      calculateMenu.IsEnabled = calculateButton.IsEnabled;
-    }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Soluling.Language.Id = Properties.Resources.Language;
+            UpdateItems();
+        }
 
-    private void Window_Loaded(object sender, RoutedEventArgs e)
-    {
-      Soluling.Language.Id = Properties.Resources.Language;
-      UpdateItems();
-    }
+        private void textBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            UpdateItems();
+        }
 
-    private void textBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-    {
-      UpdateItems();
-    }
+        private void calculateButton_Click(object sender, RoutedEventArgs e)
+        {
+            double time = Distance / Speed;
+            int hours = (int)time;
+            int minutes = (int)Math.Round(60 * (time - hours));
 
-    private void calculateButton_Click(object sender, RoutedEventArgs e)
-    {
-      double time = Distance/Speed;
-      int hours = (int)time;
-      int minutes = (int)Math.Round(60*(time - hours));
+            resultLabel.Content = MultiPattern.FormatMulti(Properties.Resources.ResultPlural, hours, minutes);
+        }
 
-      resultLabel.Content = MultiPattern.FormatMulti(Properties.Resources.ResultPlural, hours, minutes);
-    }
+        private void aboutMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Properties.Resources.About);
+        }
 
-    private void aboutMenu_Click(object sender, RoutedEventArgs e)
-    {
-      MessageBox.Show(Properties.Resources.About);
+        private void exitMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
-
-    private void exitMenu_Click(object sender, RoutedEventArgs e)
-    {
-      Close();
-    }
-  }
 }
