@@ -12,16 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp2.SharedSub
-{
+namespace WpfApp2.SharedSub {
 /// <summary>
 /// Interaction logic for SharedSubWindow.xaml
 /// </summary>
-public partial class SharedSubWindow : Window
-{
-    public SharedSubWindow()
-    {
-        InitializeComponent();
-    }
+public partial class SharedSubWindow : Window {
+  public SharedSubWindow() { InitializeComponent(); }
 }
 }

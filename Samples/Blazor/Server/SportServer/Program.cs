@@ -7,9 +7,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<SportService, SportService>();
 
 // 1) Specify .resx directory.
-builder.Services.AddLocalization(opts => {
-    opts.ResourcesPath = "Resources";
-});
+builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
 
 var app = builder.Build();
 
@@ -18,14 +16,14 @@ var supportedCultures = new[] { "en", "fi" };
 
 // 3) Configure application to use the above locales
 var localizationOptions = new RequestLocalizationOptions()
-.SetDefaultCulture(supportedCultures[0])
-.AddSupportedCultures(supportedCultures)
-.AddSupportedUICultures(supportedCultures);
+                              .SetDefaultCulture(supportedCultures[0])
+                              .AddSupportedCultures(supportedCultures)
+                              .AddSupportedUICultures(supportedCultures);
 
 app.UseRequestLocalization(localizationOptions);
 
 if (!app.Environment.IsDevelopment())
-    app.UseExceptionHandler("/Error");
+  app.UseExceptionHandler("/Error");
 
 app.UseStaticFiles();
 app.UseRouting();

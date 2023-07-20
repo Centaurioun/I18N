@@ -1,15 +1,10 @@
 ﻿using System.Windows;
 
-namespace Driving
-{
+namespace Driving {
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
-{
-    public App()
-    {
-        Soluling.Language.SetInitial();
-    }
+public partial class App : Application {
+  public App() { Soluling.Language.SetInitial(); }
 }
 }

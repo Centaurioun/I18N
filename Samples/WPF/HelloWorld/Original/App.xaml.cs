@@ -1,11 +1,8 @@
 ﻿using System.Windows;
 
-namespace HelloWorld
-{
+namespace HelloWorld {
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
-{
-}
+public partial class App : Application {}
 }

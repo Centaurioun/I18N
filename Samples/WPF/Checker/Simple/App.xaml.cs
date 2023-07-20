@@ -4,12 +4,9 @@ using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Simple
-{
+namespace Simple {
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
-{
-}
+public partial class App : Application {}
 }

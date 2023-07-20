@@ -1,15 +1,10 @@
 ﻿using System.Windows;
 
-namespace Test
-{
+namespace Test {
 /// <summary>
 /// Interaction logic for Window3.xaml
 /// </summary>
-public partial class Window3 : Window
-{
-    public Window3()
-    {
-        InitializeComponent();
-    }
+public partial class Window3 : Window {
+  public Window3() { InitializeComponent(); }
 }
 }

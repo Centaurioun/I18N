@@ -1,6 +1,3 @@
-﻿namespace SportServer
-{
-public class Strings
-{
-}
+﻿namespace SportServer {
+public class Strings {}
 }

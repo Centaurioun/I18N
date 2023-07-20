@@ -1,15 +1,10 @@
 ﻿using System.Windows;
 
-namespace WpfApp1
-{
+namespace WpfApp1 {
 /// <summary>
 /// Interaction logic for Window1.xaml
 /// </summary>
-public partial class LocalWindow : Window
-{
-    public LocalWindow()
-    {
-        InitializeComponent();
-    }
+public partial class LocalWindow : Window {
+  public LocalWindow() { InitializeComponent(); }
 }
 }

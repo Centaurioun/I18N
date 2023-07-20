@@ -13,16 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ControlSample
-{
+namespace ControlSample {
 /// <summary>
 /// Interaction logic for UserControl1.xaml
 /// </summary>
-public partial class UserControl1 : UserControl
-{
-    public UserControl1()
-    {
-        InitializeComponent();
-    }
+public partial class UserControl1 : UserControl {
+  public UserControl1() { InitializeComponent(); }
 }
 }

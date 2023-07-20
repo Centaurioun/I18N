@@ -1,11 +1,8 @@
 ﻿using System.Windows;
 
-namespace ControlSample
-{
+namespace ControlSample {
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
-{
-}
+public partial class App : Application {}
 }

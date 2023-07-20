@@ -1,11 +1,8 @@
 ﻿using System.Windows;
 
-namespace Tutorial
-{
+namespace Tutorial {
 /// <summary>
 /// Interaction logic for App.xaml
 /// </summary>
-public partial class App : Application
-{
-}
+public partial class App : Application {}
 }
