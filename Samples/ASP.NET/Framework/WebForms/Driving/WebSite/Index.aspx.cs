@@ -37,7 +37,7 @@ public partial class Index : System.Web.UI.Page {
       resultLabel.Text = "Driving time is"; // loc
       hoursLabel.Text = String.Format(
           "{0} hours", hours); // loc: This is a message pattern and {0} must
-                               // exists in the localized string
+      // exists in the localized string
       minutesLabel.Text = String.Format(
           "{0} minutes", minutes); // loc: This is a message pattern and {0}
                                    // must exists in the localized string
