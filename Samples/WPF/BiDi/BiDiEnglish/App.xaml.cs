@@ -11,8 +11,8 @@ namespace BiDiEnglish {
 /// Interaction logic for App.xaml
 /// </summary>
 public partial class App : Application {
-  public App() {
-    Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
-  }
+    public App() {
+        Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+    }
 }
 }

@@ -17,6 +17,8 @@ namespace WpfApp2.SharedSub {
 /// Interaction logic for SharedSubWindow.xaml
 /// </summary>
 public partial class SharedSubWindow : Window {
-  public SharedSubWindow() { InitializeComponent(); }
+    public SharedSubWindow() {
+        InitializeComponent();
+    }
 }
 }

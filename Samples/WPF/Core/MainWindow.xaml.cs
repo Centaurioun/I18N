@@ -5,10 +5,12 @@ namespace Core {
 /// Interaction logic for MainWindow.xaml
 /// </summary>
 public partial class MainWindow : Window {
-  public MainWindow() { InitializeComponent(); }
+    public MainWindow() {
+        InitializeComponent();
+    }
 
-  private void Window_Loaded(object sender, RoutedEventArgs e) {
-    label2.Content = Core.Resources.String1;
-  }
+    private void Window_Loaded(object sender, RoutedEventArgs e) {
+        label2.Content = Core.Resources.String1;
+    }
 }
 }

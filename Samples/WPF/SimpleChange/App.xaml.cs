@@ -5,6 +5,8 @@ namespace SimpleChange {
 /// Interaction logic for App.xaml
 /// </summary>
 public partial class App : Application {
-  public App() { Soluling.Language.SetInitial(); }
+    public App() {
+        Soluling.Language.SetInitial();
+    }
 }
 }

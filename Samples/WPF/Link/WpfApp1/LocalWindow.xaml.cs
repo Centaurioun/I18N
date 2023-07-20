@@ -5,6 +5,8 @@ namespace WpfApp1 {
 /// Interaction logic for Window1.xaml
 /// </summary>
 public partial class LocalWindow : Window {
-  public LocalWindow() { InitializeComponent(); }
+    public LocalWindow() {
+        InitializeComponent();
+    }
 }
 }

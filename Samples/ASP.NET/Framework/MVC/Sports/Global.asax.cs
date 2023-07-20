@@ -8,10 +8,10 @@ using System.Data.Entity;
 
 namespace Sports {
 public class MvcApplication : System.Web.HttpApplication {
-  protected void Application_Start() {
-    Database.SetInitializer<Sports.Models.SportContext>(null);
-    AreaRegistration.RegisterAllAreas();
-    RouteConfig.RegisterRoutes(RouteTable.Routes);
-  }
+    protected void Application_Start() {
+        Database.SetInitializer<Sports.Models.SportContext>(null);
+        AreaRegistration.RegisterAllAreas();
+        RouteConfig.RegisterRoutes(RouteTable.Routes);
+    }
 }
 }

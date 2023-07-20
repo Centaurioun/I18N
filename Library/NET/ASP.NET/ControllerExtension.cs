@@ -8,56 +8,56 @@ namespace Soluling.AspNet {
 ///
 /// </summary>
 public static class ControllerExtension {
-  /// <summary>
-  ///
-  /// </summary>
-  /// <param name="ext"></param>
-  /// <returns></returns>
-  public static string ImageExtToContentType(string ext) {
-    if (ext == "jpg")
-      return "image/jpeg";
-    else
-      return "image/" + ext;
-  }
-
-  /// <summary>
-  ///
-  /// </summary>
-  /// <param name="controller"></param>
-  /// <param name="webRootPath"></param>
-  /// <param name="name"></param>
-  /// <returns></returns>
-  public static IActionResult GetImage(this ControllerBase controller,
-                                       string webRootPath, string name) {
-    var ext = Path.GetExtension(name).Replace(".", "");
-
-    if (ext == "") {
-      ext = "png";
-      name = name + ".png";
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="ext"></param>
+    /// <returns></returns>
+    public static string ImageExtToContentType(string ext) {
+        if (ext == "jpg")
+            return "image/jpeg";
+        else
+            return "image/" + ext;
     }
 
-    var stack = new Stack<string>();
-    var path = webRootPath + "\\images";
+    /// <summary>
+    ///
+    /// </summary>
+    /// <param name="controller"></param>
+    /// <param name="webRootPath"></param>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public static IActionResult GetImage(this ControllerBase controller,
+                                         string webRootPath, string name) {
+        var ext = Path.GetExtension(name).Replace(".", "");
 
-    stack.Push(path + "\\" + name);
+        if (ext == "") {
+            ext = "png";
+            name = name + ".png";
+        }
 
-    var requestCulture =
-        controller.Request.HttpContext.Features.Get<IRequestCultureFeature>();
-    var ids = requestCulture.RequestCulture.UICulture.ToString().Split('-');
+        var stack = new Stack<string>();
+        var path = webRootPath + "\\images";
 
-    foreach (var id in ids) {
-      path = path + "\\" + id;
-      stack.Push(path + "\\" + name);
+        stack.Push(path + "\\" + name);
+
+        var requestCulture =
+            controller.Request.HttpContext.Features.Get<IRequestCultureFeature>();
+        var ids = requestCulture.RequestCulture.UICulture.ToString().Split('-');
+
+        foreach (var id in ids) {
+            path = path + "\\" + id;
+            stack.Push(path + "\\" + name);
+        }
+
+        while (stack.Count > 0) {
+            var imageFile = stack.Pop();
+
+            if (System.IO.File.Exists(imageFile))
+                return controller.PhysicalFile(imageFile, ImageExtToContentType(ext));
+        }
+
+        return controller.NotFound();
     }
-
-    while (stack.Count > 0) {
-      var imageFile = stack.Pop();
-
-      if (System.IO.File.Exists(imageFile))
-        return controller.PhysicalFile(imageFile, ImageExtToContentType(ext));
-    }
-
-    return controller.NotFound();
-  }
 }
 }

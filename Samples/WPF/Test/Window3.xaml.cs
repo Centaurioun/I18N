@@ -5,6 +5,8 @@ namespace Test {
 /// Interaction logic for Window3.xaml
 /// </summary>
 public partial class Window3 : Window {
-  public Window3() { InitializeComponent(); }
+    public Window3() {
+        InitializeComponent();
+    }
 }
 }

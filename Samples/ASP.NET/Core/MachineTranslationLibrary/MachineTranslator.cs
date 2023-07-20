@@ -13,135 +13,175 @@ using System.Globalization;
 
 namespace Soluling.MachineTranslation {
 public class Language {
-  private string name;
+    private string name;
 
-  public string Id { get; set; }
-
-  public string Name {
-    get {
-      if (string.IsNullOrEmpty(name))
-        return new CultureInfo(Id).DisplayName;
-      else
-        return name;
+    public string Id {
+        get;
+        set;
     }
 
-    set { name = value; }
-  }
+    public string Name {
+        get {
+            if (string.IsNullOrEmpty(name))
+                return new CultureInfo(Id).DisplayName;
+            else
+                return name;
+        }
+
+        set {
+            name = value;
+        }
+    }
 }
 
 public class EngineLanguageData {
-  public string Id { get; set; }
-  public string Script { get; set; }
-  public string EngineId { get; set; }
-
-  public string FullId {
-    get {
-      if (!string.IsNullOrEmpty(Script))
-        return Id + "-" + Script;
-      else
-        return Id;
+    public string Id {
+        get;
+        set;
     }
-  }
+    public string Script {
+        get;
+        set;
+    }
+    public string EngineId {
+        get;
+        set;
+    }
 
-  public EngineLanguageData(string id) {
-    EngineId = id;
-    Id = id;
-    Script = "";
-  }
+    public string FullId {
+        get {
+            if (!string.IsNullOrEmpty(Script))
+                return Id + "-" + Script;
+            else
+                return Id;
+        }
+    }
 
-  public EngineLanguageData(string engineId, string id, string script = "") {
-    EngineId = engineId;
-    Id = id;
-    Script = script;
-  }
+    public EngineLanguageData(string id) {
+        EngineId = id;
+        Id = id;
+        Script = "";
+    }
+
+    public EngineLanguageData(string engineId, string id, string script = "") {
+        EngineId = engineId;
+        Id = id;
+        Script = script;
+    }
 }
 
 public class LanguagePair {
-  public string From { get; set; }
-  public string To { get; set; }
-  public bool Bidirectional { get; set; } = false;
+    public string From {
+        get;
+        set;
+    }
+    public string To {
+        get;
+        set;
+    }
+    public bool Bidirectional {
+        get;
+        set;
+    } = false;
 
-  public LanguagePair(string from, string to, bool bidirectional = false) {
-    From = from;
-    To = to;
-    Bidirectional = bidirectional;
-  }
+    public LanguagePair(string from, string to, bool bidirectional = false) {
+        From = from;
+        To = to;
+        Bidirectional = bidirectional;
+    }
 }
 
 public abstract class MachineTranslator {
-  public MachineTranslator(string key) { Key = key; }
+    public MachineTranslator(string key) {
+        Key = key;
+    }
 
-  public string Key { get; set; }
+    public string Key {
+        get;
+        set;
+    }
 
-  public abstract Language[] GetLanguages();
-  public abstract string DetectLanguage(string value);
-  public abstract string[] Translate(string[] strings, string fromId,
-                                     string toId);
+    public abstract Language[] GetLanguages();
+    public abstract string DetectLanguage(string value);
+    public abstract string[] Translate(string[] strings, string fromId,
+                                       string toId);
 
-  public bool SupportLanguagePair(string from, string to) {
-    if (string.IsNullOrEmpty(from) || string.IsNullOrEmpty(to))
-      return true;
+    public bool SupportLanguagePair(string from, string to) {
+        if (string.IsNullOrEmpty(from) || string.IsNullOrEmpty(to))
+            return true;
 
-    var languages = GetLanguages();
+        var languages = GetLanguages();
 
-    return (Array.Find(languages, language => language.Id == from) != null) &&
-           (Array.Find(languages, language => language.Id == to) != null);
-  }
+        return (Array.Find(languages, language => language.Id == from) != null) &&
+               (Array.Find(languages, language => language.Id == to) != null);
+    }
 
-  public virtual string Translate(string str, string formId, string toId) {
-    var strings = new string[1];
-    strings[0] = str;
-    var result = Translate(strings, formId, toId);
+    public virtual string Translate(string str, string formId, string toId) {
+        var strings = new string[1];
+        strings[0] = str;
+        var result = Translate(strings, formId, toId);
 
-    if (result.Length > 0)
-      return result[0];
-    else
-      return "";
-  }
+        if (result.Length > 0)
+            return result[0];
+        else
+            return "";
+    }
 
-  protected string EngineIdToId(List<EngineLanguageData> datas, string id) {
-    foreach (var data in datas)
-      if (data.EngineId == id)
-        return data.FullId;
+    protected string EngineIdToId(List<EngineLanguageData> datas, string id) {
+        foreach (var data in datas)
+            if (data.EngineId == id)
+                return data.FullId;
 
-    return id;
-  }
+        return id;
+    }
 
-  protected string IdToEngineId(List<EngineLanguageData> datas, string id) {
-    var parts = id.Split('-');
-    var language = parts[0];
-    var script = "";
+    protected string IdToEngineId(List<EngineLanguageData> datas, string id) {
+        var parts = id.Split('-');
+        var language = parts[0];
+        var script = "";
 
-    if (parts.Length > 1)
-      script = parts[1];
+        if (parts.Length > 1)
+            script = parts[1];
 
-    foreach (var data in datas)
-      if ((data.Id == id) && ((data.Script == "") || (data.Script == script)))
-        return data.EngineId;
+        foreach (var data in datas)
+            if ((data.Id == id) && ((data.Script == "") || (data.Script == script)))
+                return data.EngineId;
 
-    return id;
-  }
+        return id;
+    }
 }
 
 public abstract class LanguageMachineTranslator : MachineTranslator {
-  protected List<Language> Languages = new List<Language>();
+    protected List<Language> Languages = new List<Language>();
 
-  public LanguageMachineTranslator(string key) : base(key) {}
+    public LanguageMachineTranslator(string key) : base(key) {}
 
-  protected abstract void LoadLanguages();
+    protected abstract void LoadLanguages();
 
-  public override Language[] GetLanguages() {
-    if (Languages.Count == 0)
-      LoadLanguages();
+    public override Language[] GetLanguages() {
+        if (Languages.Count == 0)
+            LoadLanguages();
 
-    return Languages.ToArray();
-  }
+        return Languages.ToArray();
+    }
 }
 
 public class Translation {
-  public MachineTranslator Translator { get; set; }
-  public string Value { get; set; }
-  public string Original { get; set; }
-  public string OriginalBack { get; set; }
+    public MachineTranslator Translator {
+        get;
+        set;
+    }
+    public string Value {
+        get;
+        set;
+    }
+    public string Original {
+        get;
+        set;
+    }
+    public string OriginalBack {
+        get;
+        set;
+    }
 }
 }

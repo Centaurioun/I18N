@@ -19,20 +19,20 @@ using System.Windows.Forms;
 
 namespace Database {
 static class Program {
-  /// <summary>
-  /// The main entry point for the application.
-  /// </summary>
-  [STAThread]
-  static void Main() {
-    // Set the original and default languages.
-    // Original language is English.
-    // Default language is the current selection in Regional Settings sheet of
-    // Control panel.
-    Soluling.Language.SetInitial();
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    static void Main() {
+        // Set the original and default languages.
+        // Original language is English.
+        // Default language is the current selection in Regional Settings sheet of
+        // Control panel.
+        Soluling.Language.SetInitial();
 
-    Application.EnableVisualStyles();
-    Application.SetCompatibleTextRenderingDefault(false);
-    Application.Run(new Form1());
-  }
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
+    }
 }
 }

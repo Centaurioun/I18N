@@ -9,16 +9,16 @@ namespace Soluling.Forms {
 /// application.
 /// </summary>
 public class HybridChecker : Soluling.Forms.FormsChecker {
-  /// <inheritdoc/>
-  protected override void ProcessControl(Control control) {
-    if (control is ElementHost) {
-      ElementHost elementHost = (ElementHost)control;
-      Control form = GetForm(elementHost);
-      WpfChecker checker = new WpfChecker(this);
-      checker.ScreenshotFilePrefix = form.Name + "_";
+    /// <inheritdoc/>
+    protected override void ProcessControl(Control control) {
+        if (control is ElementHost) {
+            ElementHost elementHost = (ElementHost)control;
+            Control form = GetForm(elementHost);
+            WpfChecker checker = new WpfChecker(this);
+            checker.ScreenshotFilePrefix = form.Name + "_";
 
-      checker.Process(elementHost.Child);
+            checker.Process(elementHost.Child);
+        }
     }
-  }
 }
 }

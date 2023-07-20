@@ -6,16 +6,16 @@ namespace RazorDriving.Controllers {
 [Route("localizedimages")]
 [ApiController]
 public class ImageController : ControllerBase {
-  private readonly IWebHostEnvironment environment;
+    private readonly IWebHostEnvironment environment;
 
-  public ImageController(IWebHostEnvironment environment) {
-    this.environment = environment;
-  }
+    public ImageController(IWebHostEnvironment environment) {
+        this.environment = environment;
+    }
 
-  [HttpGet]
-  [Route("{name}")]
-  public IActionResult GetFlag(string name) {
-    return this.GetImage(environment.WebRootPath, name);
-  }
+    [HttpGet]
+    [Route("{name}")]
+    public IActionResult GetFlag(string name) {
+        return this.GetImage(environment.WebRootPath, name);
+    }
 }
 }

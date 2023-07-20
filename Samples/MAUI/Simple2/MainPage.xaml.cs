@@ -1,18 +1,20 @@
 ﻿namespace Simple2 {
 public partial class MainPage : ContentPage {
-  int count = 0;
+    int count = 0;
 
-  public MainPage() { InitializeComponent(); }
+    public MainPage() {
+        InitializeComponent();
+    }
 
-  private void OnCounterClicked(object sender, EventArgs e) {
-    count++;
+    private void OnCounterClicked(object sender, EventArgs e) {
+        count++;
 
-    if (count == 1)
-      CounterBtn.Text = String.Format(Resource1.ClickedSingular, count);
-    else
-      CounterBtn.Text = String.Format(Resource1.ClickedPlural, count);
+        if (count == 1)
+            CounterBtn.Text = String.Format(Resource1.ClickedSingular, count);
+        else
+            CounterBtn.Text = String.Format(Resource1.ClickedPlural, count);
 
-    SemanticScreenReader.Announce(CounterBtn.Text);
-  }
+        SemanticScreenReader.Announce(CounterBtn.Text);
+    }
 }
 }
