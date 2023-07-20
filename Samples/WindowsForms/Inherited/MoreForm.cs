@@ -1,10 +1,10 @@
 ﻿namespace WindowsForms
 {
-    public partial class MoreForm : InheritedForm
+public partial class MoreForm : InheritedForm
+{
+    public MoreForm()
     {
-        public MoreForm()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

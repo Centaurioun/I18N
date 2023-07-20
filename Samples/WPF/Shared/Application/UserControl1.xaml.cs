@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace SharedApplication
 {
-    /// <summary>
-    /// Interaction logic for UserControl1.xaml
-    /// </summary>
-    public partial class UserControl1 : UserControl
+/// <summary>
+/// Interaction logic for UserControl1.xaml
+/// </summary>
+public partial class UserControl1 : UserControl
+{
+    public UserControl1()
     {
-        public UserControl1()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

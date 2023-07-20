@@ -8,11 +8,11 @@ using System.Windows.Forms;
 
 namespace WindowsForms
 {
-    public partial class SimpleForm : Form
+public partial class SimpleForm : Form
+{
+    public SimpleForm()
     {
-        public SimpleForm()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

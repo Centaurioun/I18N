@@ -6,40 +6,49 @@ using Soluling;
 
 namespace RazorDriving.Pages
 {
-    public class IndexModel : PageModel
+public class IndexModel : PageModel
+{
+    [BindProperty]
+    public double Distance {
+        get;
+        set;
+    } = 100;
+
+    [BindProperty]
+    public double Speed {
+        get;
+        set;
+    } = 55;
+
+    public string Message {
+        get;
+        set;
+    }
+
+    private IStringLocalizer localizer;
+
+    public IndexModel(IStringLocalizer<IndexModel> localizer)
     {
-        [BindProperty]
-        public double Distance { get; set; } = 100;
+        this.localizer = localizer;
+    }
 
-        [BindProperty]
-        public double Speed { get; set; } = 55;
+    public void OnGet()
+    {
+        Message = localizer["Enter values and click Calculate."];  //loc This is a comment
+    }
 
-        public string Message { get; set; }
+    public void OnPost()
+    {
+        Message = "";
 
-        private IStringLocalizer localizer;
-
-        public IndexModel(IStringLocalizer<IndexModel> localizer)
+        if (Speed > 0)
         {
-            this.localizer = localizer;
-        }
+            double time = Distance / Speed;
+            int hours = (int)time;
+            int minutes = (int)Math.Round(60 * (time - hours));
 
-        public void OnGet()
-        {
-            Message = localizer["Enter values and click Calculate."];  //loc This is a comment
-        }
-
-        public void OnPost()
-        {
-            Message = "";
-
-            if (Speed > 0)
-            {
-                double time = Distance / Speed;
-                int hours = (int)time;
-                int minutes = (int)Math.Round(60 * (time - hours));
-
-                Message = MultiPattern.FormatMulti(localizer["Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}"], hours, minutes);  //loc 0: Hours or minutes
-            }
+            Message = MultiPattern.FormatMulti(localizer["Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}"], hours, minutes);  //loc 0: Hours or minutes
         }
     }
+}
 }

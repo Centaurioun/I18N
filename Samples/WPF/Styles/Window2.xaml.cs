@@ -12,19 +12,19 @@ using System.Windows.Shapes;
 
 namespace Styles
 {
-    /// <summary>
-    /// Interaction logic for Window2.xaml
-    /// </summary>
-    public partial class Window2 : Window
+/// <summary>
+/// Interaction logic for Window2.xaml
+/// </summary>
+public partial class Window2 : Window
+{
+    public Window2()
     {
-        public Window2()
-        {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            new Window1().Show();
-        }
+        InitializeComponent();
     }
+
+    private void button1_Click(object sender, RoutedEventArgs e)
+    {
+        new Window1().Show();
+    }
+}
 }

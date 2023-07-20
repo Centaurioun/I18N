@@ -2,14 +2,14 @@
 
 namespace SinglePlural
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
+{
+    public App()
     {
-        public App()
-        {
-            Soluling.Language.SetInitial();
-        }
+        Soluling.Language.SetInitial();
     }
+}
 }

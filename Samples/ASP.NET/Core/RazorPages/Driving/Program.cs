@@ -5,12 +5,14 @@ using Soluling.AspNet;
 var builder = WebApplication.CreateBuilder(args);
 
 // 1) Specify .resx directory.
-builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+builder.Services.AddLocalization(opts => {
+    opts.ResourcesPath = "Resources";
+});
 
 // 2) Add the view and data annotation localization.
 builder.Services.AddRazorPages()
-  .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-  .AddDataAnnotationsLocalization();
+.AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+.AddDataAnnotationsLocalization();
 
 var app = builder.Build();
 

@@ -2,16 +2,16 @@
 
 namespace Simple2
 {
-    public partial class App : Application
+public partial class App : Application
+{
+    public App()
     {
-        public App()
-        {
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
+        Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
 
-            InitializeComponent();
+        InitializeComponent();
 
-            MainPage = new AppShell();
-        }
+        MainPage = new AppShell();
     }
+}
 }

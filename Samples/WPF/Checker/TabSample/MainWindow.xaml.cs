@@ -4,19 +4,19 @@ using NewTool.WPF;
 
 namespace TabSample
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
+{
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void Window_ContentRendered(object sender, EventArgs e)
-        {
-            WpfChecker.CheckRoot(this);
-        }
+        InitializeComponent();
     }
+
+    private void Window_ContentRendered(object sender, EventArgs e)
+    {
+        WpfChecker.CheckRoot(this);
+    }
+}
 }

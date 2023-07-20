@@ -2,7 +2,7 @@
 
 namespace Sports.Models
 {
-    public class SportContext : DbContext
-    {
-    }
+public class SportContext : DbContext
+{
+}
 }

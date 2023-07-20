@@ -2,14 +2,14 @@
 
 namespace WpfApp2
 {
-    /// <summary>
-    /// Interaction logic for SharedWindow.xaml
-    /// </summary>
-    public partial class SharedWindow : Window
+/// <summary>
+/// Interaction logic for SharedWindow.xaml
+/// </summary>
+public partial class SharedWindow : Window
+{
+    public SharedWindow()
     {
-        public SharedWindow()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }

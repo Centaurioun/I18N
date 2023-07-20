@@ -2,11 +2,11 @@
 
 namespace SubDir.Sub
 {
-    public partial class SubForm : Form
+public partial class SubForm : Form
+{
+    public SubForm()
     {
-        public SubForm()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}
 }
