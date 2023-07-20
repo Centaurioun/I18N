@@ -9,13 +9,14 @@ builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
 
 // 2) Add the view and data annotation localization.
 builder.Services.AddRazorPages()
-  .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-  .AddDataAnnotationsLocalization();
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
 
 var app = builder.Build();
 
 // 3) Add available languages and English as a default language
-app.UseRequestLocalizationWithAvailableLanguages(Assembly.GetExecutingAssembly().Location, "en");
+app.UseRequestLocalizationWithAvailableLanguages(
+    Assembly.GetExecutingAssembly().Location, "en");
 
 if (!app.Environment.IsDevelopment())
   app.UseExceptionHandler("/Error");

@@ -10,21 +10,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Styles
-{
-  /// <summary>
-  /// Interaction logic for Window2.xaml
-  /// </summary>
-  public partial class Window2 : Window
-  {
-    public Window2()
-    {
-      InitializeComponent();
-    }
+namespace Styles {
+/// <summary>
+/// Interaction logic for Window2.xaml
+/// </summary>
+public partial class Window2 : Window {
+  public Window2() { InitializeComponent(); }
 
-    private void button1_Click(object sender, RoutedEventArgs e)
-    {
-      new Window1().Show();
-    }
+  private void button1_Click(object sender, RoutedEventArgs e) {
+    new Window1().Show();
   }
+}
 }
