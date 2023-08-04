@@ -148,3 +148,5 @@ Samples/WindowsForms/**/*.xml
 !Library/Delphi/Vcl.chm
 !Library/Delphi/Fmx.chm
 !Library/NET/NET.chm
+/merge.sh
+/merge_prs.ps1
