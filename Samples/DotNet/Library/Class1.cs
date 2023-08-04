@@ -1,8 +1,5 @@
 ﻿using System;
 
-namespace Library
-{
-  public class Class1
-  {
-  }
+namespace Library {
+public class Class1 {}
 }

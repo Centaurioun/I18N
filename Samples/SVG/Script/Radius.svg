@@ -1,7 +1,4 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8cm" height="5cm" viewBox="0 0 800 500">
-  <desc>A script sample</desc>
-
-  <script type="application/ecmascript"> <![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" width="8cm" height="5cm" version="1.1" viewBox="0 0 800 500"><desc>A script sample</desc><script type="application/ecmascript"><![CDATA[
     function message_load(evt) 
     {
       var message = document.getElementById('message');
@@ -26,11 +23,4 @@
 
       message_load(evt);
     }
-  ]]> </script>
-
-  <rect x="1" y="1" width="798" height="498" fill="none" stroke="green"/>
-
-  <circle id="circle" cx="400" cy="225" r="100" fill="red" onclick="circle_click(evt)"/>
-
-  <text id="message" x="400" y="480" font-family="Verdana" font-size="35" text-anchor="middle" onload="message_load(evt)"/>
-</svg>
+  ]]></script><rect width="798" height="498" x="1" y="1" fill="none" stroke="green"/><circle id="circle" cx="400" cy="225" r="100" fill="red" onclick="circle_click(evt)"/></svg>

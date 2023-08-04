@@ -35,13 +35,13 @@ const
   { Character that is used to separate country part from language part in the locale id. }
   LOCALE_SEPARATOR = '-';
 
-  LOCALE_ALL = 0;          // enumerate all named based locales
+  NT_LOCALE_ALL = 0;          // enumerate all named based locales
 
   { Form header. }
   VCL_FORM_HEADER: array[0..3] of Byte = ($54, $50, $46, $30);  // 'TPF0'
 
   { The virtual folder that represents the My Documents desktop item. }
-  CSIDL_PERSONAL = $0005;
+  NT_CSIDL_PERSONAL = $0005;
 
 {$IFNDEF MSWINDOWS}
   { Neutral sub language id. }
@@ -132,13 +132,23 @@ type
     lnSystem      //< Lanugage of the operation system is used.
   );
 
+  { Specifies what case the language name should use. }
+  TNtLanguageNameCase =
+  (
+    lcDefault,  //< Default case of the language name
+    lcUpper,    //< Language name starts in upper case (e.g. English)
+    lcLower     //< Language name starts in lower case (e.g. english)
+  );
+
   { @abstract Contains infomation about resource DLL language. }
   TNtLanguage = class(TObject)
   private
     FCode: String;
     FId: Integer;
     FFileName: String;
+    FLanguageNameCase: TNtLanguageNameCase;
 
+    function GetActiveCode: String;
     function GetName(i: TNtLanguageName): String;
 
   public
@@ -149,14 +159,21 @@ type
     class function GetBoth(const native, localize: String): String;
 
     { Get the display name of a language or locale.
-      @param locale       Windows language or locale id.
-      @param languageName Specifies what kind of name is returned.
+      @param locale           Windows language or locale id.
+      @param languageName     Specifies what kind of name is returned.
+      @param languageNameCase Specifies what case to use in language names.
       @return Display name such as English or English (United States). }
     class function GetDisplayName(
       const id: String;
       locale: Integer = 0;
-      languageName: TNtLanguageName = lnSystem): String;
+      languageName: TNtLanguageName = lnSystem;
+      languageNameCase: TNtLanguageNameCase = lcDefault): String;
 
+    class procedure CheckCase(
+      var value: String;
+      languageNameCase: TNtLanguageNameCase);
+
+    property ActiveCode: String read GetActiveCode;
     property Code: String read FCode write FCode;                  //< ISO language or locale code.
     property Id: Integer read FId write FId;                       //< Windows locale id.
     property FileName: String read FFileName write FFileName;      //< Resource DLL file name.
@@ -165,6 +182,7 @@ type
     property EnglishName: String index lnEnglish read GetName;     //< English name.
     property SystemName: String index lnSystem read GetName;       //< System name. Uses language of the operating system.
     property Names[i: TNtLanguageName]: String read GetName;       //< Array of names.
+    property LanguageNameCase: TNtLanguageNameCase read FLanguageNameCase write FLanguageNameCase;
   end;
 
   { Specifies how the default locale is selected. }
@@ -204,6 +222,8 @@ type
     procedure Add(language: TNtLanguage); overload;
 
     procedure AddDefault;
+
+    function FindByFile(const fileName: String): TNtLanguage;
 
     property Count: Integer read GetCount;                          //< Language count.
     property Items[i: Integer]: TNtLanguage read GetItem; default;  //< Languages.
@@ -374,7 +394,7 @@ uses
 
     { Get the resource instance.
       @return Resource instance. If a resource DLL has been loaded then return the resource handle of that DLL. If no resource DLL has been loaded returns the resource handle of the application itself. }
-    class function GetResourceInstance: LongWord;
+    class function GetResourceInstance: THandle;
 
     { Get the default language of the user.
       @return Language or locale id.
@@ -598,9 +618,20 @@ var
 
 // TNtLanguage
 
+function TNtLanguage.GetActiveCode: String;
+begin
+  if FFileName <> '' then
+  begin
+    Result := ExtractFileExt(FFileName);
+    Delete(Result, 1, 1);
+  end
+  else
+    Result := FCode
+end;
+
 function TNtLanguage.GetName(i: TNtLanguageName): String;
 begin
-  Result := GetDisplayName(FCode, FId, i);
+  Result := GetDisplayName(FCode, FId, i, FLanguageNameCase);
 end;
 
 class function TNtLanguage.GetBoth(const native, localize: String): String;
@@ -608,14 +639,35 @@ begin
   Result := Format('%s - %s', [native, localize]);
 end;
 
-class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; languageName: TNtLanguageName): String;
+class procedure TNtLanguage.CheckCase(
+  var value: String;
+  languageNameCase: TNtLanguageNameCase);
+begin
+  case languageNameCase of
+    lcUpper: value := UpperCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
+    lcLower: value := LowerCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
+  end;
+end;
+
+class function TNtLanguage.GetDisplayName(
+  const id: String;
+  locale: Integer;
+  languageName: TNtLanguageName;
+  languageNameCase: TNtLanguageNameCase): String;
 {$IFDEF DELPHIXE}
   function GetNative: String;
   begin
     if id = OriginalLanguage then
       Result := NtResources.Originals[id]
     else
-      Result := NtResources.GetStringInLanguage(id, '', id, '');
+    begin
+      Result := NtResources.Natives[id];
+
+      if Result = '' then
+        Result := NtResources.GetStringInLanguage(id, '', id, '');
+    end;
+
+    CheckCase(Result, languageNameCase);
   end;
 
   function GetLocalized: String;
@@ -623,7 +675,24 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
     if LoadedResourceLocale = '' then
       Result := NtResources.Originals[id]
     else
-      Result := NtResources.GetString('', id, '');
+    begin
+      Result := NtResources.Localizeds[id];
+
+      if Result = '' then
+        Result := NtResources.GetString('', id, '');
+    end;
+
+    CheckCase(Result, languageNameCase);
+  end;
+
+  function GetSystem: String;
+  begin
+    Result := NtResources.GetStringInLanguage(SystemLanguage, '', id, '');
+
+    if Result = '' then
+      Result := GetNative;
+
+    CheckCase(Result, languageNameCase);
   end;
 {$ENDIF}
 begin
@@ -635,7 +704,7 @@ begin
       lnLocalized: Result := GetLocalized;
       lnBoth: Result := GetBoth(GetNative, GetLocalized);
       lnEnglish: Result := NtResources.Originals[id];
-      lnSystem: Result := NtResources.GetStringInLanguage(SystemLanguage, '', id, '');
+      lnSystem: Result := GetSystem;
     else
       raise Exception.Create('Not implemented');
     end;
@@ -644,7 +713,7 @@ begin
 {$ENDIF}
   begin
 {$IFDEF MSWINDOWS}
-    Result := TNtWindows.GetDisplayName(id, locale, languageName);
+    Result := TNtWindows.GetDisplayName(id, locale, languageName, languageNameCase);
 {$ENDIF}
   end;
 end;
@@ -687,6 +756,21 @@ begin
   Result := FItems[i];
 end;
 
+function TNtLanguages.FindByFile(const fileName: String): TNtLanguage;
+var
+  i: Integer;
+begin
+  for i := 0 to Count - 1 do
+  begin
+    Result := Items[i];
+
+    if SameText(Result.FileName, fileName) then
+      Exit;
+  end;
+
+  Result := nil;
+end;
+
 procedure TNtLanguages.AddDefault;
 begin
   Add(DefaultLocale);
@@ -694,6 +778,12 @@ end;
 
 function TNtLanguages.Add(const code: String; id: Integer; const fileName: String): TNtLanguage;
 begin
+  if FindByFile(fileName) <> nil then
+  begin
+    Result := nil;
+    Exit;
+  end;
+
   Result := TNtLanguage.Create;
   Result.Code := code;
 
@@ -999,7 +1089,7 @@ begin
     Result := DefaultLocale;
 end;
 
-class function TNtBase.GetResourceInstance: LongWord;
+class function TNtBase.GetResourceInstance: THandle;
 begin
   if LibModuleList <> nil then
     Result := LibModuleList.ResInstance
@@ -1127,7 +1217,7 @@ end;
 {$ENDIF}
 
 {$IFDEF POSIX}
-function LoadModule(moduleName, resModuleName: string; checkOwner: Boolean): LongWord;
+function LoadModule(moduleName, resModuleName: string; checkOwner: Boolean): HModule;
 var
   st1, st2: _stat;
   moduleFileName, resModuleFileName: UTF8String;
@@ -1143,7 +1233,7 @@ begin
   if (not checkOwner) or
     ((stat(MarshaledAString(resModuleFileName), st2) <> -1) and (st1.st_uid = st2.st_uid) and (st1.st_gid = st2.st_gid)) then
   begin
-    Result := dlopen(MarshaledAString(resModuleFileName), RTLD_LAZY);
+    Result := HModule(dlopen(MarshaledAString(resModuleFileName), RTLD_LAZY));
   end;
 end;
 {$ENDIF}
@@ -1317,7 +1407,7 @@ begin
 
   // Look finally from Soluling's personal directory such as C:\Users\<user>\Documents\Soluling
 {$IFDEF MSWINDOWS}
-  Result := GetFolderPath(CSIDL_PERSONAL) + '\' + APPLICATION_DIR + '\' + ChangeFileExt(ExtractFileName(fileName), ext);
+  Result := GetFolderPath(NT_CSIDL_PERSONAL) + '\' + APPLICATION_DIR + '\' + ChangeFileExt(ExtractFileName(fileName), ext);
 
   if FileExists(Result) then
     Exit;
@@ -1562,7 +1652,7 @@ begin
     enumFileName := TNtBase.GetRunningFileName
   else
   begin
-    dir := TNtBase.GetFolderPath(CSIDL_PERSONAL) + '\' + APPLICATION_DIR;
+    dir := TNtBase.GetFolderPath(NT_CSIDL_PERSONAL) + '\' + APPLICATION_DIR;
     CreateDir(dir);
     enumFileName := dir + '\' + ExtractFileName(TNtBase.GetRunningFileName);
   end;
