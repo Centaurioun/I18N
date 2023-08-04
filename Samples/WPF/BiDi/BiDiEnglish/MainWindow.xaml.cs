@@ -11,21 +11,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BiDiEnglish
-{
-  /// <summary>
-  /// Interaction logic for MainWindow.xaml
-  /// </summary>
-  public partial class MainWindow : Window
-  {
-    public MainWindow()
-    {
-      InitializeComponent();
-    }
+namespace BiDiEnglish {
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window {
+  public MainWindow() { InitializeComponent(); }
 
-    private void button_Click(object sender, RoutedEventArgs e)
-    {
-      textBox.Text = "";
-    }
+  private void button_Click(object sender, RoutedEventArgs e) {
+    textBox.Text = "";
   }
+}
 }

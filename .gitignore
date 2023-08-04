@@ -20,6 +20,7 @@ DataView/
 HowTo/
 ImageView/
 
+Library/Angular/.angular/cache/
 Library/Delphi/output
 Library/Automation/
 Library/Data/
@@ -53,6 +54,8 @@ Samples/Xamarin/
 Samples/BuildDataView.bat
 
 **/node_modules/
+
+**/__astcache/
 
 **/Output/
 **/fi/*
@@ -145,3 +148,5 @@ Samples/WindowsForms/**/*.xml
 !Library/Delphi/Vcl.chm
 !Library/Delphi/Fmx.chm
 !Library/NET/NET.chm
+/merge.sh
+/merge_prs.ps1

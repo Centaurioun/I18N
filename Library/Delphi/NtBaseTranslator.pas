@@ -277,6 +277,10 @@ end.#) }
     If @false postion is not changed. }
   NtFormPositionTranslationEnabled: Boolean;
 
+  { If @true data modiles are also translated
+    If @false data modules are not translated. }
+  NtTranslateDataModules: Boolean;
+
   { An event that is called before translating a property value.
     Use this to disable or change the translation process.
     If you assign this value, make sure that the event is as fast as possible because
@@ -862,7 +866,7 @@ begin  //FI:C101
     begin
       dynArray := nil;
       DynArrayFromVariant(dynArray, value, FPropInfo^.PropType^);
-      SetOrdProp(instance, FPropInfo, Integer(dynArray));
+      SetOrdProp(instance, FPropInfo, NativeInt(dynArray));
     end;
   end;
 
@@ -909,7 +913,7 @@ var
   var
     typeKind: TypInfo.TTypeKind;
   begin
-    if (FName = 'Charset') or (NtEnabledProperties = []) then
+    if (FName = 'Font.Charset') or (NtEnabledProperties = []) then
       Result := False
     else
     begin
@@ -1158,14 +1162,14 @@ begin
   AfterProcessComponent(thisComponent);
 end;
 
-function FindInstance(classType: TClass): LongWord;
+function FindInstance(classType: TClass): THandle;
 begin
   Result := FindResourceHInstance(FindClassHInstance(classType));
 end;
 
 function TNtBaseTranslator.DoTranslate(component: TComponent; resourceName: String): Boolean;
 var
-  instance: LongWord;
+  instance: THandle;
   header: array[0..3] of Byte;
   stream: TStream;
 begin
@@ -1433,6 +1437,7 @@ end;
 initialization
   NtEnabledProperties := [];
   NtFormPositionTranslationEnabled := False;
+  NtTranslateDataModules := True;
   NtBeforeTranslate := nil;
   NtAfterTranslate := nil;
 

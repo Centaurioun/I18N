@@ -1,6 +1,3 @@
-﻿namespace SharedServerLibrary
-{
-  public class SharedStrings
-  {
-  }
+﻿namespace SharedServerLibrary {
+public class SharedStrings {}
 }

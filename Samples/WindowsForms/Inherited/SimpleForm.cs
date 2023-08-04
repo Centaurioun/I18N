@@ -6,13 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsForms
-{
-  public partial class SimpleForm : Form
-  {
-    public SimpleForm()
-    {
-      InitializeComponent();
-    }
-  }
+namespace WindowsForms {
+public partial class SimpleForm : Form {
+  public SimpleForm() { InitializeComponent(); }
+}
 }

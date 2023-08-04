@@ -6,49 +6,37 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 
-namespace HelloWorldConsole
-{
-  public class ConsoleApplication
-  {
-    IStringLocalizer localizer;
+namespace HelloWorldConsole {
+public class ConsoleApplication {
+  IStringLocalizer localizer;
 
-    public ConsoleApplication(IStringLocalizer localizer)
-    {
-      this.localizer = localizer;
-    }
-
-    public void Run()
-    {
-      Console.WriteLine("Hello World!");
-    }
+  public ConsoleApplication(IStringLocalizer localizer) {
+    this.localizer = localizer;
   }
 
-  class Program
-  {
-    static void Main(string[] args)
-    {
-      var services = new ServiceCollection();
-      services.AddTransient<ConsoleApplication>();
-      //services.AddSingleton();
+  public void Run() { Console.WriteLine("Hello World!"); }
+}
 
-      var serviceProvider = services.BuildServiceProvider();
-      serviceProvider.GetService<ConsoleApplication>().Run();
+class Program {
+  static void Main(string[] args) {
+    var services = new ServiceCollection();
+    services.AddTransient<ConsoleApplication>();
+    // services.AddSingleton();
 
-      services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+    var serviceProvider = services.BuildServiceProvider();
+    serviceProvider.GetService<ConsoleApplication>().Run();
 
-      var supportedCultures = new List<CultureInfo>
-      {
-        new CultureInfo("en"),
-        new CultureInfo("fi"),
-        new CultureInfo("de")
-      };
+    services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
 
-      var options = new RequestLocalizationOptions
-      {
-        DefaultRequestCulture = new RequestCulture("en"),
-        SupportedCultures = supportedCultures,
-        SupportedUICultures = supportedCultures
-      };
-    }
+    var supportedCultures =
+        new List<CultureInfo> { new CultureInfo("en"), new CultureInfo("fi"),
+                                new CultureInfo("de") };
+
+    var options = new RequestLocalizationOptions {
+      DefaultRequestCulture = new RequestCulture("en"),
+      SupportedCultures = supportedCultures,
+      SupportedUICultures = supportedCultures
+    };
   }
+}
 }
