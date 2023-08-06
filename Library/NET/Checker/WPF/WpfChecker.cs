@@ -216,8 +216,8 @@ namespace Soluling.WPF
             {
                 var host = element;
 
-                while ((host != null) && !(host is UserControl) && !(host is Window) &&
-                       !(host is Page))
+                while ((host != null) && host is not UserControl && host is not Window &&
+                       host is not Page)
                     host = (FrameworkElement)VisualTreeHelper.GetParent(host);
 
                 issue.Host = host;
@@ -286,8 +286,8 @@ namespace Soluling.WPF
 
         private void CheckLabel(Label label)
         {
-            if ((double.IsNaN(label.Width)) || IsTruncationDiabled(label) ||
-                !(label.Content is string))
+            if ((label.Width == double.NaN) || IsTruncationDiabled(label) ||
+                label.Content is not string)
                 return;
 
             var size = CalculateTextSize(label, (string)label.Content);
@@ -298,8 +298,8 @@ namespace Soluling.WPF
 
         private void CheckCheckBox(CheckBox checkBox)
         {
-            if ((double.IsNaN(checkBox.Width)) || IsTruncationDiabled(checkBox) ||
-                !(checkBox.Content is string))
+            if ((checkBox.Width == double.NaN) || IsTruncationDiabled(checkBox) ||
+                checkBox.Content is not string)
                 return;
 
             var size = CalculateTextSize(checkBox, (string)checkBox.Content);
@@ -310,8 +310,8 @@ namespace Soluling.WPF
 
         private void CheckRadioButton(RadioButton radio)
         {
-            if ((double.IsNaN(radio.Width)) || IsTruncationDiabled(radio) ||
-                !(radio.Content is string))
+            if ((radio.Width == double.NaN) || IsTruncationDiabled(radio) ||
+                radio.Content is not string)
                 return;
 
             var size = CalculateTextSize(radio, (string)radio.Content);
@@ -322,8 +322,8 @@ namespace Soluling.WPF
 
         private void CheckButton(Button button)
         {
-            if ((double.IsNaN(button.Width)) || IsTruncationDiabled(button) ||
-                !(button.Content is string))
+            if ((button.Width == double.NaN) || IsTruncationDiabled(button) ||
+                button.Content is not string)
                 return;
 
             var size = CalculateTextSize(button, (string)button.Content);

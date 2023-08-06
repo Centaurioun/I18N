@@ -35,10 +35,10 @@ namespace Soluling.AspNet
         {
             var ext = Path.GetExtension(name).Replace(".", "");
 
-            if (string.IsNullOrEmpty(ext))
+            if (ext == "")
             {
                 ext = "png";
-                name = name + ".png";
+                name += ".png";
             }
 
             var stack = new Stack<string>();

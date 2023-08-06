@@ -84,7 +84,7 @@ namespace Soluling.WPF
             assembly = null;
             assemblyName = "";
 
-            if (!string.IsNullOrEmpty(Language.AssemblyId))
+            if (Language.AssemblyId != "")
             {
                 string applicationFileName = Assembly.GetEntryAssembly().Location;
 
@@ -205,12 +205,12 @@ namespace Soluling.WPF
             if (assembly == null)
                 assembly = Assembly.GetEntryAssembly();
 
-            if (string.IsNullOrEmpty(assemblyName))
+            if (assemblyName == "")
                 assemblyName = Language.GetAssemblyName(Assembly.GetEntryAssembly());
 
             string language = Language.Id;
 
-            if (string.IsNullOrEmpty(language))
+            if (language == "")
                 language = Thread.CurrentThread.CurrentUICulture.ToString();
 
             string bamlName = name.ToLower() + ".baml";
@@ -221,7 +221,7 @@ namespace Soluling.WPF
             if ((language != "") && (language != Language.OriginalId))
                 resourceName = resourceName + "." + language;
 
-            resourceName = resourceName + ".resources";
+            resourceName += ".resources";
 
             Stream stream = assembly.GetManifestResourceStream(resourceName);
 
@@ -294,7 +294,7 @@ namespace Soluling.WPF
                                         current.Uid = bamlReader.Value.ToString();
                                     else if (memberName == "Content")
                                         current.Value = bamlReader.Value;
-                                    else if (!string.IsNullOrEmpty(memberName))
+                                    else if (memberName != "")
                                         current.AddProperty(memberName, bamlReader.Value);
 
                                     break;
@@ -382,7 +382,7 @@ namespace Soluling.WPF
         {
             string name = element.Name;
 
-            if (string.IsNullOrEmpty(name))
+            if (name == "")
                 name = element.Uid;
 
             BamlControl result = Find(name, element);

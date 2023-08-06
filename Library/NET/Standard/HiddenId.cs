@@ -154,7 +154,7 @@ namespace Soluling
                     result.Insert(0, chars[3]);
                 }
 
-                value = value / 16;
+                value /= 16;
             }
 
             return result.ToString();

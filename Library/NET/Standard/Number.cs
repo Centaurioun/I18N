@@ -206,7 +206,8 @@ namespace Soluling
 
         private static string DeleteTrailingZeros(string value)
         {
-            if (!value.Contains(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator))
+            if (value.IndexOf(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator) ==
+                -1)
                 return value;
 
             var result = value;
@@ -285,7 +286,7 @@ namespace Soluling
                     while ((result != "") && (result[p] == '0'))
                     {
                         result = result.Remove(p, 1);
-                        range = range / 10;
+                        range /= 10;
                     }
 
                     string str;
@@ -325,7 +326,7 @@ namespace Soluling
                                 while ((result != "") && (result[p] == '0'))
                                 {
                                     result = result.Remove(p, 1);
-                                    range = range / 10;
+                                    range /= 10;
                                 }
 
                                 str = GetStr(value / range, precision);

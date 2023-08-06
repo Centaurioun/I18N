@@ -174,7 +174,7 @@ namespace Soluling.Forms
         {
             var result = control.Parent;
 
-            while (!(result is Form))
+            while (result is not Form)
                 result = result.Parent;
 
             return result;
@@ -322,7 +322,7 @@ namespace Soluling.Forms
                 extensions.Ignore(control, new List<IssueType> { IssueType.NoName }))
                 return;
 
-            if (string.IsNullOrEmpty(control.Name))
+            if (control.Name == "")
             {
                 var issue = CreateIssue(typeof(NoNameIssue), control, control.Bounds);
 
