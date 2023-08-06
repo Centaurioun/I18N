@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
@@ -21,7 +21,7 @@ public class SetDefaultModel : SportModel {
 
   public async Task<IActionResult> OnPost() {
     await _sportService.SetDefaultAsync();
-    _logger.LogInformation($"Default sports set.");
+    _logger.LogInformation("Default sports set.");
     Message = _localizer["Default sport successfully set!"];
 
     return RedirectToPage("./Index");
