@@ -172,10 +172,10 @@ namespace Soluling.WPF
         {
             var result = element.Name;
 
-            if (string.IsNullOrEmpty(result))
+            if (result == "")
                 result = element.Uid;
 
-            if (string.IsNullOrEmpty(result))
+            if (result == "")
                 result = element.GetType().Name;
 
             return result;
@@ -236,7 +236,7 @@ namespace Soluling.WPF
                 if ((name == "") || (thisElement is UserControl) ||
                     (thisElement is Window) || (thisElement is Page))
                 {
-                    if (!string.IsNullOrEmpty(name))
+                    if (name != "")
                         name = "_" + name;
 
                     name = GetName(thisElement) + name;
@@ -286,7 +286,7 @@ namespace Soluling.WPF
 
         private void CheckLabel(Label label)
         {
-            if ((label.Width == double.NaN) || IsTruncationDiabled(label) ||
+            if ((double.IsNaN(label.Width)) || IsTruncationDiabled(label) ||
                 !(label.Content is string))
                 return;
 
@@ -298,7 +298,7 @@ namespace Soluling.WPF
 
         private void CheckCheckBox(CheckBox checkBox)
         {
-            if ((checkBox.Width == double.NaN) || IsTruncationDiabled(checkBox) ||
+            if ((double.IsNaN(checkBox.Width)) || IsTruncationDiabled(checkBox) ||
                 !(checkBox.Content is string))
                 return;
 
@@ -310,7 +310,7 @@ namespace Soluling.WPF
 
         private void CheckRadioButton(RadioButton radio)
         {
-            if ((radio.Width == double.NaN) || IsTruncationDiabled(radio) ||
+            if ((double.IsNaN(radio.Width)) || IsTruncationDiabled(radio) ||
                 !(radio.Content is string))
                 return;
 
@@ -322,7 +322,7 @@ namespace Soluling.WPF
 
         private void CheckButton(Button button)
         {
-            if ((button.Width == double.NaN) || IsTruncationDiabled(button) ||
+            if ((double.IsNaN(button.Width)) || IsTruncationDiabled(button) ||
                 !(button.Content is string))
                 return;
 
