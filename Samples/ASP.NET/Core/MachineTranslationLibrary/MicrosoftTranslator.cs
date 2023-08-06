@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
@@ -107,7 +107,7 @@ public class MicrosoftTranslator : LanguageMachineTranslator {
       query["from"] = IdToMicrosoftId(formId);
       query["to"] = IdToMicrosoftId(toId);
 
-      if (Category != "")
+      if (!string.IsNullOrEmpty(Category))
         query["category"] = Category;
 
       builder.Query = query.ToString();

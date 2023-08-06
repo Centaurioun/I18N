@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Soluling;
 
@@ -19,7 +19,7 @@ public class PluralGetKindTests {
   }
 
   private void Form(uint count, Plural plural, string id = "") {
-    if (id != "")
+    if (!string.IsNullOrEmpty(id))
       language = id;
 
     PluralProc func = MultiPattern.GetProc(new CultureInfo(language));
@@ -29,7 +29,7 @@ public class PluralGetKindTests {
 
   private void Pattern(uint count, string format, string pattern,
                        string id = "") {
-    if (id != "")
+    if (!string.IsNullOrEmpty(id))
       Language.Id = id;
 
     string thisPattern = MultiPattern.GetPattern(format, count);

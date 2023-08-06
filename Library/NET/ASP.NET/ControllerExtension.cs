@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -31,7 +31,7 @@ public static class ControllerExtension {
                                        string webRootPath, string name) {
     var ext = Path.GetExtension(name).Replace(".", "");
 
-    if (ext == "") {
+    if (string.IsNullOrEmpty(ext)) {
       ext = "png";
       name = name + ".png";
     }

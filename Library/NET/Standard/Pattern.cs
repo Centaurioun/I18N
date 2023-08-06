@@ -521,7 +521,7 @@ namespace Soluling
             {
                 value = operatorPattern.Value;
 
-                if (value != "")
+                if (!string.IsNullOrEmpty(value))
                     return value;
             }
 
@@ -531,13 +531,13 @@ namespace Soluling
             {
                 value = this[matchingPlural];
 
-                if (value != "")
+                if (!string.IsNullOrEmpty(value))
                     return value;
             }
 
             value = this[plural];
 
-            if (value != "")
+            if (!string.IsNullOrEmpty(value))
                 return value;
 
             return FirstValue;
@@ -555,7 +555,7 @@ namespace Soluling
 
             string value = this[gender];
 
-            if (value == "")
+            if (string.IsNullOrEmpty(value))
                 value = this.FirstValue;
 
             return value;
@@ -596,13 +596,13 @@ namespace Soluling
                 {
                     var result = this[Gender.Neutral];
 
-                    if (result == "")
+                    if (string.IsNullOrEmpty(result))
                         result = this[MultiPattern.OTHER];
 
-                    if (result == "")
+                    if (string.IsNullOrEmpty(result))
                         result = this[MultiPattern.NEUTRAL];
 
-                    if (result == "")
+                    if (string.IsNullOrEmpty(result))
                         result = FirstValue;
 
                     return result;
@@ -1107,7 +1107,7 @@ namespace Soluling
                     placeholder = "{" + placeholderIndex.ToString() + "}";
                     placeholderIndex++;
 
-                    if (startPattern != "")
+                    if (!string.IsNullOrEmpty(startPattern))
                     {
                         startPattern += placeholder;
                         placeholder = "";
@@ -1123,7 +1123,7 @@ namespace Soluling
                 }
                 else
                 {
-                    if (placeholder != "")
+                    if (!string.IsNullOrEmpty(placeholder))
                     {
                         startPattern += placeholder;
                         placeholder = "";
@@ -1175,13 +1175,13 @@ namespace Soluling
                     // New parameter
                     parameter = AddParameter();
                 }
-                else if (pluralStr != "")
+                else if (!string.IsNullOrEmpty(pluralStr))
                 {
                     // Add plural pattern
                     parameter.Add(str, MultiPattern.StringToPlural(pluralStr));
                     pluralStr = "";
                 }
-                else if (operatorStr != "")
+                else if (!string.IsNullOrEmpty(operatorStr))
                 {
                     // Add plural pattern
                     OperatorKind kind;
@@ -1189,13 +1189,13 @@ namespace Soluling
                     parameter.Add(str, kind, operand);
                     operatorStr = "";
                 }
-                else if (genderStr != "")
+                else if (!string.IsNullOrEmpty(genderStr))
                 {
                     // Add gender pattern
                     parameter.Add(str, MultiPattern.StringToGender(genderStr));
                     genderStr = "";
                 }
-                else if (selectStr != "")
+                else if (!string.IsNullOrEmpty(selectStr))
                 {
                     // Add selectStr pattern
                     parameter.Add(str, selectStr);
@@ -1937,7 +1937,7 @@ namespace Soluling
 
                         var pattern = parameter[gender];
 
-                        if (pattern == "")
+                        if (string.IsNullOrEmpty(pattern))
                             pattern = parameter.FirstValue;
 
                         parameters[i] = String.Format(pattern, value);
@@ -2003,7 +2003,7 @@ namespace Soluling
 
                         var pattern = parameter[gender];
 
-                        if (pattern == "")
+                        if (string.IsNullOrEmpty(pattern))
                             pattern = parameter.FirstValue;
 
                         if (i == str.Count - 1)

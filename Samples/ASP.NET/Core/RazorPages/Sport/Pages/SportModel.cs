@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -51,7 +51,7 @@ public class SportModel : PageModel {
 
   public string ActiveLanguage {
     get {
-      if (CookieLanguage != "")
+      if (!string.IsNullOrEmpty(CookieLanguage))
         return CookieLanguage;
       else
         return AcceptLanguage;

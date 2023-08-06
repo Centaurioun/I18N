@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Soluling;
 
 namespace Tests {
@@ -55,7 +55,7 @@ public class DialogTests {
     // No items
     s = new DialogFilter().ToString();
 
-    Assert.IsTrue(s == "");
+    Assert.IsTrue(string.IsNullOrEmpty(s));
 
     // No placeholder
     s = new DialogFilter().Add("XML files", "*.xml", false).ToString();

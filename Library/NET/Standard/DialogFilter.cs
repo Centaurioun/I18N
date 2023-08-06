@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Soluling {
@@ -98,7 +98,7 @@ public class DialogFilter {
     // "" -> *.*
     // ext -> *.ext
     // .ext -> *.ext
-    if (mask == "")
+    if (string.IsNullOrEmpty(mask))
       mask = "*.*";
     else if (mask[0] == '.')
       mask = "*" + mask;
@@ -158,7 +158,7 @@ public class DialogFilter {
 
     foreach (DialogFilterItem item in items) {
       if (item.Type == DialogFilterItemType.Specific) {
-        if (supportedMask != "")
+        if (!string.IsNullOrEmpty(supportedMask))
           supportedMask = supportedMask + ';';
 
         supportedMask = supportedMask + item.Mask;
@@ -172,7 +172,7 @@ public class DialogFilter {
       if (item.Type == DialogFilterItemType.Supported)
         item.Mask = supportedMask;
 
-      if (result != "")
+      if (!string.IsNullOrEmpty(result))
         result = result + "|";
 
       result = result + GetFilter(item.Pattern, item.Mask, item.AddMask);

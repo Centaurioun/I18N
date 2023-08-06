@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
@@ -157,10 +157,10 @@ public class WpfChecker : UserInterfaceChecker {
   private string GetName(FrameworkElement element) {
     var result = element.Name;
 
-    if (result == "")
+    if (string.IsNullOrEmpty(result))
       result = element.Uid;
 
-    if (result == "")
+    if (string.IsNullOrEmpty(result))
       result = element.GetType().Name;
 
     return result;
@@ -213,7 +213,7 @@ public class WpfChecker : UserInterfaceChecker {
     while (thisElement != null) {
       if ((name == "") || (thisElement is UserControl) ||
           (thisElement is Window) || (thisElement is Page)) {
-        if (name != "")
+        if (!string.IsNullOrEmpty(name))
           name = "_" + name;
 
         name = GetName(thisElement) + name;

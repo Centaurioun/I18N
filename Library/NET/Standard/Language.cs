@@ -493,7 +493,7 @@ namespace Soluling
             //            -> de-DE\Sample.png
             string dir = Path.GetDirectoryName(fileName);
 
-            if (dir == "")
+            if (string.IsNullOrEmpty(dir))
                 dir = Path.GetDirectoryName(mainAssembly.Location);
 
             return dir + "\\" + Language.Id + "\\" + Path.GetFileName(fileName);

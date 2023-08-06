@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -79,7 +79,7 @@ public class Translator {
     assembly = null;
     assemblyName = "";
 
-    if (Language.AssemblyId != "") {
+    if (!string.IsNullOrEmpty(Language.AssemblyId)) {
       string applicationFileName = Assembly.GetEntryAssembly().Location;
 
       assemblyFileName = Path.Combine(
@@ -183,12 +183,12 @@ public class Translator {
     if (assembly == null)
       assembly = Assembly.GetEntryAssembly();
 
-    if (assemblyName == "")
+    if (string.IsNullOrEmpty(assemblyName))
       assemblyName = Language.GetAssemblyName(Assembly.GetEntryAssembly());
 
     string language = Language.Id;
 
-    if (language == "")
+    if (string.IsNullOrEmpty(language))
       language = Thread.CurrentThread.CurrentUICulture.ToString();
 
     string bamlName = name.ToLower() + ".baml";
@@ -266,7 +266,7 @@ public class Translator {
                 current.Uid = bamlReader.Value.ToString();
               else if (memberName == "Content")
                 current.Value = bamlReader.Value;
-              else if (memberName != "")
+              else if (!string.IsNullOrEmpty(memberName))
                 current.AddProperty(memberName, bamlReader.Value);
 
               break;
@@ -343,7 +343,7 @@ class BamlControl {
   public BamlControl Find(FrameworkElement element) {
     string name = element.Name;
 
-    if (name == "")
+    if (string.IsNullOrEmpty(name))
       name = element.Uid;
 
     BamlControl result = Find(name, element);

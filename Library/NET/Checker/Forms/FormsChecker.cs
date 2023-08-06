@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -294,7 +294,7 @@ public class FormsChecker : UserInterfaceChecker {
         extensions.Ignore(control, new List<IssueType> { IssueType.NoName }))
       return;
 
-    if (control.Name == "") {
+    if (string.IsNullOrEmpty(control.Name)) {
       var issue = CreateIssue(typeof(NoNameIssue), control, control.Bounds);
 
       if (ShouldWriteIssue(issue))

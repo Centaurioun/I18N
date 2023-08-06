@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -263,7 +263,7 @@ public static class AbbreviatedNumber {
         string str;
         double displayValue;
 
-        if (result != "") {
+        if (!string.IsNullOrEmpty(result)) {
           str = GetStr(value / range, precision);
           displayValue = Convert.ToDouble(str);
         } else {
