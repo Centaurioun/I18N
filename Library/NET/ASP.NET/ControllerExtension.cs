@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
@@ -33,7 +33,7 @@ public static class ControllerExtension {
 
     if (ext == "") {
       ext = "png";
-      name = name + ".png";
+      name += ".png";
     }
 
     var stack = new Stack<string>();

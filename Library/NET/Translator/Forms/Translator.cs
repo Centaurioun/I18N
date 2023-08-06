@@ -116,7 +116,7 @@ public class Translator {
       string name = item.ListView.Name + ".Items";
 
       if (i > 0)
-        name = name + i.ToString();
+        name += i.ToString();
 
       ListViewItem source = resourceManager.GetObject(name) as ListViewItem;
       item.Text = source.Text;

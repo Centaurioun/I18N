@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -257,7 +257,7 @@ public static class AbbreviatedNumber {
 
         while ((result != "") && (result[p] == '0')) {
           result = result.Remove(p, 1);
-          range = range / 10;
+          range /= 10;
         }
 
         string str;
@@ -290,7 +290,7 @@ public static class AbbreviatedNumber {
 
               while ((result != "") && (result[p] == '0')) {
                 result = result.Remove(p, 1);
-                range = range / 10;
+                range /= 10;
               }
 
               str = GetStr(value / range, precision);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -199,7 +199,7 @@ public class Translator {
     if ((language != "") && (language != Language.OriginalId))
       resourceName = resourceName + "." + language;
 
-    resourceName = resourceName + ".resources";
+    resourceName += ".resources";
 
     Stream stream = assembly.GetManifestResourceStream(resourceName);
 

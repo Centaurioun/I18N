@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
@@ -20,9 +20,9 @@ public partial class Form1 : Form {
         xml.Read();
 
         if (str.Length > 0)
-          str = str + Environment.NewLine;
+          str += Environment.NewLine;
 
-        str = str + xml.Value.ToString();
+        str += xml.Value.ToString();
       }
     }
 
@@ -42,9 +42,9 @@ public partial class Form1 : Form {
         string value = xml.GetAttribute("name");
 
         if (str.Length > 0)
-          str = str + Environment.NewLine;
+          str += Environment.NewLine;
 
-        str = str + value;
+        str += value;
       }
     }
 

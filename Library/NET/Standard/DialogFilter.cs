@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Soluling {
@@ -159,9 +159,9 @@ public class DialogFilter {
     foreach (DialogFilterItem item in items) {
       if (item.Type == DialogFilterItemType.Specific) {
         if (supportedMask != "")
-          supportedMask = supportedMask + ';';
+          supportedMask += ';';
 
-        supportedMask = supportedMask + item.Mask;
+        supportedMask += item.Mask;
       }
     }
 
@@ -173,9 +173,9 @@ public class DialogFilter {
         item.Mask = supportedMask;
 
       if (result != "")
-        result = result + "|";
+        result += "|";
 
-      result = result + GetFilter(item.Pattern, item.Mask, item.AddMask);
+      result += GetFilter(item.Pattern, item.Mask, item.AddMask);
     }
 
     return result;
@@ -185,7 +185,7 @@ public class DialogFilter {
     // If the pattern does not contain a placeholder add one into end of the
     // pattern.
     if (checkPlaceholder && (pattern.IndexOf("{0}") == -1))
-      pattern = pattern + " ({0})";
+      pattern += " ({0})";
 
     return String.Format(pattern, mask) + "|" + mask;
   }
