@@ -292,7 +292,7 @@ namespace Soluling
                     string str;
                     double displayValue;
 
-                    if (!string.IsNullOrEmpty(result))
+                    if (result != "")
                     {
                         str = GetStr(value / range, precision);
                         displayValue = Convert.ToDouble(str);
@@ -366,7 +366,7 @@ namespace Soluling
         }
 
         private static readonly AbbreviationRule[] NULL_RULES =
-            new AbbreviationRule[0];
+            Array.Empty<AbbreviationRule>();
 
         static AbbreviatedNumber()
         {
