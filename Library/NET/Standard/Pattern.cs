@@ -1040,7 +1040,7 @@ namespace Soluling
 
         private bool IsIcuPattern(string pattern)
         {
-            if ((pattern.IndexOf('{') == -1) || (pattern.IndexOf('}') == -1))
+            if ((!pattern.Contains('{')) || (!pattern.Contains('}')))
                 return false;
 
             var level = 0;

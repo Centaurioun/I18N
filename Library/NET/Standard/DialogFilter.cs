@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace Soluling {
@@ -184,7 +184,7 @@ public class DialogFilter {
   private string GetFilter(string pattern, string mask, bool checkPlaceholder) {
     // If the pattern does not contain a placeholder add one into end of the
     // pattern.
-    if (checkPlaceholder && (pattern.IndexOf("{0}") == -1))
+    if (checkPlaceholder && (!pattern.Contains("{0}")))
       pattern = pattern + " ({0})";
 
     return String.Format(pattern, mask) + "|" + mask;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -187,8 +187,7 @@ public static class AbbreviatedNumber {
   }
 
   private static string DeleteTrailingZeros(string value) {
-    if (value.IndexOf(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator) ==
-        -1)
+    if (!value.Contains(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator))
       return value;
 
     var result = value;
