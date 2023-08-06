@@ -85,7 +85,7 @@ namespace Soluling
         /// <summary>
         /// Initializes a new instance of the Issue class.
         /// </summary>
-        public Issue() { }
+        protected Issue() { }
 
         /// <summary>
         /// Gets the issue type.
@@ -356,7 +356,7 @@ namespace Soluling
         /// <summary>
         /// Initializes a new instance of the UserInterfaceChecker class.
         /// </summary>
-        public UserInterfaceChecker()
+        protected UserInterfaceChecker()
         {
             highlightColors = new Color[5];
             disabledIssueTypes = new List<IssueType>();
@@ -404,7 +404,7 @@ namespace Soluling
         /// </summary>
         /// <param name="checker">Main checker where the new checker will be
         /// linked.</param>
-        public UserInterfaceChecker(UserInterfaceChecker checker)
+        protected UserInterfaceChecker(UserInterfaceChecker checker)
         {
             highlightColors = checker.highlightColors;
             disabledIssueTypes = checker.disabledIssueTypes;
