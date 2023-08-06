@@ -8,36 +8,41 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Hosting;
 
-namespace Minimal {
-public class Startup {
-  public void ConfigureServices(IServiceCollection services) {
-    // 1) Specify .resx directory. Add Resources directory and add
-    // Startup.*.resx files.
-    services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
-  }
+namespace Minimal
+{
+    public class Startup
+    {
+        public void ConfigureServices(IServiceCollection services)
+        {
+            // 1) Specify .resx directory. Add Resources directory and add
+            // Startup.*.resx files.
+            services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+        }
 
-  // 2) Add IStringLocalizer<Startup> parameter so it can be injected.
-  public void Configure(IApplicationBuilder app,
-                        IStringLocalizer<Startup> localizer,
-                        IWebHostEnvironment env) {
-    if (env.IsDevelopment())
-      app.UseDeveloperExceptionPage();
+        // 2) Add IStringLocalizer<Startup> parameter so it can be injected.
+        public void Configure(IApplicationBuilder app,
+                              IStringLocalizer<Startup> localizer,
+                              IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+                app.UseDeveloperExceptionPage();
 
-    // 3) Add supported languages: Finnish and German
-    var supportedCultures =
-        new List<CultureInfo> { new CultureInfo("fi"), new CultureInfo("de") };
+            // 3) Add supported languages: Finnish and German
+            var supportedCultures =
+                new List<CultureInfo> { new CultureInfo("fi"), new CultureInfo("de") };
 
-    var options = new RequestLocalizationOptions {
-      DefaultRequestCulture = new RequestCulture("en"),
-      SupportedCultures = supportedCultures,
-      SupportedUICultures = supportedCultures
-    };
+            var options = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en"),
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            };
 
-    app.UseRequestLocalization(options);
+            app.UseRequestLocalization(options);
 
-    app.Run(async (context) => // 4) Use the localizer. Add "Hello World!" to Startup.resx and localize
-// Startup.resx to Finnish (Startup.fi.resx) and German (Startup.de.resx)
-await context.Response.WriteAsync(localizer["Hello World!"]));
-  }
-}
+            app.Run(async (context) => // 4) Use the localizer. Add "Hello World!" to Startup.resx and localize
+                                       // Startup.resx to Finnish (Startup.fi.resx) and German (Startup.de.resx)
+        await context.Response.WriteAsync(localizer["Hello World!"]));
+        }
+    }
 }
