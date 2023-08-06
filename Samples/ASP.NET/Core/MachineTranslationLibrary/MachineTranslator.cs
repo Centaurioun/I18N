@@ -81,7 +81,7 @@ namespace Soluling.MachineTranslation
 
     public abstract class MachineTranslator
     {
-        public MachineTranslator(string key) { Key = key; }
+        protected MachineTranslator(string key) { Key = key; }
 
         public string Key { get; set; }
 
@@ -143,7 +143,7 @@ namespace Soluling.MachineTranslation
     {
         protected List<Language> Languages = new List<Language>();
 
-        public LanguageMachineTranslator(string key) : base(key) { }
+        protected LanguageMachineTranslator(string key) : base(key) { }
 
         protected abstract void LoadLanguages();
 
