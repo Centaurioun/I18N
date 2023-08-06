@@ -172,7 +172,7 @@ namespace Soluling
 
             var result = 0;
 
-            while (value != "")
+            while (!string.IsNullOrEmpty(value))
             {
                 var digit = GetZeroWidthIndex(value[1]);
 

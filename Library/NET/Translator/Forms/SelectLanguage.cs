@@ -128,14 +128,14 @@ namespace Soluling.Forms
 
             var len = languages.Length;
 
-            if (originalLanguage != "")
+            if (!string.IsNullOrEmpty(originalLanguage))
                 len++;
 
             cultureInfos = new CultureInfo[len];
 
             listBox.BeginUpdate();
 
-            if (originalLanguage != "")
+            if (!string.IsNullOrEmpty(originalLanguage))
                 AddLanguage(new CultureInfo(originalLanguage));
 
             for (int i = 0; i < languages.Length; i++)
