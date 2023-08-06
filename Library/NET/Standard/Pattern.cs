@@ -940,7 +940,7 @@ namespace Soluling
                 if (c == '{')
                     break;
 
-                result = result + c;
+                result += c;
                 index++;
             }
 
@@ -1119,7 +1119,7 @@ namespace Soluling
                 {
                     i++;
                     c = patterns[i];
-                    startPattern = startPattern + c;
+                    startPattern += c;
                 }
                 else
                 {
@@ -1129,7 +1129,7 @@ namespace Soluling
                         placeholder = "";
                     }
 
-                    startPattern = startPattern + c;
+                    startPattern += c;
                 }
 
                 i++;
@@ -1166,7 +1166,7 @@ namespace Soluling
                             break;
                     }
 
-                    str = str + c;
+                    str += c;
                     i++;
                 }
 
