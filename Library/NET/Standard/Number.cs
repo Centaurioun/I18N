@@ -206,8 +206,7 @@ namespace Soluling
 
         private static string DeleteTrailingZeros(string value)
         {
-            if (value.IndexOf(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator) ==
-                -1)
+            if (!value.Contains(NumberFormatInfo.CurrentInfo.NumberDecimalSeparator))
                 return value;
 
             var result = value;
@@ -366,7 +365,7 @@ namespace Soluling
         }
 
         private static readonly AbbreviationRule[] NULL_RULES =
-            Array.Empty<AbbreviationRule>();
+            new AbbreviationRule[0];
 
         static AbbreviatedNumber()
         {

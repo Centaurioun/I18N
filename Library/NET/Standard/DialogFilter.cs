@@ -104,7 +104,7 @@ namespace Soluling
             // "" -> *.*
             // ext -> *.ext
             // .ext -> *.ext
-            if (string.IsNullOrEmpty(mask))
+            if (mask == "")
                 mask = "*.*";
             else if (mask[0] == '.')
                 mask = "*" + mask;
@@ -169,7 +169,7 @@ namespace Soluling
             {
                 if (item.Type == DialogFilterItemType.Specific)
                 {
-                    if (!string.IsNullOrEmpty(supportedMask))
+                    if (supportedMask != "")
                         supportedMask = supportedMask + ';';
 
                     supportedMask = supportedMask + item.Mask;
@@ -184,7 +184,7 @@ namespace Soluling
                 if (item.Type == DialogFilterItemType.Supported)
                     item.Mask = supportedMask;
 
-                if (!string.IsNullOrEmpty(result))
+                if (result != "")
                     result = result + "|";
 
                 result = result + GetFilter(item.Pattern, item.Mask, item.AddMask);
@@ -197,7 +197,7 @@ namespace Soluling
         {
             // If the pattern does not contain a placeholder add one into end of the
             // pattern.
-            if (checkPlaceholder && (pattern.IndexOf("{0}") == -1))
+            if (checkPlaceholder && (!pattern.Contains("{0}")))
                 pattern = pattern + " ({0})";
 
             return String.Format(pattern, mask) + "|" + mask;
