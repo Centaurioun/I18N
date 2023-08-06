@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -328,7 +328,7 @@ public static class AbbreviatedNumber {
   }
 
   private static readonly AbbreviationRule[] NULL_RULES =
-      new AbbreviationRule[0];
+      Array.Empty<AbbreviationRule>();
 
   static AbbreviatedNumber() {
     AbbreviatedNumberData.Initialize();
