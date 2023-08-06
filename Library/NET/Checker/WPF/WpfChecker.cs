@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
@@ -259,7 +259,7 @@ public class WpfChecker : UserInterfaceChecker {
   }
 
   private void CheckLabel(Label label) {
-    if ((label.Width == double.NaN) || IsTruncationDiabled(label) ||
+    if ((double.IsNaN(label.Width)) || IsTruncationDiabled(label) ||
         !(label.Content is string))
       return;
 
@@ -270,7 +270,7 @@ public class WpfChecker : UserInterfaceChecker {
   }
 
   private void CheckCheckBox(CheckBox checkBox) {
-    if ((checkBox.Width == double.NaN) || IsTruncationDiabled(checkBox) ||
+    if ((double.IsNaN(checkBox.Width)) || IsTruncationDiabled(checkBox) ||
         !(checkBox.Content is string))
       return;
 
@@ -281,7 +281,7 @@ public class WpfChecker : UserInterfaceChecker {
   }
 
   private void CheckRadioButton(RadioButton radio) {
-    if ((radio.Width == double.NaN) || IsTruncationDiabled(radio) ||
+    if ((double.IsNaN(radio.Width)) || IsTruncationDiabled(radio) ||
         !(radio.Content is string))
       return;
 
@@ -292,7 +292,7 @@ public class WpfChecker : UserInterfaceChecker {
   }
 
   private void CheckButton(Button button) {
-    if ((button.Width == double.NaN) || IsTruncationDiabled(button) ||
+    if ((double.IsNaN(button.Width)) || IsTruncationDiabled(button) ||
         !(button.Content is string))
       return;
 
