@@ -12,7 +12,7 @@ namespace Tutorial {
 /// </summary>
 public sealed partial class MainWindow : Window {
   // This provides string resource file for the application
-  private ResourceLoader rl = new ResourceLoader();
+  private ResourceLoader rl = new();
 
   int count = 0;
 
