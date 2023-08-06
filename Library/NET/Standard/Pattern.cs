@@ -1343,10 +1343,10 @@ namespace Soluling
         internal const string NEUTRAL = "neutral";
 
         private static readonly string[] PLURAL_DATAS =
-            new string[] { "zero", "one", "two", "few", "many", OTHER };
+            new[] { "zero", "one", "two", "few", "many", OTHER };
 
         private static readonly string[] GENDER_DATAS =
-            new string[] { "male", "female", OTHER };
+            new[] { "male", "female", OTHER };
 
         /// <summary>
         ///
