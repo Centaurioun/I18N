@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Globalization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -35,11 +35,9 @@ public class Startup {
 
     app.UseRequestLocalization(options);
 
-    app.Run(async (context) => {
-      // 4) Use the localizer. Add "Hello World!" to Startup.resx and localize
-      // Startup.resx to Finnish (Startup.fi.resx) and German (Startup.de.resx)
-      await context.Response.WriteAsync(localizer["Hello World!"]);
-    });
+    app.Run(async (context) => // 4) Use the localizer. Add "Hello World!" to Startup.resx and localize
+// Startup.resx to Finnish (Startup.fi.resx) and German (Startup.de.resx)
+await context.Response.WriteAsync(localizer["Hello World!"]));
   }
 }
 }
