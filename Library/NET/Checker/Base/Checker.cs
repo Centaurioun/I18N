@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -52,14 +52,14 @@ public abstract class Issue {
   /// Gets the issue type.
   /// </summary>
   public IssueType IssueType {
-    get { return GetIssueType(); }
+    get => GetIssueType();
   }
 
   /// <summary>
   /// Gets the name of the issue type.
   /// </summary>
   public string Name {
-    get { return GetName(); }
+    get => GetName();
   }
 
   /// <summary>
@@ -171,7 +171,7 @@ public abstract class ControlsIssue : Issue {
   /// Number of controls that conflict with this control.
   /// </summary>
   public int Count {
-    get { return controls.Count; }
+    get => controls.Count;
   }
 
   /// <summary>
@@ -180,7 +180,7 @@ public abstract class ControlsIssue : Issue {
   /// <param name="index">The index of the control.</param>
   /// <returns>The control that conflicts with this control.</returns>
   public object this[int index] {
-    get { return controls[index]; }
+    get => controls[index];
   }
 
   /// <summary>
@@ -770,7 +770,7 @@ public class CheckerExtensions {
   /// Gets the count of extensions.
   /// </summary>
   public int Count {
-    get { return items.Count; }
+    get => items.Count;
   }
 
   /// <summary>
@@ -779,7 +779,7 @@ public class CheckerExtensions {
   /// <param name="index">The index of the extension.</param>
   /// <returns>The extension.</returns>
   public CheckerExtension this[int index] {
-    get { return items[index]; }
+    get => items[index];
   }
 
   /// <summary>

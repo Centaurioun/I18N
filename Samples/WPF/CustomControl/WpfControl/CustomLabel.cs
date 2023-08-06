@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace WpfControl {
@@ -11,7 +11,7 @@ public class CustomLabel : Label {
   }
 
   public string TextValue {
-    get { return (string)GetValue(TextValueProperty); }
+    get => (string)GetValue(TextValueProperty);
     set { SetValue(TextValueProperty, value); }
   }
 }

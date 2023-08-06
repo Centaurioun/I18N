@@ -1,4 +1,4 @@
-﻿// [MachineTranslator]
+// [MachineTranslator]
 //   AmazonTranslate              Amazon Translate
 //   DeepLTranslator              DeepL Translator
 //   [LanguageMachineTranslator]  Machine translator that can query a list of
@@ -25,7 +25,7 @@ public class Language {
         return name;
     }
 
-    set { name = value; }
+    set => name = value;
   }
 }
 

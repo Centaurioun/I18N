@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace MultiPlural {
@@ -6,7 +6,7 @@ public partial class Form1 : Form {
   public Form1() { InitializeComponent(); }
 
   public bool UseZero {
-    get { return useZeroCheck.Checked; }
+    get => useZeroCheck.Checked;
   }
 
   private string Process(uint completed, uint total) {

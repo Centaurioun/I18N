@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -28,12 +28,7 @@ public class SportsController : Controller {
   public SportsController(SportContext context) { this.context = context; }
 
   public string Language {
-    get {
-      // Language is passed either using Accept-Language header,
-      // culture/ui-culture URL parameter, or cookie. ASP.NET processes it and
-      // then sets thread's current culture.
-      return Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
-    }
+    get => Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
   }
 
   private void ProcessSport(Sport sport) {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -135,8 +135,8 @@ public class SampleLabel : Label {
 
   [Localizable(true)]
   public byte[] CustomBinary {
-    get { return customBinary; }
-    set { customBinary = value; }
+    get => customBinary;
+    set => customBinary = value;
   }
 }
 }

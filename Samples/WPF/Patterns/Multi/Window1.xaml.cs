@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 
 namespace MultiPlural {
 /// <summary>
@@ -8,7 +8,7 @@ public partial class Window1 : Window {
   public Window1() { InitializeComponent(); }
 
   public bool UseZero {
-    get { return useZeroCheck.IsChecked.Value; }
+    get => useZeroCheck.IsChecked.Value;
   }
 
   private string Process(int completed, int total) {

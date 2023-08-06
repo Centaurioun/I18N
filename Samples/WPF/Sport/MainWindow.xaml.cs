@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Collections.ObjectModel;
 
 namespace Sport {
@@ -32,7 +32,7 @@ public partial class MainWindow : Window {
   }
 
   public ObservableCollection<SportData> SportCollection {
-    get { return sportCollection; }
+    get => sportCollection;
   }
 }
 

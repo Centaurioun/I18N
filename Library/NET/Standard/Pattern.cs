@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Resources;
@@ -211,7 +211,7 @@ public class FormatPart {
 
   /// <summary>Gets the number of patterns contained.</summary>
   public int Count {
-    get { return items.Count; }
+    get => items.Count;
   }
 
   /// <summary>
@@ -220,7 +220,7 @@ public class FormatPart {
   /// <param name="index">The zero-based index of the pattern to get.</param>
   /// <returns>The pattern at the specified index.</returns>
   public Pattern this[int index] {
-    get { return items[index]; }
+    get => items[index];
   }
 
   /// <summary>
@@ -526,7 +526,7 @@ public class FormatPart {
   /// Gets the pattern for other plural form.
   /// </summary>
   public string OtherValue {
-    get { return this[Plural.Other]; }
+    get => this[Plural.Other];
   }
 
   /// <summary>
@@ -722,7 +722,7 @@ public class FormatString {
 
   /// <summary>Gets the number of parameters contained.</summary>
   public int Count {
-    get { return items.Count; }
+    get => items.Count;
   }
 
   /// <summary>
@@ -731,7 +731,7 @@ public class FormatString {
   /// <param name="index">The zero-based index of the parameter to get.</param>
   /// <returns>The parameter at the specified index.</returns>
   public FormatPart this[int index] {
-    get { return items[index]; }
+    get => items[index];
   }
 
   /// <summary>
@@ -740,7 +740,7 @@ public class FormatString {
   /// <param name="form"></param>
   /// <returns>The pattern for the specified plural form.</returns>
   public string this[Plural form] {
-    get { return items[0][form]; }
+    get => items[0][form];
   }
 
   /// <summary>
@@ -749,7 +749,7 @@ public class FormatString {
   /// <param name="gender"></param>
   /// <returns>The pattern for the specified gender.</returns>
   public string this[Gender gender] {
-    get { return items[0][gender]; }
+    get => items[0][gender];
   }
 
   /// <summary>
@@ -758,7 +758,7 @@ public class FormatString {
   /// <param name="select"></param>
   /// <returns>The pattern for the specified select value.</returns>
   public string this[string select] {
-    get { return items[0][select]; }
+    get => items[0][select];
   }
 
   /// <summary>

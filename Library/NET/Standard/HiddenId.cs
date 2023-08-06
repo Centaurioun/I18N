@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -70,7 +70,7 @@ public class HiddenId {
   ///
   /// </summary>
   public Dictionary<ZeroWidthCharacter, object> Value {
-    get { return value; }
+    get => value;
 
     set {
       if (value.Count == 4) {

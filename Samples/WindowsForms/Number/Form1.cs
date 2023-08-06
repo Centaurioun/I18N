@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  A sample that shows how to use abbreviated numbers.
  */
 using System;
@@ -22,7 +22,7 @@ public partial class Form1 : Form {
   }
 
   public int Precision {
-    get { return (int)precisionUpDown.Value; }
+    get => (int)precisionUpDown.Value;
   }
 
   private void Process(double value, Label abbreviated, Label original) {

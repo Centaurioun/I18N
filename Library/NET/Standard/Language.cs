@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Collections;
 using System.IO;
@@ -98,8 +98,8 @@ public class Language {
   /// </summary>
   /// <seealso cref="P:Soluling.Language.Culture"/>
   public static string Id {
-    get { return Culture.ToString(); }
-    set { Culture = new CultureInfo(value); }
+    get => Culture.ToString();
+    set => Culture = new CultureInfo(value);
   }
 
   /// <summary>
@@ -122,7 +122,7 @@ public class Language {
   /// </summary>
   /// <seealso cref="P:Soluling.Language.AssemblyId"/>
   public static CultureInfo AssemblyCulture {
-    get { return new CultureInfo(AssemblyId); }
+    get => new CultureInfo(AssemblyId);
   }
 
   /// <summary>
@@ -130,9 +130,9 @@ public class Language {
   /// </summary>
   /// <seealso cref="P:Soluling.Language.OriginalId"/>
   public static string DefaultOriginalId {
-    get { return defaultOriginalId; }
+    get => defaultOriginalId;
 
-    set { defaultOriginalId = value; }
+    set => defaultOriginalId = value;
   }
 
   /// <summary>
@@ -167,7 +167,7 @@ public class Language {
   /// </summary>
   /// <seealso cref="P:Soluling.Language.OriginalId"/>
   public static CultureInfo OriginalCulture {
-    get { return new CultureInfo(OriginalId); }
+    get => new CultureInfo(OriginalId);
   }
 
   /// <summary>

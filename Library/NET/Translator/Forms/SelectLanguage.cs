@@ -75,15 +75,15 @@ public partial class SelectLanguage : Form {
   /// Gets and sets the type of display language.
   /// </summary>
   public LanguageName DisplayLanguage {
-    get { return displayLanguage; }
-    set { displayLanguage = value; }
+    get => displayLanguage;
+    set => displayLanguage = value;
   }
 
   /// <summary>
   /// Gets and sets the selected language.
   /// </summary>
   public CultureInfo SelectedLanguage {
-    get { return cultureInfos[listBox.SelectedIndex]; }
+    get => cultureInfos[listBox.SelectedIndex];
     set {
       for (int i = 0; i < cultureInfos.Length; i++) {
         if (cultureInfos[i] == value) {

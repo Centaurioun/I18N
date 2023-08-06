@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using Soluling;
 using Soluling.WPF;
@@ -11,7 +11,7 @@ public partial class MainWindow : Window {
   public MainWindow() { InitializeComponent(); }
 
   public LanguageName DisplaLanugage {
-    get { return (LanguageName)languageComboBox.SelectedIndex; }
+    get => (LanguageName)languageComboBox.SelectedIndex;
   }
 
   // This procedure initializes the properties that are set on run time

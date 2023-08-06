@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -9,21 +9,21 @@ public class MainWindowViewModel : INotifyPropertyChanged {
   private string productName = "Ski";
 
   public DateTime Date {
-    get { return date; }
+    get => date;
     set {
       date = value;
       DoPropertyChanged();
     }
   }
   public double Amount {
-    get { return amount; }
+    get => amount;
     set {
       amount = value;
       DoPropertyChanged();
     }
   }
   public string ProductName {
-    get { return productName; }
+    get => productName;
     set {
       productName = value;
       DoPropertyChanged();
