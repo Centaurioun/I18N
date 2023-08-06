@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -163,7 +163,7 @@ public class FormsChecker : UserInterfaceChecker {
   protected Control GetForm(Control control) {
     var result = control.Parent;
 
-    while (!(result is Form))
+    while (result is not Form)
       result = result.Parent;
 
     return result;

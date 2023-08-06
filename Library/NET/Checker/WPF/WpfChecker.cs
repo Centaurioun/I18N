@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
@@ -195,8 +195,8 @@ public class WpfChecker : UserInterfaceChecker {
     } else {
       var host = element;
 
-      while ((host != null) && !(host is UserControl) && !(host is Window) &&
-             !(host is Page))
+      while ((host != null) && host is not UserControl && host is not Window &&
+             host is not Page)
         host = (FrameworkElement)VisualTreeHelper.GetParent(host);
 
       issue.Host = host;
@@ -260,7 +260,7 @@ public class WpfChecker : UserInterfaceChecker {
 
   private void CheckLabel(Label label) {
     if ((label.Width == double.NaN) || IsTruncationDiabled(label) ||
-        !(label.Content is string))
+        label.Content is not string)
       return;
 
     var size = CalculateTextSize(label, (string)label.Content);
@@ -271,7 +271,7 @@ public class WpfChecker : UserInterfaceChecker {
 
   private void CheckCheckBox(CheckBox checkBox) {
     if ((checkBox.Width == double.NaN) || IsTruncationDiabled(checkBox) ||
-        !(checkBox.Content is string))
+        checkBox.Content is not string)
       return;
 
     var size = CalculateTextSize(checkBox, (string)checkBox.Content);
@@ -282,7 +282,7 @@ public class WpfChecker : UserInterfaceChecker {
 
   private void CheckRadioButton(RadioButton radio) {
     if ((radio.Width == double.NaN) || IsTruncationDiabled(radio) ||
-        !(radio.Content is string))
+        radio.Content is not string)
       return;
 
     var size = CalculateTextSize(radio, (string)radio.Content);
@@ -293,7 +293,7 @@ public class WpfChecker : UserInterfaceChecker {
 
   private void CheckButton(Button button) {
     if ((button.Width == double.NaN) || IsTruncationDiabled(button) ||
-        !(button.Content is string))
+        button.Content is not string)
       return;
 
     var size = CalculateTextSize(button, (string)button.Content);
